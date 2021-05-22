@@ -56,8 +56,6 @@ return (
   {/* main body image */}
   <div className="text-white">
     <img src="/bg-image.jpg" alt="" className="w-full object-cover" style={{height:'500px'}} />
-    
-    {/* <Image src="/bg-image.jpg" height="400px" width="200" alt="" className="w-full object-cover"  /> */}
   </div>
 
   <div className="">
