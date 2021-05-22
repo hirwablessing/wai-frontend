@@ -4,7 +4,7 @@ import parse from 'html-react-parser'
 export default function Home() {
   const [navToggle,setNavToogle]=useState(false);
 return (
-  
+
 <div>
   {/* navigation bar */}
   <div className="hidden lg:block bg-white shadow h-1/2 px-5 py-3 w-full top-0 sticky">
@@ -13,7 +13,7 @@ return (
           International</span> <br />
         <span className="text-lg text-yellow-500">WAI</span>
       </div>
-      <div className="menu lg:w-1/2 lg:flex gap-3 justify-end text-sm mt-5 lg:mt-0 items-center">
+      <div className="menu lg:w-1/2 lg:flex gap-3 justify-end text-xs mt-5 lg:mt-0 items-center">
         <a href="" className="uppercase block hover:text-blue-600 hover:font-bold">HOME</a>
         <a href="" className="uppercase block hover:text-blue-600 hover:font-bold">ABOUT US</a>
         <a href="" className="uppercase block hover:text-blue-600 hover:font-bold">Take Action</a>
@@ -59,7 +59,7 @@ return (
     <img src="/bg-image.jpg" alt="" className="w-full object-cover" style={{height:'500px'}} />
   </div>
 
-  <div className="">
+  <div className="p-5">
   
     Porro, vitae. Cupiditate culpa commodi quae assumenda in, architecto quam ipsam laboriosam quos repudiandae repellat
     pariatur quas officiis illum deleniti ullam quasi provident numquam ducimus repellendus at incidunt corporis labore.
