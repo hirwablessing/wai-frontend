@@ -5,19 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "build:css": "postcss styles/tailwind.css -o styles/main.css",
-    "build:watch": "postcss styles/tailwind.css -o styles/main.css"
+    "start": "next start"
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
     "next": "10.2.2",
-    "next-images": "^1.7.0",
-    "postcss": "^8.3.0",
-    "postcss-cli": "^8.3.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "tailwindcss": "^2.1.2"
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@types/react": "17.0.6",
