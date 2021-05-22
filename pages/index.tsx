@@ -4,6 +4,7 @@ import parse from 'html-react-parser'
 export default function Home() {
   const [navToggle,setNavToogle]=useState(false);
 return (
+  
 <div>
   {/* navigation bar */}
   <div className="hidden lg:block bg-white shadow h-1/2 px-5 py-3 w-full top-0 sticky">
