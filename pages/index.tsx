@@ -1,4 +1,3 @@
-import bgImage from '../images/bg-image.jpg'
 import {icons} from '../utils/icons'
 import {useState} from 'react'
 import parse from 'html-react-parser'
@@ -56,7 +55,9 @@ return (
 
   {/* main body image */}
   <div className="text-white">
-    <img src={bgImage} alt="" className="w-full object-cover" style={{height:'500px'}} />
+    <img src="/bg-image.jpg" alt="" className="w-full object-cover" style={{height:'500px'}} />
+    
+    {/* <Image src="/bg-image.jpg" height="400px" width="200" alt="" className="w-full object-cover"  /> */}
   </div>
 
   <div className="">
