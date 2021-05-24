@@ -41,7 +41,7 @@ return (
     </div>
 
   {navToggle &&
-    <div className="menu w-full lg:flex gap-3 justify-end text-sm items-center p-5 absolute bg-white shadow-lg top-5 right-0 mt-14 md:12 z-40 cursor-pointer">
+    <div className="menu w-full lg:flex gap-3 justify-end text-sm items-center p-5 absolute bg-white shadow-lg top-4 right-0 mt-14 md:12 z-40 cursor-pointer">
     <a href="" className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">HOME</a>
     <a href="" className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">ABOUT US</a>
     <a href="" className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">Take Action</a>
@@ -133,7 +133,7 @@ return (
       <br />
       <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
       <div className="my-2">
-      <a href="" className="text-yellow-500">Read more</a> 
+      <a href="" className="text-gray-500 text-xs hover:underline">Read more</a> 
 </div>
     </div>
     <div className="card mt-5 lg:mt-0 border p-7">
@@ -142,7 +142,7 @@ return (
       <br />
       <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
       <div className="my-2">
-      <a href="" className="text-yellow-500">Read more</a> 
+      <a href="" className="text-gray-500 text-xs hover:underline">Read more</a> 
 </div>
     </div>
     <div className="card mt-5 lg:mt-0 border p-7">
@@ -151,7 +151,7 @@ return (
       <br />
       <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
       <div className="my-2">
-      <a href="" className="text-yellow-500">Read more</a> 
+      <a href="" className="text-gray-500 text-xs hover:underline">Read more</a> 
 </div>
     </div>
     <div className="card mt-5 lg:mt-0 border p-7">
@@ -160,7 +160,7 @@ return (
       <br />
       <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
       <div className="my-2">
-      <a href="" className="text-yellow-500">Read more</a> 
+      <a href="" className="text-gray-500 text-xs hover:underline">Read more</a> 
 </div>
     </div>
   </div>
@@ -184,10 +184,10 @@ return (
     
     <div className="lg:w-1/3">
       <h1 className="font-bold my-2 text-xl text-yellow-500">Connect with us</h1>
-      <div className="flex gap-2">
-        <a href="">fB_icon</a>
-        <a href="">twi_icon</a>
-        <a href="">Inst_icon</a>
+      <div className="flex gap-9">
+        <a href="https://twitter.com">{    parse('' + icons.twitter + '')}</a>
+        <a href="https://facebook.com">{    parse('' + icons.fb + '')}</a>
+        <a href="https://instagram.com">{    parse('' + icons.ig + '')}</a>
       </div>
     </div>
     
