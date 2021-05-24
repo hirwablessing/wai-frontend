@@ -3,6 +3,8 @@ import {useState} from 'react'
 import parse from 'html-react-parser'
 export default function Home() {
   const [navToggle,setNavToogle]=useState(false);
+  // e-mail toggled
+  const [emailToggle, setEmailToggle] = useState(false);
 return (
 
 <div>
@@ -184,10 +186,13 @@ return (
     
     <div className="lg:w-1/3">
       <h1 className="font-bold my-2 text-xl text-yellow-500">Connect with us</h1>
-      <div className="flex gap-9">
+      <div className="flex gap-5 contact--icons-block">
         <a href="https://twitter.com">{    parse('' + icons.twitter + '')}</a>
         <a href="https://facebook.com">{    parse('' + icons.fb + '')}</a>
         <a href="https://instagram.com">{    parse('' + icons.ig + '')}</a>
+        <span className={emailToggle?"cursor-pointer shadow":'cursor-pointer'} onClick={()=>setEmailToggle(!emailToggle)}>{    parse('' + icons.mail + '')}</span>
+        {emailToggle && <div className="card absolute shadow-lg bg-yellow-200 px-5 py-3 mt-7 ml-12">Mail us: <b> director@wai.com </b></div>}
+        
       </div>
     </div>
     

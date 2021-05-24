@@ -24,3 +24,17 @@ a {
   height:500px;
   /* content: url('../public/') */
 }
+
+/* footer */
+
+.contact-icons{
+  fill: rgba(128, 128, 128, 0.568);
+}
+
+.contact-icons:hover{
+fill: #f49e0b;
+}
+
+.contact--icon-active svg{
+  fill:#f49e0b;
+}
