@@ -1,61 +1,12 @@
-import {icons} from '../utils/icons'
-import {useState} from 'react'
-import parse from 'html-react-parser'
+import Navbar from '../components/home/navbar'
+import Footer from '../components/home/footer'
+import News from '../components/home/news'
 export default function Home() {
-const [navToggle,setNavToogle]=useState(false);
-// e-mail toggled
-const [emailToggle, setEmailToggle] = useState(false);
 return (
 
 <div>
   {/* navigation bar */}
-  <div className="hidden lg:block bg-white shadow h-1/2 px-5 py-3 w-full top-0 sticky">
-    <div className="mx-auto lg:px-7 lg:flex items-center">
-      <div className="lg:w-1/2 home--title text-yellow-500 text-sm uppercase"> <span>World Amenders
-          International</span> <br />
-        <span className="text-lg font-bold text-yellow-500">WAI</span>
-      </div>
-      <div className="menu lg:w-1/2 lg:flex gap-5 justify-end text-xs mt-5 lg:mt-0 items-center cursor-pointer">
-        <a href="" className="uppercase block hover:text-yellow-600 hover:font-bold">HOME</a>
-        <a href="" className="uppercase block hover:text-yellow-600 hover:font-bold">ABOUT US</a>
-        <a href="" className="uppercase block hover:text-yellow-600 hover:font-bold">Take Action</a>
-        <a href="" className="uppercase block hover:text-yellow-600 hover:font-bold">our impact</a>
-        <a href="" className="uppercase block hover:text-yellow-600 hover:font-bold">women advocacy</a>
-        <a href=""
-          className="uppercase block bg-yellow-500 text-white px-2 py-3 rounded font-bold hover:bg-yellow-600">CONTACT
-          US</a>
-      </div>
-
-    </div>
-  </div>
-
-  {/* navbar responsiveness */}
-  <div className="block lg:hidden shadow bg-white h top-0 sticky px-5 py-3 w-full flex items-center gap-4">
-    <div className="w-3/4 home--title text-yellow-500 text-sm uppercase"> <span>World Amenders
-        International</span> <br />
-      <span className="text-lg font-bold text-yellow-500">WAI</span>
-    </div>
-    <div className="w-1/4 flex justify-end cursor-pointer" onClick={()=>{setNavToogle(!navToggle)}}>
-      {!navToggle?
-      parse('' + icons.menu + '')
-      :
-      parse('' + icons.close + '')}
-    </div>
-
-    {navToggle &&
-    <div
-      className="menu w-full lg:flex gap-3 justify-end text-sm items-center p-5 absolute bg-white shadow-lg top-4 right-0 mt-14 md:12 z-40 cursor-pointer">
-      <a href="" className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">HOME</a>
-      <a href="" className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">ABOUT US</a>
-      <a href="" className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">Take Action</a>
-      <a href="" className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">our impact</a>
-      <a href="" className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">women advocacy</a>
-      <a href=""
-        className="uppercase block bg-yellow-500 text-white px-2 py-3 rounded font-bold hover:bg-yellow-600">CONTACT
-        US</a>
-    </div>
-    }
-  </div>
+  <Navbar />
 
   {/* main body image */}
   <div className="bg--img-block py-12">
@@ -70,9 +21,6 @@ return (
 
     </div>
   </div>
-
-
-
   {/* main body content */}
   <div className="px-5 lg:px-0">
     <div className="upper--block my-12 lg:w-2/3 m-auto">
@@ -135,99 +83,11 @@ return (
 
   {/* main body ends here */}
   <hr />
-
-  <div className="title text-xl font-bold text-yellow-500 ml-5 lg:ml-12 my-5">NEWS</div>
-  <div className="w-full p-1 gap-12 lg:flex px-5 lg:px-12 my-5 lg:my-12">
-    <div className="card mt-5 lg:mt-0 border p-7">
-      <h1 className="text-xl font-bold text-gray-500 my-3">Article #1</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, unde.</p>
-      <br />
-      <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
-      <div className="my-2">
-        <a href="" className="text-gray-500 text-xs hover:underline">Read more</a>
-      </div>
-    </div>
-    <div className="card mt-5 lg:mt-0 border p-7">
-      <h1 className="text-xl font-bold text-gray-500 my-3">Article #1</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, unde.</p>
-      <br />
-      <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
-      <div className="my-2">
-        <a href="" className="text-gray-500 text-xs hover:underline">Read more</a>
-      </div>
-    </div>
-    <div className="card mt-5 lg:mt-0 border p-7">
-      <h1 className="text-xl font-bold text-gray-500 my-3">Article #1</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, unde.</p>
-      <br />
-      <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
-      <div className="my-2">
-        <a href="" className="text-gray-500 text-xs hover:underline">Read more</a>
-      </div>
-    </div>
-    <div className="card mt-5 lg:mt-0 border p-7">
-      <h1 className="text-xl font-bold text-gray-500 my-3">Article #1</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, unde.</p>
-      <br />
-      <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
-      <div className="my-2">
-        <a href="" className="text-gray-500 text-xs hover:underline">Read more</a>
-      </div>
-    </div>
-  </div>
-
+  {/* new articles */}
+  <News />
   {/* footer */}
   <hr />
-
-  <div className="footer w-full lg:mt-12 text-dark-500 p-5 bg-white px-5 lg:px-12">
-    <div className="lg:flex">
-      <div className="lg:w-1/3">
-        <h1 className="font-bold my-2 text-xl text-yellow-500">Categories</h1>
-        <ul>
-          <li className="my-2">Home</li>
-          <li className="my-2">About us</li>
-          <li className="my-2">Take action</li>
-          <li className="my-2">Our Impact</li>
-          <li className="my-2">Women advocacy</li>
-          <li className="my-2">Contact us</li>
-        </ul>
-      </div>
-
-      <div className="lg:w-1/3">
-        <h1 className="font-bold my-2 text-xl text-yellow-500">Connect with us</h1>
-        <div className="flex gap-5 contact--icons-block"> 
-        <span className={emailToggle?"cursor-pointer shadow":'cursor-pointer'} onClick={()=>setEmailToggle(!emailToggle)}>{ parse('' + icons.mail + '')}</span>
-          {emailToggle && <div className="card absolute shadow-lg bg-yellow-200 px-5 py-3 mt-7">Mail us: <b>
-              director@wai.com </b></div>}
-
-          <a href="https://twitter.com">{ parse('' + icons.twitter + '')}</a>
-          <a href="https://facebook.com">{ parse('' + icons.fb + '')}</a>
-          <a href="https://instagram.com">{ parse('' + icons.ig + '')}</a>
-
-        </div>
-      </div>
-
-      <div className="lg:w-1/3">
-        <h1 className="font-bold my-2 text-xl text-yellow-500">Get Our Newsletter</h1>
-        <form action="">
-          <label htmlFor="">Enter your email address</label>
-          <div className="flex items-center">
-            <input type="email" name="" id="" className="w-full border form-control px-3 py-2 my-3 focus:outline-none"
-              required />
-            <button type="submit"
-              className="bg-yellow-500 hover:bg-yellow-600 h-1/2 text-white px-3 py-2 focus:outline-none">Subscribe</button>
-          </div>
-        </form>
-      </div>
-    </div>
-
-  </div>
-  {/* footer ends here */}
-  {/* sub-footer */}
-  <div className="bg-yellow-500 w-full text-center text-white text-sm py-3">
-    &copy; 2021 Allrights reserved ~ WAI
-  </div>
-  {/* sub-footer ends here */}
+  <Footer />
 
 </div>
 )

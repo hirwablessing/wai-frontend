@@ -1,0 +1,45 @@
+export default function news(){
+    return(
+        <div>
+            <div className="title text-xl font-bold text-yellow-500 ml-5 lg:ml-12 my-5">NEWS</div>
+  <div className="w-full p-1 gap-12 lg:flex px-5 lg:px-12 my-5 lg:my-12">
+    <div className="card mt-5 lg:mt-0 border p-7">
+      <h1 className="text-xl font-bold text-gray-500 my-3">Article #1</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, unde.</p>
+      <br />
+      <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
+      <div className="my-2">
+        <a href="" className="text-gray-500 text-xs hover:underline">Read more</a>
+      </div>
+    </div>
+    <div className="card mt-5 lg:mt-0 border p-7">
+      <h1 className="text-xl font-bold text-gray-500 my-3">Article #1</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, unde.</p>
+      <br />
+      <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
+      <div className="my-2">
+        <a href="" className="text-gray-500 text-xs hover:underline">Read more</a>
+      </div>
+    </div>
+    <div className="card mt-5 lg:mt-0 border p-7">
+      <h1 className="text-xl font-bold text-gray-500 my-3">Article #1</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, unde.</p>
+      <br />
+      <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
+      <div className="my-2">
+        <a href="" className="text-gray-500 text-xs hover:underline">Read more</a>
+      </div>
+    </div>
+    <div className="card mt-5 lg:mt-0 border p-7">
+      <h1 className="text-xl font-bold text-gray-500 my-3">Article #1</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, unde.</p>
+      <br />
+      <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
+      <div className="my-2">
+        <a href="" className="text-gray-500 text-xs hover:underline">Read more</a>
+      </div>
+    </div>
+  </div>
+        </div>
+    )
+}
