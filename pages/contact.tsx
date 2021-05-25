@@ -22,7 +22,7 @@ return (
     <Navbar />
 
     {/* main body image */}
-    <div className="lg:flex gap-12 mx-auto lg:w-2/3 p-5">
+    <div className="lg:flex gap-12 mx-auto lg:w-2/3 p-5 my-3">
         {/* <div className="shadow-lg lg:w-1/2 p-5 h-1/2">
             <div className="title font-bold text-gray-500 text-xl">Contact us</div>
         </div> */}
@@ -62,9 +62,8 @@ return (
     </div>
 
     {/* main body ends here */}
-    <hr />
     {/* footer */}
-    <hr />
+    <hr className="hidden lg:block" />
     <Footer />
 
 </div>
