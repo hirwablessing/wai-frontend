@@ -16,14 +16,14 @@ return(
                 <span className="text-lg font-bold text-yellow-500">WAI</span>
             </div>
             <div className="menu lg:w-1/2 lg:flex gap-5 justify-end text-xs mt-5 lg:mt-0 items-center cursor-pointer">
-                <Link href="/"><a className="uppercase block hover:text-yellow-600 hover:font-bold">HOME</a></Link>
-                <Link href="/about"><a className="uppercase block hover:text-yellow-600 hover:font-bold">ABOUT US</a>
+                <Link href="/"><a className={router.pathname==='/'?"uppercase block text-yellow-600 font-bold hover:font-bold":'uppercase block hover:text-yellow-600 hover:font-bold'}>HOME</a></Link>
+                <Link href="/about"><a className={router.pathname==='/about'?"uppercase block text-yellow-600 font-bold hover:font-bold":'uppercase block hover:text-yellow-600 hover:font-bold'}>ABOUT US</a>
                 </Link>
-                <Link href="/take-action"><a className="uppercase block hover:text-yellow-600 hover:font-bold">Take
+                <Link href="/take-action"><a className={router.pathname==='/take-action'?"uppercase block text-yellow-600 font-bold hover:font-bold":'uppercase block hover:text-yellow-600 hover:font-bold'}>Take
                     Action</a></Link>
-                <Link href="/our-impact"><a className="uppercase block hover:text-yellow-600 hover:font-bold">our
+                <Link href="/our-impact"><a className={router.pathname==='/our-impact'?"uppercase block text-yellow-600 font-bold hover:font-bold":'uppercase block hover:text-yellow-600 hover:font-bold'}>our
                     impact</a></Link>
-                <Link href="/women-advocacy"><a className="uppercase block hover:text-yellow-600 hover:font-bold">women
+                <Link href="/women-advocacy"><a className={router.pathname==='/women-advocacy'?"uppercase block text-yellow-600 font-bold hover:font-bold":'uppercase block hover:text-yellow-600 hover:font-bold'}>women
                     advocacy</a></Link>
                 <Link href="/contact"><a
                     className="uppercase block bg-yellow-500 text-white px-2 py-3 rounded font-bold hover:bg-yellow-600">
