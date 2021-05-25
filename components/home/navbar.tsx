@@ -1,15 +1,17 @@
 import {useState} from 'react'
 import parse from 'html-react-parser'
 import Link from 'next/link'
+import {useRouter} from 'next/router';
 import {icons} from '../../utils/icons'
 export default function navbar(){
 
 const [navToggle,setNavToogle]=useState(false);
+const router = useRouter();
 return(
 <>
     <div className="hidden lg:block bg-white shadow h-1/2 px-5 py-3 w-full top-0 sticky">
         <div className="mx-auto lg:px-7 lg:flex items-center">
-            <div className="lg:w-1/2 home--title text-yellow-500 text-sm uppercase"> <span>World Amenders
+            <div className="lg:w-1/2 home--title text-yellow-500 hover:text-yellow-700 text-sm uppercase cursor-pointer" onClick={()=>router.push('/')}> <span>World Amenders
                     International</span> <br />
                 <span className="text-lg font-bold text-yellow-500">WAI</span>
             </div>

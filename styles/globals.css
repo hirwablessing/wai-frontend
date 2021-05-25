@@ -38,3 +38,27 @@ fill: #f49e0b;
 .contact--icon-active svg{
   fill:#f49e0b;
 }
+
+body{
+  margin:0
+}
+
+/* progress bar styles */
+
+#nprogress .bar {
+  height:5px !important;
+}
+
+#container {
+  padding:40px;
+  background-color:grey;
+  color:white;
+}
+#nprogress .bar {
+  background: #f49e0b !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #f49e0b;
+  border-left-color: #f49e0b;
+}

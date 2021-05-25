@@ -1,32 +1,36 @@
 import {useState} from 'react'
 import parse from 'html-react-parser'
 import {icons} from '../../utils/icons'
+import Link from 'next/link'
 export default function footer(){
-    
+
 // e-mail toggled
 const [emailToggle, setEmailToggle] = useState(false);
-    return(
-        <div>
-            
+return(
+<div>
+
 
   <div className="footer w-full lg:mt-12 text-dark-500 p-5 bg-white px-5 lg:px-12">
     <div className="lg:flex">
       <div className="lg:w-1/3">
         <h1 className="font-bold my-2 text-xl text-yellow-500">Categories</h1>
-        <ul>
-          <li className="my-2">Home</li>
-          <li className="my-2">About us</li>
-          <li className="my-2">Take action</li>
-          <li className="my-2">Our Impact</li>
-          <li className="my-2">Women advocacy</li>
-          <li className="my-2">Contact us</li>
-        </ul>
+        <Link href="/"><a className="block my-2 hover:text-yellow-600 hover:font-bold">Home</a></Link>
+        <Link href="/about"><a className="block my-2 hover:text-yellow-600 hover:font-bold">About us</a>
+        </Link>
+        <Link href="/take-action"><a className="block my-2 hover:text-yellow-600 hover:font-bold">Take
+          Action</a></Link>
+        <Link href="/our-impact"><a className="block my-2 hover:text-yellow-600 hover:font-bold">Our
+          impact</a></Link>
+        <Link href="/women-advocacy"><a className="block my-2 hover:text-yellow-600 hover:font-bold">Women
+          advocacy</a></Link>
+        <Link href="/contact"><a className="block my-2 hover:text-yellow-600 hover:font-bold">Contact</a></Link>
       </div>
 
       <div className="lg:w-1/3">
         <h1 className="font-bold my-2 text-xl text-yellow-500">Connect with us</h1>
-        <div className="flex gap-5 contact--icons-block"> 
-        <span className={emailToggle?"cursor-pointer shadow":'cursor-pointer'} onClick={()=>setEmailToggle(!emailToggle)}>{ parse('' + icons.mail + '')}</span>
+        <div className="flex gap-5 contact--icons-block">
+          <span className={emailToggle?"cursor-pointer shadow":'cursor-pointer'}
+            onClick={()=>setEmailToggle(!emailToggle)}>{ parse('' + icons.mail + '')}</span>
           {emailToggle && <div className="card absolute shadow-lg bg-yellow-200 px-5 py-3 mt-7">Mail us: <b>
               director@wai.com </b></div>}
 
@@ -58,6 +62,6 @@ const [emailToggle, setEmailToggle] = useState(false);
     &copy; 2021 Allrights reserved ~ WAI
   </div>
   {/* sub-footer ends here */}
-        </div>
-    )
+</div>
+)
 }
