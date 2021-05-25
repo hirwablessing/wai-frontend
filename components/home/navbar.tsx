@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import parse from 'html-react-parser'
+import Link from 'next/link'
 import {icons} from '../../utils/icons'
 export default function navbar(){
 
@@ -13,14 +14,19 @@ return(
                 <span className="text-lg font-bold text-yellow-500">WAI</span>
             </div>
             <div className="menu lg:w-1/2 lg:flex gap-5 justify-end text-xs mt-5 lg:mt-0 items-center cursor-pointer">
-                <a href="" className="uppercase block hover:text-yellow-600 hover:font-bold">HOME</a>
-                <a href="" className="uppercase block hover:text-yellow-600 hover:font-bold">ABOUT US</a>
-                <a href="" className="uppercase block hover:text-yellow-600 hover:font-bold">Take Action</a>
-                <a href="" className="uppercase block hover:text-yellow-600 hover:font-bold">our impact</a>
-                <a href="" className="uppercase block hover:text-yellow-600 hover:font-bold">women advocacy</a>
-                <a href=""
-                    className="uppercase block bg-yellow-500 text-white px-2 py-3 rounded font-bold hover:bg-yellow-600">CONTACT
-                    US</a>
+                <Link href="/"><a className="uppercase block hover:text-yellow-600 hover:font-bold">HOME</a></Link>
+                <Link href="/about"><a className="uppercase block hover:text-yellow-600 hover:font-bold">ABOUT US</a>
+                </Link>
+                <Link href="/take-action"><a className="uppercase block hover:text-yellow-600 hover:font-bold">Take
+                    Action</a></Link>
+                <Link href="/our-impact"><a className="uppercase block hover:text-yellow-600 hover:font-bold">our
+                    impact</a></Link>
+                <Link href="/women-advocacy"><a className="uppercase block hover:text-yellow-600 hover:font-bold">women
+                    advocacy</a></Link>
+                <Link href="/contact"><a
+                    className="uppercase block bg-yellow-500 text-white px-2 py-3 rounded font-bold hover:bg-yellow-600">
+                    CONTACT
+                    US </a></Link>
             </div>
 
         </div>
@@ -42,14 +48,18 @@ return(
         {navToggle &&
         <div
             className="menu w-full lg:flex gap-3 justify-end text-sm items-center p-5 absolute bg-white shadow-lg top-4 right-0 mt-14 md:12 z-40 cursor-pointer">
-            <a href="" className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">HOME</a>
-            <a href="" className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">ABOUT US</a>
-            <a href="" className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">Take Action</a>
-            <a href="" className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">our impact</a>
-            <a href="" className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">women advocacy</a>
-            <a href=""
+            <Link href="/"><a className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">HOME</a></Link>
+            <Link href="/about"><a className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">ABOUT US</a>
+            </Link>
+            <Link href="/take-action"><a className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">Take
+                Action</a></Link>
+          <Link href="/our-impact"><a className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">our
+                impact</a></Link>
+            <Link href="/women-advocacy"><a className="uppercase my-3 block hover:text-yellow-600 hover:font-bold">women
+                advocacy</a></Link>
+            <Link href="/contact"><a
                 className="uppercase block bg-yellow-500 text-white px-2 py-3 rounded font-bold hover:bg-yellow-600">CONTACT
-                US</a>
+                US</a></Link>
         </div>
         }
     </div>
