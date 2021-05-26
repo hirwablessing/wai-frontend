@@ -64,15 +64,15 @@ return (
                         help him launch very small humanitarian actions in their village.
 
                     </p>
-                    <p className="font-bold my-5 text-justify">“Regardless of financial status, educational level, religious belief, or political position -- everyone who can, at least for one second, see or hear about the heartbreaking life stories of the neediest people across the globe cannot leave their lives unamended. That is what happened to me after reading “Challenging The Face of Hunger By Tony Hall.” I could not hold myself until I thought of founding World Amenders International  - <span className="text-gray-500 font-normal"> Aime Ismael. </span>”</p>
+                    <p className="font-bold my-5 text-justify">“Regardless of financial status, educational level, religious belief, or political position -- everyone who can, at least for one second, see or hear about the heartbreaking life stories of the neediest people across the globe cannot leave their lives unamended. That is what happened to me after reading “Challenging The Face of Hunger By Tony Hall.” I could not hold myself until I thought of founding World Amenders International  - Aime Ismael.”</p>
 
                     <div className="w-full flex gap-12 items-center justify-center">
                         <div className="w-1/2">
-                    <img src="/bg-image.jpg" alt="" className="rounded-md" />
+                    {/* <img src="/bg-image.jpg" alt="" className="rounded-md" /> */}
                     </div>
                     <div className="text-center">
                     <h1 className="">Aime Ismael</h1>
-                    <span className="title text-gray-400 text-xs">CO-Founder of WAI</span>
+                    <span className="title text-gray-400 text-xs">Founder and President of World Amenders International</span>
                     </div>
                     </div>
                 </div>
