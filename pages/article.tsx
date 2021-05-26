@@ -48,7 +48,7 @@ return(
                 <img src="/bg-image.jpg" alt="" className="w-full article--cover-img" />
             </div>
             <div className="content lg:ml-16 flex gap-5">
-                <div className="w-full text-justify">
+                <div className="w-full text-justify text-gray-600">
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam illo id pariatur qui sint, earum
                         magnam quod recusandae officiis atque adipisci neque delectus vitae eaque doloremque cupiditate

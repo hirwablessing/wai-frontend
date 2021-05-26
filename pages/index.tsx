@@ -35,11 +35,12 @@ return (
       <div className="title text-yellow-500 font-bold text-xl text-center"> WAI </div>
       <div className="lg:flex gap-12 my-12 items-center lg:px-20">
         <div className="w-full lg:w-1/2">
-          <h1 className="font-bold text-gray-600 text-lg">
+          <h1 className="font-bold text-lg">
             Opening verse</h1>
           <br />
+          <p className="text-gray-500">
           Whoever oppresses the poor insults their Maker, but those who are generous to the needy honors Him (14: 31)
-
+          </p>
         </div>
         <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
           <img src="/bg-image.jpg" alt="" />
@@ -53,12 +54,14 @@ return (
           <img src="/bg-image.jpg" alt="" />
         </div>
         <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
-          <h1 className="font-bold text-gray-600 text-lg">
+          <h1 className="font-bold text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis iste</h1>
           <br />
+          <p className="text-gray-500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis iste, quo numquam laborum, beatae
           necessitatibus doloribus tenetur possimus ab saepe? Quam totam deserunt et repellendus quos maiores a
           consectetur.
+          </p>
         </div>
       </div>
     </div>
@@ -66,12 +69,14 @@ return (
     <div className="upper--block my-15 w-full">
       <div className="lg:flex gap-12 my-12 items-center lg:px-20">
         <div className="w-full lg:w-1/2">
-          <h1 className="font-bold text-gray-600 text-lg">
+          <h1 className="font-bold text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis iste</h1>
           <br />
+          <p className="text-gray-500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis iste, quo numquam laborum, beatae
           necessitatibus doloribus tenetur possimus ab saepe? Quam totam deserunt et repellendus quos maiores a
           consectetur.
+          </p>
         </div>
         <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
           <img src="/bg-image.jpg" alt="" />
