@@ -22,18 +22,18 @@ return (
     </div>
   </div>
   {/* main body content */}
-  <div className="px-5 lg:px-0">
-    <div className="upper--block my-12 lg:w-2/3 m-auto">
-      <div className="title text-yellow-500 font-bold text-xl text-center">__ OUR MISSION __</div>
-      <div className="mission--title text-center my-12">
+  <div className="px-5 py-20 lg:px-20">
+    <div className="upper--block my-15 w-full">
+      <div className="title text-yellow-500 font-bold text-xl text-center"> OUR MISSION </div>
+      <div className="mission--title text-center my-12 lg:px-20">
         Commissioned by Christ, wherever we go, we strive to better the lives of the neediest and encourage young people
         to use their powerful energy, fearless spirit, and creative minds in launching humanitarian actions and advocacy
         to make hunger, poverty, and injustice unknown to the next generations.
 
       </div>
 
-      <div className="title text-yellow-500 font-bold text-xl text-center">__ WAI __</div>
-      <div className="lg:flex gap-12 my-5 items-center">
+      <div className="title text-yellow-500 font-bold text-xl text-center"> WAI </div>
+      <div className="lg:flex gap-12 my-12 items-center lg:px-20">
         <div className="w-full lg:w-1/2">
           <h1 className="font-bold text-gray-600 text-lg">
             Opening verse</h1>
@@ -47,8 +47,8 @@ return (
       </div>
     </div>
 
-    <div className="upper--block my-12 lg:w-2/3 m-auto">
-      <div className="lg:flex gap-12 my-5 items-center">
+    <div className="upper--block my-15 w-full">
+      <div className="lg:flex gap-12 my-12 items-center lg:px-20">
         <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
           <img src="/bg-image.jpg" alt="" />
         </div>
@@ -63,8 +63,8 @@ return (
       </div>
     </div>
 
-    <div className="upper--block my-12 lg:w-2/3 m-auto">
-      <div className="lg:flex gap-12 my-5 items-center">
+    <div className="upper--block my-15 w-full">
+      <div className="lg:flex gap-12 my-12 items-center lg:px-20">
         <div className="w-full lg:w-1/2">
           <h1 className="font-bold text-gray-600 text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis iste</h1>
