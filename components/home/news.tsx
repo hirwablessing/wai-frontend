@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function news(){
     return(
         <div>
@@ -9,7 +10,7 @@ export default function news(){
       <br />
       <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
       <div className="my-2">
-        <a href="" className="text-gray-500 text-xs hover:underline">Read more</a>
+        <Link href="/article"><a className="text-gray-500 text-xs hover:underline">Read more</a></Link>
       </div>
     </div>
     <div className="card mt-5 lg:mt-0 border p-7">
@@ -18,7 +19,7 @@ export default function news(){
       <br />
       <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
       <div className="my-2">
-        <a href="" className="text-gray-500 text-xs hover:underline">Read more</a>
+        <Link href="/article"><a className="text-gray-500 text-xs hover:underline">Read more</a></Link>
       </div>
     </div>
     <div className="card mt-5 lg:mt-0 border p-7">
@@ -27,7 +28,7 @@ export default function news(){
       <br />
       <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
       <div className="my-2">
-        <a href="" className="text-gray-500 text-xs hover:underline">Read more</a>
+        <Link href="/article"><a className="text-gray-500 text-xs hover:underline">Read more</a></Link>
       </div>
     </div>
     <div className="card mt-5 lg:mt-0 border p-7">
@@ -36,7 +37,7 @@ export default function news(){
       <br />
       <span className="data text-gray-400 text-sm w-full block">2021-02-03</span>
       <div className="my-2">
-        <a href="" className="text-gray-500 text-xs hover:underline">Read more</a>
+        <Link href="/article"><a className="text-gray-500 text-xs hover:underline">Read more</a></Link>
       </div>
     </div>
   </div>

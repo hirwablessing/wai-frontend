@@ -35,18 +35,18 @@ return (
                 </div>
                 <div className="lg:flex w-full gap-5">
                     <div className="form-group lg:w-1/2">
-                        <label htmlFor="" className="text-gray-600 block my-3">Names</label>
+                        <label htmlFor="" className="text-gray-600 block my-3">Names <span className="text-red-500">*</span> </label>
                         <input type="text" id="" className="border p-3 w-full"  {...register('names', { required: '* This field is required' })}  />
                         <span className="text-red-600 text-xs">{errors.names && errors.names.message}</span>
                     </div>
                     <div className="form-group lg:w-1/2">
-                        <label htmlFor="" className="text-gray-600 block my-3">Email</label>
+                        <label htmlFor="" className="text-gray-600 block my-3">Email <span className="text-red-500">*</span></label>
                         <input type="email" id="" className="border p-3 w-full" {...register('email', { required: '* This field is required' })} />
                         <span className="text-red-600 text-xs">{errors.email && errors.email.message}</span>
                     </div>
                 </div>
                 <div className="form-group">
-                    <label htmlFor="" className="text-gray-600 block my-3">Message</label>
+                    <label htmlFor="" className="text-gray-600 block my-3">Message <span className="text-red-500">*</span></label>
                     <textarea id="" className="border h-2/3 p-3 w-full" {...register('smessage', { required: '* This field is required' })}></textarea>
                     <span className="text-red-600 text-xs">{errors.smessage && errors.smessage.message}</span>
                 </div>
