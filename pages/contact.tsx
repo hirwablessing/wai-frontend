@@ -30,8 +30,8 @@ return (
 
             <form onSubmit={ handleSubmit((data) => { handleForm(data) })}>
                 <div className="title  text-gray-500 text-xl my-5"> <div className="font-bold my-5 uppercase"> Contact us form</div>
-                    <div className="sub-title text-sm text-gray-400">- Fill out the information</div>
-                    <div className="sub-title text-sm text-gray-400">- Field marked with *, is required</div>
+                    <div className="sub-title text-sm text-gray-400">Fill out the information</div>
+                    <div className="sub-title text-sm text-gray-400">Field marked with <span className="text-red-500">*</span> is required</div>
                 </div>
                 <div className="lg:flex w-full gap-5">
                     <div className="form-group lg:w-1/2">

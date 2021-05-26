@@ -48,13 +48,13 @@ return(
                 <img src="/bg-image.jpg" alt="" className="w-full article--cover-img" />
             </div>
             <div className="content lg:ml-16 flex gap-5">
-                <div className="w-full text-justify text-gray-600">
-                    <p>
+                <div className="w-full text-justify ">
+                    <p className="text-gray-600">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam illo id pariatur qui sint, earum
                         magnam quod recusandae officiis atque adipisci neque delectus vitae eaque doloremque cupiditate
                         veritatis. A, minima?
 
-                        <br />
+                        <br /> <br />
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, perferendis maxime. Corporis
                         quae in eaque rerum perspiciatis sed ad minus, pariatur commodi nesciunt sequi, placeat eos
                         architecto. Consectetur, voluptatum aperiam.
@@ -94,7 +94,7 @@ return(
                         itaque odit iure porro architecto molestias quam id rem vitae nesciunt. Quo alias voluptatibus
                         error eum illo pariatur expedita harum.
                     </p>
-                    <div className="author my-5 flex gap-3 text-gray-500 my-12">
+                    <div className="author my-5 flex gap-3 my-12">
                         <h4 className="names font-bold">Author: </h4> <span>Aime Ismael</span>
                     </div>
                     <div className="sharing--icons flex gap-5 float-right mb-5">

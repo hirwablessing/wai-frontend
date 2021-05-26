@@ -55,8 +55,8 @@ body{
 
 #container {
   padding:40px;
-  background-color:grey;
-  color:white;
+  /* background-color:grey; */
+  /* color:white; */
 }
 #nprogress .bar {
   background: #f49e0b !important;
