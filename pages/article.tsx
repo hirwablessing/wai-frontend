@@ -2,6 +2,7 @@ import Navbar from '../components/home/navbar'
 import Footer from '../components/home/footer'
 import {icons} from '../utils/icons'
 import parse from 'html-react-parser'
+import News from '../components/home/news'
 export default function article(){
 return(
 <div>
@@ -97,17 +98,22 @@ return(
                         <h4 className="names font-bold">Author: </h4> <span>Aime Ismael</span>
                     </div>
                     <div className="sharing--icons flex gap-5 float-right mb-5">
-                <h4 className="font-bold">Share</h4>
-                <a href="https://instagram.com">{ parse('' + icons.whatsapp + '')}</a>
-                <a href="https://twitter.com">{ parse('' + icons.twitter + '')}</a>
-                <a href="https://facebook.com">{ parse('' + icons.fb + '')}</a>
-                <a href="https://instagram.com">{ parse('' + icons.ig + '')}</a>
-            </div>
+                        <h4 className="font-bold">Share</h4>
+                        <a href="https://instagram.com">{ parse('' + icons.whatsapp + '')}</a>
+                        <a href="https://twitter.com">{ parse('' + icons.twitter + '')}</a>
+                        <a href="https://facebook.com">{ parse('' + icons.fb + '')}</a>
+                        <a href="https://instagram.com">{ parse('' + icons.ig + '')}</a>
+                    </div>
                 </div>
 
             </div>
 
         </div>
+
+        {/* related articles */}
+        <News title={'Related articles'} />
+        {/* other articles */}
+        <News title={'Other articles'} />
     </div>
     {/* main body ends here */}
     {/* footer */}

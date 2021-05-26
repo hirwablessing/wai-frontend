@@ -84,7 +84,7 @@ return (
   {/* main body ends here */}
   <hr />
   {/* new articles */}
-  <News />
+  <News title={'News'} />
   {/* footer */}
   <hr />
   <Footer />
