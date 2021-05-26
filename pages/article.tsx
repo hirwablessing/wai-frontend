@@ -15,22 +15,22 @@ return(
         {/* tags */}
         <div className="tags flex gap-4 w-full justify-center my-5 overflow-x-auto px-5">
             <div
-                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow-500 hover:text-white cursor-pointer">
+                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow hover:text-white cursor-pointer">
                 Branding</div>
             <div
-                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow-500 hover:text-white cursor-pointer">
+                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow hover:text-white cursor-pointer">
                 Communication</div>
             <div
-                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow-500 hover:text-white cursor-pointer">
+                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow hover:text-white cursor-pointer">
                 Experience</div>
             <div
-                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow-500 hover:text-white cursor-pointer">
+                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow hover:text-white cursor-pointer">
                 Identity</div>
             <div
-                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow-500 hover:text-white cursor-pointer">
+                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow hover:text-white cursor-pointer">
                 Identity</div>
             <div
-                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow-500 hover:text-white cursor-pointer">
+                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow hover:text-white cursor-pointer">
                 Identity</div>
 
         </div>
@@ -48,7 +48,7 @@ return(
                 <img src="/bg-image.jpg" alt="" className="w-full article--cover-img" />
             </div>
             <div className="content lg:ml-16 flex gap-5">
-                <div className="w-full text-justify">
+                <div className="w-full text-justify text-gray-500">
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam illo id pariatur qui sint, earum
                         magnam quod recusandae officiis atque adipisci neque delectus vitae eaque doloremque cupiditate

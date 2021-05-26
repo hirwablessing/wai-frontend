@@ -32,11 +32,11 @@ a {
 }
 
 .contact-icons:hover{
-fill: #f49e0b;
+fill: #ff4b33;
 }
 
 .contact--icon-active svg{
-  fill:#f49e0b;
+  fill:#ff4b33;
 }
 
 body{
@@ -55,14 +55,14 @@ body{
 
 #container {
   padding:40px;
-  background-color:grey;
+  /* background-color:grey; */
   color:white;
 }
 #nprogress .bar {
-  background: #f49e0b !important;
+  background: #ff4c1fe3 !important;
 }
 
 #nprogress .spinner-icon {
-  border-top-color: #f49e0b;
-  border-left-color: #f49e0b;
+  border-top-color: #ff4c1fe3;
+  border-left-color: #ff4c1fe3;
 }
