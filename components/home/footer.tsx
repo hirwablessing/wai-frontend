@@ -18,7 +18,7 @@ return(
       <div className="lg:w-1/3">
         <h1 className="font-bold my-2 text-xl text-yellow-500">Categories</h1>
         <Link href="/"><a className={router.pathname==='/'?"block my-2 text-yellow-500 font-bold":"block my-2 hover:text-yellow-500 hover:font-bold"}>Home</a></Link>
-        <Link href="/about"><a className={router.pathname==='/about'?"block my-2 text-yellow-500 font-bold":"block my-2 hover:text-yellow-500 hover:font-bold"}>About us</a>
+        <Link href="/aboutus"><a className={router.pathname==='/aboutus'?"block my-2 text-yellow-500 font-bold":"block my-2 hover:text-yellow-500 hover:font-bold"}>About us</a>
         </Link>
         <Link href="/take-action"><a className={router.pathname==='/take-action'?"block my-2 text-yellow-500 font-bold":"block my-2 hover:text-yellow-500 hover:font-bold"}>Take
           Action</a></Link>
