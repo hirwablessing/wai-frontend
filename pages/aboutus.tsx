@@ -121,7 +121,7 @@ return (
                 <div className="lg:flex gap-4 w-full justify-center my-5 overflow-x-auto">
 
                     <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" alt="" />
+                        <img src="/bg-image.jpg" className="h-60" alt="" />
                         <div className="block -center my-5 p-5">
                             <h1 className="text-md">Aime Ismael</h1>
                             <span className="text-sm text-gray-500">Founder and President of World Amenders
@@ -130,7 +130,7 @@ return (
                     </div>
 
                     <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" alt="" />
+                        <img src="/bg-image.jpg" className="h-60" alt="" />
                         <div className="block -center my-5 p-5">
                             <h1 className="text-md">Aime Ismael</h1>
                             <span className="text-sm text-gray-500">Founder and President of World Amenders
@@ -139,7 +139,7 @@ return (
                     </div>
 
                     <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" alt="" />
+                        <img src="/bg-image.jpg" className="h-60" alt="" />
                         <div className="block -center my-5 p-5">
                             <h1 className="text-md">Aime Ismael</h1>
                             <span className="text-sm text-gray-500">Founder and President of World Amenders
@@ -148,7 +148,7 @@ return (
                     </div>
 
                     <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" alt="" />
+                        <img src="/bg-image.jpg" className="h-60" alt="" />
                         <div className="block -center my-5 p-5">
                             <h1 className="text-md">Aime Ismael</h1>
                             <span className="text-sm text-gray-500">Founder and President of World Amenders
@@ -159,7 +159,7 @@ return (
                 <div className="mt-12 lg:flex gap-4 w-full justify-center my-5 overflow-x-auto">
                    
                 <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" alt="" />
+                        <img src="/bg-image.jpg" className="h-60" alt="" />
                         <div className="block -center my-5 p-5">
                             <h1 className="text-md">Aime Ismael</h1>
                             <span className="text-sm text-gray-500">Founder and President of World Amenders
@@ -168,7 +168,7 @@ return (
                     </div>
 
                     <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" alt="" />
+                        <img src="/bg-image.jpg" className="h-60" alt="" />
                         <div className="block -center my-5 p-5">
                             <h1 className="text-md">Aime Ismael</h1>
                             <span className="text-sm text-gray-500">Founder and President of World Amenders
@@ -177,7 +177,7 @@ return (
                     </div>
 
                     <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" alt="" />
+                        <img src="/bg-image.jpg" className="h-60" alt="" />
                         <div className="block -center my-5 p-5">
                             <h1 className="text-md">Aime Ismael</h1>
                             <span className="text-sm text-gray-500">Founder and President of World Amenders
@@ -186,7 +186,7 @@ return (
                     </div>
 
                     <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" alt="" />
+                        <img src="/bg-image.jpg" className="h-60" alt="" />
                         <div className="block -center my-5 p-5">
                             <h1 className="text-md">Aime Ismael</h1>
                             <span className="text-sm text-gray-500">Founder and President of World Amenders
