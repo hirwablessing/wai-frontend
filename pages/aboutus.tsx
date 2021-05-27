@@ -22,7 +22,7 @@ return (
             <div className="lg:flex gap-12">
                 <div className="w-full lg:w-1/2 my-5 lg:my-0">
                     <img src="/world.png" alt="" className="rounded-md" />
-                   
+
                 </div>
 
                 <div className="w-full lg:w-1/2">
@@ -71,24 +71,24 @@ return (
         <div className="my-10">
             <h2 className="text-center text-2xl text-yellow-500 font-bold w-full my-10">How we work</h2>
             <div className="absolute">
-                 <div className="flex gap-5 w-full">
-                        <div className="shadow-lg w-1/3 h-1/2 p-10 lg:p-20"></div>
-                        <div className="shadow-lg w-1/3 h-1/2 p-5 lg:p-10"></div>
-                        <div className="shadow-lg w-1/3 h-1/2 p-10 lg:p-20"></div>
-                    </div>
-                    <div className="flex gap-5 w-full mt-5">
-                        <div className="shadow-lg w-1/3 h-1/2 p-5 lg:p-10"></div>
-                        <div className="shadow-lg w-1/3 h-1/2 p-10 lg:p-20"></div>
-                        <div className="shadow-lg w-1/3 h-1/2 p-5 lg:p-10"></div>
-                    </div>
-                    <div className="flex gap-5 w-full mt-5">
-                        <div className="shadow-lg w-1/3 h-1/2 p-5 lg:p-20"></div>
-                        <div className="shadow-lg w-1/3 h-1/2 p-10 lg:p-10"></div>
-                        <div className="shadow-lg w-1/3 h-1/2 p-5 lg:p-20"></div>
-                    </div>
+                <div className="flex gap-5 w-full">
+                    <div className="shadow-lg w-1/3 h-1/2 p-10 lg:p-20"></div>
+                    <div className="shadow-lg w-1/3 h-1/2 p-5 lg:p-10"></div>
+                    <div className="shadow-lg w-1/3 h-1/2 p-10 lg:p-20"></div>
+                </div>
+                <div className="flex gap-5 w-full mt-5">
+                    <div className="shadow-lg w-1/3 h-1/2 p-5 lg:p-10"></div>
+                    <div className="shadow-lg w-1/3 h-1/2 p-10 lg:p-20"></div>
+                    <div className="shadow-lg w-1/3 h-1/2 p-5 lg:p-10"></div>
+                </div>
+                <div className="flex gap-5 w-full mt-5">
+                    <div className="shadow-lg w-1/3 h-1/2 p-5 lg:p-20"></div>
+                    <div className="shadow-lg w-1/3 h-1/2 p-10 lg:p-10"></div>
+                    <div className="shadow-lg w-1/3 h-1/2 p-5 lg:p-20"></div>
+                </div>
             </div>
             <div className="lg:flex gap-12">
-            <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
+                <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
                     <img src="/how_we_work.png" alt="" className="rounded-md" />
                 </div>
                 <div className="mt-12 lg:mt-0 lg:w-1/2 py-10 lg:py-0">
@@ -104,14 +104,39 @@ return (
                         God. <br /> Some problems can have strong gravity in that they require the collaborative effort
                         of all Amenders across the globe to advocate, launch strong fundraising campaigns, or initiate
                         long-lasting programs like schools or centers. At any cost, we never fear facing such gigantic
-                        problems because we are strong under God. <br /> Every year, we hold a meeting in Kigali to check our progress, set personal and team goals, and go back to amend the world where we live. 
+                        problems because we are strong under God. <br /> Every year, we hold a meeting in Kigali to
+                        check our progress, set personal and team goals, and go back to amend the world where we live.
 
                     </p>
                 </div>
             </div>
 
         </div>
-    </div> 
+
+        {/* our location */}
+        <div className="mt-12 pt-12">
+            <div className="lg:flex gap-12 mt-12">
+                <div className="lg:w-1/2">
+                    <h2 className="text-2xl text-yellow-500 font-bold w-full my-10">Our Location</h2>
+                    <p className="text-gray-600">
+                        We work from any place that has the most vulnerable person/people. We believe that the most
+                        unheard and the most sick aren’t in offices; however, they are crying next to our workrooms, our
+                        houses, our dorms, hospitals, or in your neighborhood. <br /> Every year, we hold a meeting in
+                        Kigali to check our progress, set personal and team goals, and go back to amend the world where
+                        we live.
+
+                    </p>
+                </div>
+                <div className="lg:w-1/2 border p-2 my-10 lg:my-0">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50274.68177558104!2d30.094723093317853!3d-1.9233386718099916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca4258ed8e797%3A0xf32b36a5411d0bc8!2sKigali!5e0!3m2!1sen!2srw!4v1622105810969!5m2!1sen!2srw"
+                        className="w-full h-96" loading="lazy"></iframe>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 
     {/* main body ends here */}
     {/* footer */}
