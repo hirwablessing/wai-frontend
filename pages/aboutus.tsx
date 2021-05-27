@@ -113,6 +113,92 @@ return (
 
         </div>
 
+        {/* our team */}
+        <div className="mt-12 pt-12">
+            <div className=" bg-yellow-50 p-5 lg:p-20">
+                <h2 className="text-2xl text-yellow-500 font-bold w-full my-10">Our team</h2>
+
+                <div className="lg:flex gap-4 w-full justify-center my-5 overflow-x-auto">
+
+                    <div className="card bg-white lg:w-1/4 min-h-60">
+                        <img src="/bg-image.jpg" alt="" />
+                        <div className="block -center my-5 p-5">
+                            <h1 className="text-md">Aime Ismael</h1>
+                            <span className="text-sm text-gray-500">Founder and President of World Amenders
+                                International</span>
+                        </div>
+                    </div>
+
+                    <div className="card bg-white lg:w-1/4 min-h-60">
+                        <img src="/bg-image.jpg" alt="" />
+                        <div className="block -center my-5 p-5">
+                            <h1 className="text-md">Aime Ismael</h1>
+                            <span className="text-sm text-gray-500">Founder and President of World Amenders
+                                International</span>
+                        </div>
+                    </div>
+
+                    <div className="card bg-white lg:w-1/4 min-h-60">
+                        <img src="/bg-image.jpg" alt="" />
+                        <div className="block -center my-5 p-5">
+                            <h1 className="text-md">Aime Ismael</h1>
+                            <span className="text-sm text-gray-500">Founder and President of World Amenders
+                                International</span>
+                        </div>
+                    </div>
+
+                    <div className="card bg-white lg:w-1/4 min-h-60">
+                        <img src="/bg-image.jpg" alt="" />
+                        <div className="block -center my-5 p-5">
+                            <h1 className="text-md">Aime Ismael</h1>
+                            <span className="text-sm text-gray-500">Founder and President of World Amenders
+                                International</span>
+                        </div>
+                    </div>
+                </div>
+                <div className="mt-12 lg:flex gap-4 w-full justify-center my-5 overflow-x-auto">
+                   
+                <div className="card bg-white lg:w-1/4 min-h-60">
+                        <img src="/bg-image.jpg" alt="" />
+                        <div className="block -center my-5 p-5">
+                            <h1 className="text-md">Aime Ismael</h1>
+                            <span className="text-sm text-gray-500">Founder and President of World Amenders
+                                International</span>
+                        </div>
+                    </div>
+
+                    <div className="card bg-white lg:w-1/4 min-h-60">
+                        <img src="/bg-image.jpg" alt="" />
+                        <div className="block -center my-5 p-5">
+                            <h1 className="text-md">Aime Ismael</h1>
+                            <span className="text-sm text-gray-500">Founder and President of World Amenders
+                                International</span>
+                        </div>
+                    </div>
+
+                    <div className="card bg-white lg:w-1/4 min-h-60">
+                        <img src="/bg-image.jpg" alt="" />
+                        <div className="block -center my-5 p-5">
+                            <h1 className="text-md">Aime Ismael</h1>
+                            <span className="text-sm text-gray-500">Founder and President of World Amenders
+                                International</span>
+                        </div>
+                    </div>
+
+                    <div className="card bg-white lg:w-1/4 min-h-60">
+                        <img src="/bg-image.jpg" alt="" />
+                        <div className="block -center my-5 p-5">
+                            <h1 className="text-md">Aime Ismael</h1>
+                            <span className="text-sm text-gray-500">Founder and President of World Amenders
+                                International</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
         {/* our location */}
         <div className="mt-12 pt-12">
             <div className="lg:flex gap-12 mt-12">
