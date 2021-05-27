@@ -104,13 +104,14 @@ return (
                         God. <br /> Some problems can have strong gravity in that they require the collaborative effort
                         of all Amenders across the globe to advocate, launch strong fundraising campaigns, or initiate
                         long-lasting programs like schools or centers. At any cost, we never fear facing such gigantic
-                        problems because we are strong under God. Every year, we hold a meeting.
+                        problems because we are strong under God. <br /> Every year, we hold a meeting in Kigali to check our progress, set personal and team goals, and go back to amend the world where we live. 
+
                     </p>
                 </div>
             </div>
 
         </div>
-    </div>
+    </div> 
 
     {/* main body ends here */}
     {/* footer */}
