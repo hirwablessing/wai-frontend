@@ -4,7 +4,7 @@ import {useRouter} from "next/router"
 export default function sidebar(){
     const router = useRouter();
     return(
-        <div className="sidebar bg-white lg:w-1/5 h-screen top-o sticky overflow-y-auto">
+        <div className="sidebar bg-white lg:w-1/5 h-screen top-0 sticky overflow-y-auto">
                 <div className="upper--bound flex gap-5 mb-5 p-5 items-center">
                     <span className="bg-yellow-500 rounded-lg text-white p-5">logo</span><h1>World Amenders International (WAI)</h1>
                 </div>

@@ -7,8 +7,8 @@ export default function dashboard(){
         <div className="block lg:flex gap-7 bg-gray-50">
            {/* sidebar */}
            <Sidebar/>
-            <div className="lg:w-4/5 min-h-screen  overflow-y-auto">
-                <div className="h-screen">
+            <div className="lg:w-4/5 min-h-screen">
+                <div className="">
                     {/* navbar */}
                  <Navbar/>
                     {/* navbar ends here */}
