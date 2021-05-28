@@ -223,7 +223,7 @@ return(
         </div>
 
         {/* */}
-        <div className="bg-yellow-50 p-10 font-bold text-3xl text-yellow-500 mt-20 lg:my-20 mb-5">
+        <div className="bg-yellow-50 p-10 font-bold text-3xl text-yellow-500 mt-20 lg:my-10 mb-5">
             Actions matter most when it comes to helping the poor.
         </div>
         <div className="lg:flex gap-20">
