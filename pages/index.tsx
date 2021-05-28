@@ -1,6 +1,8 @@
 import Navbar from '../components/home/navbar'
 import Footer from '../components/home/footer'
 import News from '../components/home/news'
+import React from 'react'
+import Link from 'next/link'
 export default function Home() {
 return (
 
@@ -14,10 +16,9 @@ return (
       <h1 className="ml-2" style={{fontSize:'35px'}}>WORLD AMENDERS INTERNATIONAL</h1>
       <p className="ml-2 text-xl my-3">"We are a young, but strong, voice for the unheard."</p>
 
-
-      <a href=""
-        className="mx-2 block text-center lg:w-1/2 btn bg-yellow-500 hover:bg-yellow-600 text-white rounded p-4 text-sm my-12">Take
-        an action and become an Amender</a>
+<Link href="/takeaction"><a  className="mx-2 block text-center lg:w-1/2 btn bg-yellow-500 hover:bg-yellow-600 text-white rounded p-4 text-sm my-12">Take
+        an action and become an Amender </a></Link>
+   
 
     </div>
   </div>

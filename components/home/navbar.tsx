@@ -19,7 +19,7 @@ return(
                 <Link href="/"><a className={router.pathname==='/'?"uppercase block text-yellow-500 font-bold hover:font-bold":'uppercase block hover:text-yellow-500 hover:font-bold'}>HOME</a></Link>
                 <Link href="/aboutus"><a className={router.pathname==='/aboutus'?"uppercase block text-yellow-500 font-bold hover:font-bold":'uppercase block hover:text-yellow-500 hover:font-bold'}>ABOUT US</a>
                 </Link>
-                <Link href="/take-action"><a className={router.pathname==='/take-action'?"uppercase block text-yellow-500 font-bold hover:font-bold":'uppercase block hover:text-yellow-500 hover:font-bold'}>Take
+                <Link href="/takeaction"><a className={router.pathname==='/takeaction'?"uppercase block text-yellow-500 font-bold hover:font-bold":'uppercase block hover:text-yellow-500 hover:font-bold'}>Take
                     Action</a></Link>
                 {/* <Link href="/our-impact"><a className={router.pathname==='/our-impact'?"uppercase block text-yellow-500 font-bold hover:font-bold":'uppercase block hover:text-yellow-500 hover:font-bold'}>our
                     impact</a></Link>
@@ -49,11 +49,11 @@ return(
 
         {navToggle &&
         <div
-            className="menu w-full lg:flex gap-3 justify-end text-sm items-center p-5 absolute bg-white shadow-lg top-4 right-0 mt-14 md:12 z-40 cursor-pointer">
+            className="menu z-40  w-full lg:flex gap-3 justify-end text-sm items-center p-5 absolute bg-white shadow-lg top-4 right-0 mt-14 md:12 z-40 cursor-pointer">
             <Link href="/"><a className="uppercase my-3 block hover:text-yellow-500 hover:font-bold">HOME</a></Link>
             <Link href="/aboutus"><a className="uppercase my-3 block hover:text-yellow-500 hover:font-bold">ABOUT US</a>
             </Link>
-            <Link href="/take-action"><a className="uppercase my-3 block hover:text-yellow-500 hover:font-bold">Take
+            <Link href="/takeaction"><a className="uppercase my-3 block hover:text-yellow-500 hover:font-bold">Take
                 Action</a></Link>
           {/* <Link href="/our-impact"><a className="uppercase my-3 block hover:text-yellow-500 hover:font-bold">our
                 impact</a></Link>

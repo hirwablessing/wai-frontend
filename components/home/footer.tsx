@@ -20,7 +20,7 @@ return(
         <Link href="/"><a className={router.pathname==='/'?"block my-2 text-yellow-500 font-bold":"block my-2 hover:text-yellow-500 hover:font-bold"}>Home</a></Link>
         <Link href="/aboutus"><a className={router.pathname==='/aboutus'?"block my-2 text-yellow-500 font-bold":"block my-2 hover:text-yellow-500 hover:font-bold"}>About us</a>
         </Link>
-        <Link href="/take-action"><a className={router.pathname==='/take-action'?"block my-2 text-yellow-500 font-bold":"block my-2 hover:text-yellow-500 hover:font-bold"}>Take
+        <Link href="/takeaction"><a className={router.pathname==='/takeaction'?"block my-2 text-yellow-500 font-bold":"block my-2 hover:text-yellow-500 hover:font-bold"}>Take
           Action</a></Link>
         {/* <Link href="/our-impact"><a className={router.pathname==='/our-impact'?"block my-2 text-yellow-500 font-bold":"block my-2 hover:text-yellow-500 hover:font-bold"}>Our
           impact</a></Link>
