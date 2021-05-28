@@ -21,10 +21,10 @@ return(
                 </Link>
                 <Link href="/take-action"><a className={router.pathname==='/take-action'?"uppercase block text-yellow-500 font-bold hover:font-bold":'uppercase block hover:text-yellow-500 hover:font-bold'}>Take
                     Action</a></Link>
-                <Link href="/our-impact"><a className={router.pathname==='/our-impact'?"uppercase block text-yellow-500 font-bold hover:font-bold":'uppercase block hover:text-yellow-500 hover:font-bold'}>our
+                {/* <Link href="/our-impact"><a className={router.pathname==='/our-impact'?"uppercase block text-yellow-500 font-bold hover:font-bold":'uppercase block hover:text-yellow-500 hover:font-bold'}>our
                     impact</a></Link>
                 <Link href="/women-advocacy"><a className={router.pathname==='/women-advocacy'?"uppercase block text-yellow-500 font-bold hover:font-bold":'uppercase block hover:text-yellow-500 hover:font-bold'}>women
-                    advocacy</a></Link>
+                    advocacy</a></Link> */}
                 <Link href="/contact"><a
                     className="uppercase block bg-yellow-500 text-white px-2 py-3 rounded font-bold hover:bg-yellow-600">
                     CONTACT
@@ -55,10 +55,10 @@ return(
             </Link>
             <Link href="/take-action"><a className="uppercase my-3 block hover:text-yellow-500 hover:font-bold">Take
                 Action</a></Link>
-          <Link href="/our-impact"><a className="uppercase my-3 block hover:text-yellow-500 hover:font-bold">our
+          {/* <Link href="/our-impact"><a className="uppercase my-3 block hover:text-yellow-500 hover:font-bold">our
                 impact</a></Link>
             <Link href="/women-advocacy"><a className="uppercase my-3 block hover:text-yellow-500 hover:font-bold">women
-                advocacy</a></Link>
+                advocacy</a></Link> */}
             <Link href="/contact"><a
                 className="uppercase block bg-yellow-500 text-white px-2 py-3 rounded font-bold hover:bg-yellow-600">CONTACT
                 US</a></Link>

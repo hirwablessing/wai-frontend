@@ -22,10 +22,10 @@ return(
         </Link>
         <Link href="/take-action"><a className={router.pathname==='/take-action'?"block my-2 text-yellow-500 font-bold":"block my-2 hover:text-yellow-500 hover:font-bold"}>Take
           Action</a></Link>
-        <Link href="/our-impact"><a className={router.pathname==='/our-impact'?"block my-2 text-yellow-500 font-bold":"block my-2 hover:text-yellow-500 hover:font-bold"}>Our
+        {/* <Link href="/our-impact"><a className={router.pathname==='/our-impact'?"block my-2 text-yellow-500 font-bold":"block my-2 hover:text-yellow-500 hover:font-bold"}>Our
           impact</a></Link>
         <Link href="/women-advocacy"><a className={router.pathname==='/women-advocacy'?"block my-2 text-yellow-500 font-bold":"block my-2 hover:text-yellow-500 hover:font-bold"}>Women
-          advocacy</a></Link>
+          advocacy</a></Link> */}
         <Link href="/contact"><a className={router.pathname==='/contact'?"block my-2 text-yellow-500 font-bold":"block my-2 hover:text-yellow-500 hover:font-bold"}>Contact</a></Link>
       </div>
 
