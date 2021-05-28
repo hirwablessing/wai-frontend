@@ -47,6 +47,39 @@ body{
   height:450px !important;
   object-fit: cover;
 }
+
+/* dashboard */
+.avatar--image{
+  height:50px !important;
+  width:50px !important;
+}
+/* sidebar */
+.links a, .links span{
+  padding:10px 20px;
+  margin-top: 4%;
+}
+.links >.activeSidebarLink{
+
+  background-color: #f9fafc;
+  font-weight: bold;
+  color: #f49e0b;
+  /* border-left: 5px solid #f49e0b; */
+}
+.links a:hover, .links span:hover{
+  background-color: #f9fafc;
+  font-weight: bold;
+  color: #f49e0b;
+  /* border-left: 5px solid #f49e0b; */
+}
+
+/* messages cards */
+.messages--cards{
+  height:100%;
+}
+.messages--cards .card:hover{
+  cursor: pointer;
+  border: 1px solid #f49e0b;
+}
 /* progress bar styles */
 
 #nprogress .bar {
