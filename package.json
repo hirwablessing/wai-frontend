@@ -11,6 +11,7 @@
     "@ant-design/icons": "^4.6.2",
     "@types/nprogress": "^0.2.0",
     "autoprefixer": "^9.8.6",
+    "bizcharts": "^4.1.10",
     "html-react-parser": "^1.2.6",
     "next": "10.2.2",
     "nprogress": "^0.2.0",

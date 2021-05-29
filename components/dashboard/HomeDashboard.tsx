@@ -1,3 +1,5 @@
+import DailyVisits from "./charts/DailyVisits";
+
 export default function HomeDashboard(){
 return(
 <div className="h-1/2">
@@ -20,6 +22,9 @@ return(
             {/* readers chart */}
             <div className="block relative mt-5">
                 <h1 className="font-bold text-md text-gray-500">Daily visitors </h1>
+                <div className="my-10">
+                    <DailyVisits/>
+                </div>
 
             </div>
 
