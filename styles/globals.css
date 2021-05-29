@@ -55,8 +55,14 @@ body{
 }
 /* sidebar */
 .links a, .links span{
-  padding:10px 20px;
-  margin-top: 4%;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 1%;
+}
+.links div a{
+  padding: 10px 20px;
+  margin-left: 15%; 
 }
 .links >.activeSidebarLink{
 

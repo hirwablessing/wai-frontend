@@ -47,10 +47,10 @@ return(
                     }
             <div className="w-full flex my-5">
                 <Link href="/">
-                <a className="w-1/2 text-blue-500 hover:underline">Visit site</a>
+                <a className="w-1/2 text-blue-400 hover:underline">Visit site</a>
                 </Link>
                 <Link href="/login">
-                <a className="w-1/2 flex justify-end text-gray-500 hover:underline">Login</a>
+                <a className="w-1/2 flex justify-end text-gray-400 hover:underline">Login</a>
                 </Link>
                 </div>
                 <div className="bottom-0 absolute py-10 text-gray-400 text-sm">

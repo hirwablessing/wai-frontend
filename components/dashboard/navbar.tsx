@@ -7,7 +7,7 @@ return(
 <div>
     <div className="bg-white px-5 py-3 flex items-center gap-10">
         <div className="lg:w-1/2">
-            <input type="text" placeholder="search dashboard" className="w-full border px-5 py-2 text-sm" />
+            <input type="text" placeholder="search dashboard" className="w-full rounded-full bg-gray-50 px-10 py-3 text-sm text-dark-500 focus:outline-none" />
         </div>
         <div className="lg:w-1/2 flex justify-end">
             <div
