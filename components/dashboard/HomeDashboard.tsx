@@ -3,7 +3,7 @@ import DailyVisits from "./charts/DailyVisits";
 export default function HomeDashboard(){
 return(
 <div className="h-1/2">
-    <h1 className="font-bold text-xl text-gray-500">Dashboard </h1>
+    <h1 className="font-bold text-dark-500">Dashboard </h1>
     <h1 className="font-bold text-md my-5 text-gray-500 ">Count </h1>
     <div className="lg:flex gap-10 my-5">
         <div className="lg:w-2/3 h-1/2">
@@ -13,7 +13,7 @@ return(
                 </div>
                 <div className="bg-green-50 p-10 rounded-lg hover:bg-green-500 hover:text-white cursor-pointer my-2">
                     posts</div>
-                <div className="bg-blue-50 p-10 rounded-lg hover:bg-blue-600 hover:text-white cursor-pointer my-2">posts
+                <div className="bg-yellow-50 p-10 rounded-lg hover:bg-yellow-500 hover:text-white cursor-pointer my-2">posts
                 </div>
                 <div className="bg-red-50 p-10 rounded-lg hover:bg-red-500 hover:text-white cursor-pointer my-2">posts
                 </div>
@@ -31,7 +31,7 @@ return(
 
         </div>
         <div className="lg:w-1/3" style={{height:'500px'}}>
-            <h1 className="font-bold text-xl my-4 ml-5">Messages </h1>
+            <h1 className="font-bold my-4 ml-5">Messages </h1>
             <hr />
             <div className="messages--cards overflow-y-auto px-5">
                 <div className="card rounded p-5 bg-white my-5 border flex gap-5">

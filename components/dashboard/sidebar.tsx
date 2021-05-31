@@ -64,10 +64,10 @@ return (
         </span>
         {openSettingSubmenu && (
         <div className="ml-10 text-gray-500">
-            <Link href="/settings/profilesettings">
-            <a className={ router.pathname.startsWith("/settings/profilesettings")===true ? "activeSidebarLink block"
+            <Link href="/settings/profile">
+            <a className={ router.pathname.startsWith("/settings/profile")===true ? "activeSidebarLink block"
                 : "block" }>
-                Profile settings
+                Profile
             </a>
             </Link>
             <Link href="/settings/changepassword">

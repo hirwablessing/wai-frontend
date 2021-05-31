@@ -62,7 +62,7 @@ export default function changepassword(){
             </form>
          
                      </div>
-                     <Link href="/settings/profilesettings">
+                     <Link href="/settings/profile">
             <a className="text-gray-400 text-sm my-5 hover:underline cursor-pointer">Change profile settings</a>
             </Link>
                  </div>

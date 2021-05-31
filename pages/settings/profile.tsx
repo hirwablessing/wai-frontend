@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form'
 import { LoadingOutlined } from '@ant-design/icons';
 import Link from "next/link";
 
-export default function profilesettings(){
+export default function profile(){
     const { register, handleSubmit, formState: { errors } } = useForm()
     const [loading,setLoading] = useState(false)
     const handleForm = async(data:any)=>{
