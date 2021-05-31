@@ -38,7 +38,9 @@ return(
                     <div
                         className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
-                    <div className="content text-sm">problems will you start to solve after this registration <h1
+                    <div className="content text-sm">
+                        <h1 className="block my-1 text-gray-500">Ish Gervais</h1>
+                        problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
                     </div>
                 </div>
@@ -46,7 +48,9 @@ return(
                     <div
                         className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
-                    <div className="content text-sm">problems will you start to solve after this registration <h1
+                    <div className="content text-sm">
+                        <h1 className="block my-1 text-gray-500">Ish Gervais</h1>
+                        problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
                     </div>
                 </div>
@@ -54,7 +58,9 @@ return(
                     <div
                         className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
-                    <div className="content text-sm">problems will you start to solve after this registration <h1
+                    <div className="content text-sm">
+                        <h1 className="block my-1 text-gray-500">Ish Gervais</h1>
+                        problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
                     </div>
                 </div>
@@ -62,7 +68,9 @@ return(
                     <div
                         className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
-                    <div className="content text-sm">problems will you start to solve after this registration <h1
+                    <div className="content text-sm">
+                        <h1 className="block my-1 text-gray-500">Ish Gervais</h1>
+                        problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
                     </div>
                 </div>
@@ -70,7 +78,9 @@ return(
                     <div
                         className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
-                    <div className="content text-sm">problems will you start to solve after this registration <h1
+                    <div className="content text-sm">
+                        <h1 className="block my-1 text-gray-500">Ish Gervais</h1>
+                        problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
                     </div>
                 </div>
@@ -78,7 +88,9 @@ return(
                     <div
                         className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
-                    <div className="content text-sm">problems will you start to solve after this registration <h1
+                    <div className="content text-sm">
+                        <h1 className="block my-1 text-gray-500">Ish Gervais</h1>
+                        problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
                     </div>
                 </div>
@@ -86,7 +98,9 @@ return(
                     <div
                         className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
-                    <div className="content text-sm">problems will you start to solve after this registration <h1
+                    <div className="content text-sm">
+                        <h1 className="block my-1 text-gray-500">Ish Gervais</h1>
+                        problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
                     </div>
                 </div>
