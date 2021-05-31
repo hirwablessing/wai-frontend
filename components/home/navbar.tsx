@@ -36,7 +36,7 @@ return(
 
     {/* navbar responsiveness */}
     <div className="block lg:hidden shadow bg-white h top-0 sticky px-5 py-3 w-full flex items-center gap-4" onClick={()=>router.push('/')}>
-        <div className="w-3/4 home--title text-blue-700 text-sm uppercase"> <span>World Amenders
+        <div className="w-3/4 home--title text-blue-700 text-sm uppercase font-bold"> <span>World Amenders
                 International</span> <br />
             <span className="text-lg font-bold text-blue-700">WAI</span>
         </div>
