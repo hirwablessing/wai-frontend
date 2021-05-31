@@ -38,12 +38,12 @@ return (
         {openNewsSubmenu && (
         <div className="ml-10 text-gray-500">
             <Link href="/articles/create">
-            <a className={ router.pathname.startsWith("/articles/create")===true ? "activeSidebarLink block"
+            <a className={ router.pathname.startsWith("/articles")===true ? "activeSidebarLink block"
                 : "block" }>
                  Create article
             </a>
             </Link>
-            <Link href="/articles">
+            <Link href="/articles/list">
             <a className={ router.pathname.startsWith("/articles")===true ? "activeSidebarLink block"
                 : "block" }>
                 List all articles
