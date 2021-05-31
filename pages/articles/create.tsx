@@ -5,6 +5,11 @@ import { useForm } from 'react-hook-form'
 import { LoadingOutlined } from '@ant-design/icons';
 import Link from "next/link";
 // import PostEditor from "../../components/dashboard/PostEditor";
+import dynamic from "next/dynamic"
+
+const PostEditor = dynamic(()=> import("../../components/dashboard/editors/PostEditor"),{
+    ssr:false
+})
 
 export default function create(){
     const { register, handleSubmit, formState: { errors } } = useForm()
@@ -48,6 +53,7 @@ export default function create(){
                         <label htmlFor="" className="text-gray-600 block my-3">Content </label>
                         
                         {/* <PostEditor/> */}
+                        <PostEditor/>
                         <span className="text-red-600 text-xs">{errors.content && errors.content.message}</span>
                     </div>
              

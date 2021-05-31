@@ -91,6 +91,11 @@ table tr td{
   padding: 10px 0;
 }
 
+/* styles for the editor */
+button{
+
+  font-family: 'Rubik', sans-serif !important;
+}
 /* messages cards */
 .messages--cards{
   height:100%;

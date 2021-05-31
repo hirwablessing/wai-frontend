@@ -10,7 +10,7 @@ return(
             <input type="text" placeholder="search dashboard" className="w-full rounded-full bg-gray-50 px-10 py-3 text-sm text-dark-500 focus:outline-none" />
         </div>
         <div className="lg:w-1/2 flex justify-end items-center gap-3">
-        <h1>Gervais Admin</h1>
+        <h1 className="font-bold text-sm">Gervais Admin</h1>
             <div
                 className="cursor-pointer rounded-full text-center bg-blue-700 avatar--image flex items-center text-white font-bold  justify-center"
                 onClick={() => setToggle(!toggle)}
