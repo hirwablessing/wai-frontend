@@ -52,8 +52,8 @@ return (
                 </div>
                 <div>
                     {loading?
-         <button type="submit" className="btn bg-yellow-400 px-4 py-3 text-white float-right my-5 focus:outline-none flex gap-2 items-center"><LoadingOutlined />Submitting</button>:
-         <button type="submit" className="btn bg-yellow-500 px-4 py-3 text-white float-right my-5 focus:outline-none">Submit</button>
+         <button type="submit" className="btn bg-blue-400 px-4 py-3 text-white float-right my-5 focus:outline-none flex gap-2 items-center"><LoadingOutlined />Submitting</button>:
+         <button type="submit" className="btn bg-blue-700 px-4 py-3 text-white float-right my-5 focus:outline-none">Submit</button>
                 }
                 
                 </div>

@@ -17,7 +17,7 @@ return (
       <p className="ml-2 text-xl my-3">"We are a young, but strong, voice for the unheard."</p>
 
       <Link href="/takeaction"><a
-        className="mx-2 block text-center lg:w-1/2 btn bg-yellow-500 hover:bg-yellow-600 text-white rounded p-4 text-sm my-12">Take
+        className="mx-2 block text-center lg:w-1/2 btn bg-blue-700 hover:bg-blue-600 text-white rounded p-4 text-sm my-12">Take
         an action and become an Amender </a></Link>
 
 
@@ -25,8 +25,8 @@ return (
   </div>
   {/* main body content */}
   <div className="px-5 py-20 lg:px-20">
-    <div className="upper--block my-15 w-full bg-yellow-50 p-5 lg:p-10">
-      <div className="title text-yellow-500 font-bold text-3xl text-center"> OUR MISSION </div>
+    <div className="upper--block my-15 w-full bg-blue-50 p-5 lg:p-10">
+      <div className="title text-blue-700 font-bold text-3xl text-center"> OUR MISSION </div>
       <div className="mission--title text-center my-12 lg:px-20 text-gray-600">
         Commissioned by Christ, wherever we go, we strive to better the lives of the neediest and encourage young people
         to use their powerful energy, fearless spirit, and creative minds in launching humanitarian actions and advocacy
@@ -34,7 +34,7 @@ return (
 
       </div>
 
-      <div className="title text-yellow-500 font-bold text-3xl lg:px-20"> World Amenders International (WAI)
+      <div className="title text-blue-700 font-bold text-3xl lg:px-20"> World Amenders International (WAI)
       </div>
       <div className="lg:flex gap-12 my-12 items-center lg:px-20">
         <div className="w-full lg:w-1/2">

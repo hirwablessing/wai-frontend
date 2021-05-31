@@ -8,8 +8,8 @@ return (
     <Navbar />
     {/* main body content */}
     <div className="p-5 lg:p-20 w-full">
-        <div className="mission bg-yellow-50 text-dark p-10 rounded-lg">
-            <h2 className="text-yellow-500 text-center text-3xl font-bold w-full my-5">Mission</h2>
+        <div className="mission bg-blue-50 text-dark p-10 rounded-lg">
+            <h2 className="text-blue-700 text-center text-3xl font-bold w-full my-5">Mission</h2>
             <p className="">Commissioned by Christ, wherever we go, we strive to better the lives of the
                 neediest
                 and encourage young people to use their powerful energy, fearless spirit, and creative minds in
@@ -18,7 +18,7 @@ return (
         </div>
 
         <div className="story my-12">
-            <h2 className="text-3xl text-yellow-500 font-bold w-full my-10">Our story</h2>
+            <h2 className="text-3xl text-blue-700 font-bold w-full my-10">Our story</h2>
             <div className="lg:flex gap-12">
                 <div className="w-full lg:w-1/2 my-5 lg:my-0">
                     <img src="/world.png" alt="" className="rounded-md" />
@@ -69,7 +69,7 @@ return (
 
         {/* how we work */}
         <div className="my-10">
-            <h2 className="text-3xl text-yellow-500 font-bold w-full my-10">How we work</h2>
+            <h2 className="text-3xl text-blue-700 font-bold w-full my-10">How we work</h2>
             <div className="absolute">
                 <div className="flex gap-5 w-full">
                     <div className="shadow-lg w-1/3 h-1/2 p-10 lg:p-20"></div>
@@ -115,8 +115,8 @@ return (
 
         {/* our team */}
         <div className="mt-12 pt-12">
-            <div className=" bg-yellow-50 p-5 lg:p-20">
-                <h2 className="text-3xl text-yellow-500 font-bold w-full my-10">Our team</h2>
+            <div className=" bg-blue-50 p-5 lg:p-20">
+                <h2 className="text-3xl text-blue-700 font-bold w-full my-10">Our team</h2>
 
                 <div className="lg:flex gap-4 w-full justify-center my-5 overflow-x-auto">
 
@@ -203,7 +203,7 @@ return (
         <div className="mt-12 pt-12">
             <div className="lg:flex gap-12 mt-12">
                 <div className="lg:w-1/2">
-                    <h2 className="text-3xl text-yellow-500 font-bold w-full my-10">Our Location</h2>
+                    <h2 className="text-3xl text-blue-700 font-bold w-full my-10">Our Location</h2>
                     <p className="text-gray-600">
                         We work from any place that has the most vulnerable person/people. We believe that the most
                         unheard and the most sick aren’t in offices; however, they are crying next to our workrooms, our

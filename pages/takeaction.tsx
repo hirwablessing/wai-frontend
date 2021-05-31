@@ -20,7 +20,7 @@ return(
     <Navbar />
     {/* main body*/}
     <div className="p-5 lg:px-20 py-10">
-        <div className="bg-yellow-50 p-10 font-bold text-3xl text-yellow-500 my-10">
+        <div className="bg-blue-50 p-10 font-bold text-3xl text-blue-700 my-10">
             Take Action and Become An Amender
         </div>
         <div className="lg:flex gap-20">
@@ -120,10 +120,10 @@ return(
                         <div>
                             {loading?
                             <button type="submit"
-                                className="btn bg-yellow-400 px-4 py-3 text-white float-right my-5 focus:outline-none flex gap-2 items-center">
+                                className="btn bg-blue-400 px-4 py-3 text-white float-right my-5 focus:outline-none flex gap-2 items-center">
                                 <LoadingOutlined />Submitting</button>:
                             <button type="submit"
-                                className="btn bg-yellow-500 px-4 py-3 text-white float-right my-5 focus:outline-none">Submit</button>
+                                className="btn bg-blue-700 px-4 py-3 text-white float-right my-5 focus:outline-none">Submit</button>
                             }
 
                         </div>
@@ -209,10 +209,10 @@ return(
                         <div>
                             {loading?
                             <button type="submit"
-                                className="btn bg-yellow-400 px-4 py-3 text-white float-right my-5 focus:outline-none flex gap-2 items-center">
+                                className="btn bg-blue-400 px-4 py-3 text-white float-right my-5 focus:outline-none flex gap-2 items-center">
                                 <LoadingOutlined />Submitting</button>:
                             <button type="submit"
-                                className="btn bg-yellow-500 px-4 py-3 text-white float-right my-5 focus:outline-none">Submit</button>
+                                className="btn bg-blue-700 px-4 py-3 text-white float-right my-5 focus:outline-none">Submit</button>
                             }
 
                         </div>
@@ -223,7 +223,7 @@ return(
         </div>
 
         {/* */}
-        <div className="bg-yellow-50 p-10 font-bold text-3xl text-yellow-500 mt-20 lg:my-10 mb-5">
+        <div className="bg-blue-50 p-10 font-bold text-3xl text-blue-700 mt-20 lg:my-10 mb-5">
             Actions matter most when it comes to helping the poor.
         </div>
         <div className="lg:flex gap-20">
@@ -296,10 +296,10 @@ return(
                         <div>
                             {loading?
                             <button type="submit"
-                                className="btn bg-yellow-400 px-4 py-3 text-white float-right my-5 focus:outline-none flex gap-2 items-center">
+                                className="btn bg-blue-400 px-4 py-3 text-white float-right my-5 focus:outline-none flex gap-2 items-center">
                                 <LoadingOutlined />Submitting</button>:
                             <button type="submit"
-                                className="btn bg-yellow-500 px-4 py-3 text-white float-right my-5 focus:outline-none">Register</button>
+                                className="btn bg-blue-700 px-4 py-3 text-white float-right my-5 focus:outline-none">Register</button>
                             }
 
                         </div>
