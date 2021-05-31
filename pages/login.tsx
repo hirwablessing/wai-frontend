@@ -20,7 +20,7 @@ return(
     <div className="lg:flex lg:w-2/3 mx-auto my-auto">
         <div className="lg:w-1/2  bg-white h-screen flex items-center p-10">
             <div className="w-full">
-            <div className="title text-yellow-500 font-bold text-3xl cursor-pointer"  onClick={()=>router.push('/')}> World Amenders International (WAI)
+            <div className="title text-blue-700 font-bold text-3xl cursor-pointer"  onClick={()=>router.push('/')}> World Amenders International (WAI)
       </div>
             <h1 className="text-3xl font-bold my-5 text-gray-600">Login</h1>
             <span className="text-gray-300 text-sm my-5">Login to use the WAI components</span>
@@ -45,10 +45,10 @@ return(
                 <div>
                     {loading?
                     <button type="submit"
-                        className="btn bg-yellow-400 px-10 py-3 text-white my-5 focus:outline-none flex gap-2 items-center">
+                        className="btn bg-blue-400 px-10 py-3 text-white my-5 focus:outline-none flex gap-2 items-center">
                         <LoadingOutlined />Login</button>:
                     <button type="submit"
-                        className="btn bg-yellow-500 px-10 py-3 text-white my-5 focus:outline-none">Login</button>
+                        className="btn bg-blue-700 px-10 py-3 text-white my-5 focus:outline-none">Login</button>
                     }
             <div className="w-full flex my-5">
                 <Link href="/">
@@ -65,7 +65,7 @@ return(
             </form>
             </div>
         </div>
-        <div className="lg:w-1/2 bg-yellow-500 flex items-center">
+        <div className="lg:w-1/2 bg-blue-700 flex items-center">
             <div className="mx-5 p-10 w-full">
                 <h1 className="text-white text-3xl font-bold">World Amenders International (WAI)</h1>
         

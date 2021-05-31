@@ -7,7 +7,7 @@ return(
     <Navbar />
     {/* main body*/}
     <div className="p-5 lg:px-20 py-10">
-    <div className="bg-yellow-50 p-10 font-bold text-3xl text-yellow-500 my-10">
+    <div className="bg-blue-50 p-10 font-bold text-3xl text-blue-700 my-10">
            Our Impact
         </div>
 

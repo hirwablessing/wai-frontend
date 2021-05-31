@@ -15,22 +15,22 @@ return(
         {/* tags */}
         <div className="tags flex gap-4 w-full justify-center my-5 overflow-x-auto px-5">
             <div
-                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow-500 hover:text-white cursor-pointer">
+                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-blue-700 hover:text-white cursor-pointer">
                 Branding</div>
             <div
-                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow-500 hover:text-white cursor-pointer">
+                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-blue-700 hover:text-white cursor-pointer">
                 Communication</div>
             <div
-                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow-500 hover:text-white cursor-pointer">
+                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-blue-700 hover:text-white cursor-pointer">
                 Experience</div>
             <div
-                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow-500 hover:text-white cursor-pointer">
+                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-blue-700 hover:text-white cursor-pointer">
                 Identity</div>
             <div
-                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow-500 hover:text-white cursor-pointer">
+                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-blue-700 hover:text-white cursor-pointer">
                 Identity</div>
             <div
-                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-yellow-500 hover:text-white cursor-pointer">
+                className="bg-gray-100 rounded text-gray-500 text-sm text-center mt-3  p-2 hover:bg-blue-700 hover:text-white cursor-pointer">
                 Identity</div>
 
         </div>

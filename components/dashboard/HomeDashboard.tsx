@@ -8,12 +8,12 @@ return(
     <div className="lg:flex gap-10 my-5">
         <div className="lg:w-2/3 h-1/2">
             <div className="cards lg:flex gap-10">
-                <div className="bg-yellow-50 p-10 rounded-lg hover:bg-yellow-500 hover:text-white cursor-pointer my-2">
+                <div className="bg-blue-50 p-10 rounded-lg hover:bg-blue-600 hover:text-white cursor-pointer my-2">
                     posts
                 </div>
                 <div className="bg-green-50 p-10 rounded-lg hover:bg-green-500 hover:text-white cursor-pointer my-2">
                     posts</div>
-                <div className="bg-blue-50 p-10 rounded-lg hover:bg-blue-500 hover:text-white cursor-pointer my-2">posts
+                <div className="bg-blue-50 p-10 rounded-lg hover:bg-blue-600 hover:text-white cursor-pointer my-2">posts
                 </div>
                 <div className="bg-red-50 p-10 rounded-lg hover:bg-red-500 hover:text-white cursor-pointer my-2">posts
                 </div>
@@ -36,7 +36,7 @@ return(
             <div className="messages--cards overflow-y-auto px-5">
                 <div className="card rounded p-5 bg-white my-5 border flex gap-5">
                     <div
-                        className="rounded-lg p-5 h-1/2 text-center bg-yellow-100 text-dark flex items-center font-bold justify-center">
+                        className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
                     <div className="content text-sm">problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
@@ -44,7 +44,7 @@ return(
                 </div>
                 <div className="card rounded p-5 bg-white my-5 border flex gap-5">
                     <div
-                        className="rounded-lg p-5 h-1/2 text-center bg-yellow-100 text-dark flex items-center font-bold justify-center">
+                        className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
                     <div className="content text-sm">problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
@@ -52,7 +52,7 @@ return(
                 </div>
                 <div className="card rounded p-5 bg-white my-5 border flex gap-5">
                     <div
-                        className="rounded-lg p-5 h-1/2 text-center bg-yellow-100 text-dark flex items-center font-bold justify-center">
+                        className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
                     <div className="content text-sm">problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
@@ -60,7 +60,7 @@ return(
                 </div>
                 <div className="card rounded p-5 bg-white my-5 border flex gap-5">
                     <div
-                        className="rounded-lg p-5 h-1/2 text-center bg-yellow-100 text-dark flex items-center font-bold justify-center">
+                        className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
                     <div className="content text-sm">problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
@@ -68,7 +68,7 @@ return(
                 </div>
                 <div className="card rounded p-5 bg-white my-5 border flex gap-5">
                     <div
-                        className="rounded-lg p-5 h-1/2 text-center bg-yellow-100 text-dark flex items-center font-bold justify-center">
+                        className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
                     <div className="content text-sm">problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
@@ -76,7 +76,7 @@ return(
                 </div>
                 <div className="card rounded p-5 bg-white my-5 border flex gap-5">
                     <div
-                        className="rounded-lg p-5 h-1/2 text-center bg-yellow-100 text-dark flex items-center font-bold justify-center">
+                        className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
                     <div className="content text-sm">problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
@@ -84,7 +84,7 @@ return(
                 </div>
                 <div className="card rounded p-5 bg-white my-5 border flex gap-5">
                     <div
-                        className="rounded-lg p-5 h-1/2 text-center bg-yellow-100 text-dark flex items-center font-bold justify-center">
+                        className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
                     <div className="content text-sm">problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
@@ -92,7 +92,7 @@ return(
                 </div>
                 <div className="card rounded p-5 bg-white my-5 border flex gap-5">
                     <div
-                        className="rounded-lg p-5 h-1/2 text-center bg-yellow-100 text-dark flex items-center font-bold justify-center">
+                        className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
                     <div className="content text-sm">problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
@@ -100,7 +100,7 @@ return(
                 </div>
                 <div className="card rounded p-5 bg-white my-5 border flex gap-5">
                     <div
-                        className="rounded-lg p-5 h-1/2 text-center bg-yellow-100 text-dark flex items-center font-bold justify-center">
+                        className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
                     <div className="content text-sm">problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>
@@ -108,7 +108,7 @@ return(
                 </div>
                 <div className="card rounded p-5 bg-white my-5 border flex gap-5">
                     <div
-                        className="rounded-lg p-5 h-1/2 text-center bg-yellow-100 text-dark flex items-center font-bold justify-center">
+                        className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
                     <div className="content text-sm">problems will you start to solve after this registration <h1
                             className="text-gray-400 text-sm mt-4 block float-right">04/20/2021</h1>

@@ -30,13 +30,18 @@ a {
 .contact-icons{
   fill: rgba(128, 128, 128, 0.568);
 }
-
+.contact--white-icons{
+  fill:#fff;
+}
+.contact--white-icons:hover{
+  /* fill:blue */
+}
 .contact-icons:hover{
-fill: #f49e0b;
+fill: #1d4ed7;
 }
 
 .contact--icon-active svg{
-  fill:#f49e0b;
+  fill:#1d4ed7;
 }
 
 body{
@@ -68,14 +73,13 @@ body{
 
   background-color: #f9fafc;
   font-weight: bold;
-  color: #f49e0b;
-  /* border-left: 5px solid #f49e0b; */
+  color: #1d4ed7;
+  /* border-left: 5px solid #1d4ed7; */
 }
 .links a:hover, .links span:hover{
   background-color: #f9fafc;
-  font-weight: bold;
-  color: #f49e0b;
-  /* border-left: 5px solid #f49e0b; */
+  color: #1d4ed7;
+  /* border-left: 5px solid #1d4ed7; */
 }
 
 /* messages cards */
@@ -84,7 +88,7 @@ body{
 }
 .messages--cards .card:hover{
   cursor: pointer;
-  border: 1px solid #f49e0b;
+  border: 1px solid #1d4ed7;
 }
 /* progress bar styles */
 
@@ -98,10 +102,10 @@ body{
   /* color:white; */
 }
 #nprogress .bar {
-  background: #f49e0b !important;
+  background: #1d4ed7 !important;
 }
 
 #nprogress .spinner-icon {
-  border-top-color: #f49e0b;
-  border-left-color: #f49e0b;
+  border-top-color: #1d4ed7;
+  border-left-color: #1d4ed7;
 }
