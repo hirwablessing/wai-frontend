@@ -18,15 +18,15 @@ return(
                 </div>
                 {toggle &&
                 <div className="bg-white shadow p-5 absolute float-right lg:top-5 mt-12 z-40">
-                    <Link href="/settings">
+                    <Link href="/settings/profilesettings">
                     <a className="w-full block my-2 text-sm text-gray-600 hover:text-blue-700">Profile settings</a>
                     </Link>
                     <hr />
-                    <Link href="/settings">
+                    <Link href="/settings/changepassword">
                     <a className="w-full block my-2 text-sm text-gray-600 hover:text-blue-700">Change password</a>
                     </Link>
                     <hr />
-                    <Link href="/settings">
+                    <Link href="/login">
                     <a className="w-full block my-2 text-sm text-gray-600 hover:text-blue-700">Logout</a>
                     </Link>
                 </div>
