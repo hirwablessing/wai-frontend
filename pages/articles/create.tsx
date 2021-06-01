@@ -6,6 +6,7 @@ import { LoadingOutlined, CameraOutlined } from '@ant-design/icons';
 import Link from "next/link";
 // import PostEditor from "../../components/dashboard/PostEditor";
 import dynamic from "next/dynamic"
+import Alert from "../../components/dashboard/toasts/Alert";
 
 const PostEditor = dynamic(()=> import("../../components/dashboard/editors/PostEditor"),{
 ssr:false
@@ -109,7 +110,7 @@ return(
                             <button type="submit"
                                 className="btn bg-blue-700 px-4 py-3 text-white float-right my-5 focus:outline-none">Publish</button>
                             }
-
+                            <Alert type="error" message="failed" autoClose={false}/>
                         </div>
                     </form>
 
