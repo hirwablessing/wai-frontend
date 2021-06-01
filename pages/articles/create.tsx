@@ -14,6 +14,34 @@ ssr:false
 export default function create(){
 const { register, handleSubmit, formState: { errors } } = useForm()
 const [loading,setLoading] = useState(false)
+
+
+// upload image here
+
+const [file, setFile] = useState('');
+const [image,setImage] = useState("");
+let tempFile:any;
+const uploadImage = (e:any) => {
+tempFile = e.target.files[0];
+// console.log("image",tempFile)
+const reader:any = new FileReader();
+reader.addEventListener(
+"load",
+function () {
+setFile(reader.result);
+setImage(tempFile)
+},
+false
+);
+
+if (tempFile) {
+reader.readAsDataURL(tempFile);
+}
+// setFilename(e.target.files.name);
+};
+
+
+
 const handleForm = async(data:any)=>{
 setTimeout(() => {
 setLoading(false)
@@ -54,12 +82,14 @@ return(
                             <label htmlFor="featured_image" className="text-gray-600 block my-3">
                                 <span className="block my-3">Feature image</span>
                                 <div
-                                    className="border-2 border-dashed border-dark-500 py-20 w-full h-1/2 cursor-pointer flex items-center justify-center hover:border-blue-700">
-                                    <CameraOutlined style={{ fontSize: '40px' }} />
+                                    className="px-12 border-2 border-dashed border-dark-500 py-20 w-full h-1/2 cursor-pointer flex items-center justify-center hover:border-blue-700">
+                                   
+                                   {!file ?<CameraOutlined style={{ fontSize: '40px' }} />:<img src={file} alt="Featured image" className="create--featured-image" />}
+                                   
                                 </div>
                             </label>
 
-                            <input type="file" name="" id="featured_image" className="hidden" />
+                            <input type="file" name="" id="featured_image" className="hidden" onChange={uploadImage}  />
                         </div>
 
                         <div className="form-group">

@@ -85,6 +85,14 @@ body{
   /* border-left: 5px solid #1d4ed7; */
 }
 
+/* create post page */
+.create--featured-image{
+  height:400px;
+  width:100%;
+  object-fit: cover;
+}
+
+
 /* tables */
 table tr td{
   border-bottom: 1px solid rgb(190, 190, 190);
