@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 
 import { EditorState, convertToRaw, ContentState } from "draft-js";
-import 'suneditor/dist/css/suneditor.min.css'; // Import Sun Editor's CSS File to the _app.js
+import 'suneditor/dist/css/suneditor.min.css'; // Import Sun Editor's CSS File to the _app.j
 import parser from "html-react-parser";
 import SunEditor from "suneditor-react";
 import "suneditor/dist/css/suneditor.min.css";
