@@ -1,9 +1,18 @@
 import { useForm } from 'react-hook-form'
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import { LoadingOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
+// import {UserServices} from '../pages/api/services/UserServices'
+import {User} from './types/User'
+import {decode} from '../utils/decode'
+import {UserContext} from '../pages/api/context/UserContext'
+// use the user context
+
+
 export default function login(){
+
+    const {user} = useContext(UserContext)
     const router = useRouter();
 
 const { register, handleSubmit, formState: { errors } } = useForm()
@@ -13,7 +22,28 @@ setTimeout(() => {
 setLoading(false)
 }, 3000);
 setLoading(true)
-console.log(data.names,data.email,data.smessage)
+
+// let body:User = {
+//     email:data.email,
+//     password: data.password
+// }
+try {
+    // const services = new UserServices();
+    // data = await services.login(body);
+    // let userData = decode(data.token);
+    // console.log(userData);
+
+    // // let userInfo = await getUser(userData.id);
+    // // console.log(userInfo.message);
+    // // localStorage.setItem("user", JSON.stringify(userInfo.message));
+    // localStorage.setItem("token", JSON.stringify(data.token));
+    // setUser(userInfo.message);
+} catch (e) {
+    data = e.response;
+    console.log(e);
+}
+
+
 }
 return(
 <div className=" h-screen w-full">
