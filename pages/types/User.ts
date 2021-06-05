@@ -11,6 +11,15 @@ createdAt:string;
 updatedAt:string;
 }
 
+export type LoggedInUser ={
+    id?:string;
+    first_name?:string;
+    second_name?:string;
+    email?:string;
+    gender?:string;
+    iat?:number
+    }
+
 export type UserLogin ={
     email:string;
     password:string;

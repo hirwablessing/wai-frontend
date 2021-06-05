@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import Navbar from "../../components/dashboard/navbar";
-import Sidebar from "../../components/dashboard/sidebar";
+import Navbar from "../../../components/dashboard/navbar";
+import Sidebar from "../../../components/dashboard/sidebar";
 import { useForm } from 'react-hook-form'
 import { LoadingOutlined, CameraOutlined } from '@ant-design/icons';
 import Link from "next/link";
 // import PostEditor from "../../components/dashboard/PostEditor";
 import dynamic from "next/dynamic"
-import Alert from "../../components/dashboard/toasts/Alert";
+import Alert from "../../../components/dashboard/toasts/Alert";
 
-const PostEditor = dynamic(()=> import("../../components/dashboard/editors/PostEditor"),{
+const PostEditor = dynamic(()=> import("../../../components/dashboard/editors/PostEditor"),{
 ssr:false
 })
 

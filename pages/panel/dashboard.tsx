@@ -1,6 +1,6 @@
-import HomeDashboard from "../components/dashboard/HomeDashboard"
-import Navbar from "../components/dashboard/navbar"
-import Sidebar from "../components/dashboard/sidebar"
+import HomeDashboard from "../../components/dashboard/HomeDashboard"
+import Navbar from "../../components/dashboard/navbar"
+import Sidebar from "../../components/dashboard/sidebar"
 
 export default function dashboard(){
     return(

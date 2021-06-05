@@ -3,10 +3,10 @@ import React, { useState,useContext } from 'react'
 import { LoadingOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
-import {UserServices} from '../pages/api/services/UserServices'
-import {User,UserLogin} from './types/User'
-import {decode} from '../utils/decode'
-import {UserContext} from '../pages/api/context/UserContext'
+import {UserServices} from '../api/services/UserServices'
+import {LoggedInUser,UserLogin} from '../types/User'
+import {decode} from '../../utils/decode'
+import {UserContext} from '../api/context/UserContext'
 // use the user context
 
 
@@ -14,6 +14,7 @@ export default function login(){
 
     const {user,setUser} = useContext(UserContext)
     const router = useRouter();
+    let [responseStatus, setResponseStatus] = useState<any>('')
 
 const { register, handleSubmit, formState: { errors } } = useForm()
 const [loading,setLoading] = useState(false)
@@ -29,18 +30,20 @@ try {
     const services = new UserServices();
     console.log(body);
     data = await services.login(body);
-    let userData = decode(data.token);
-    console.log(data);
-    setLoading(false)
-
-    // let userInfo = await getUser(userData.id);
-    // console.log(userInfo.message);
-    // localStorage.setItem("user", JSON.stringify(userInfo.message));
+    let userData:any;
+    userData = decode(data.token);
+    console.log(userData);
+    let userInfo = await services.getUser(userData.id);
+    // console.log(userInfo);
+    localStorage.setItem("user", JSON.stringify(userInfo.message));
     // localStorage.setItem("token", JSON.stringify(data.token));
-    // setUser(userInfo.message);
+    setUser(userInfo.message);
+    router.push("/panel/dashboard")
+    
+    setLoading(false)
 } catch (e) {
-    data = e.response;
-    console.log(e);
+    setResponseStatus(e.response.data.message);
+    setLoading(false)
 }
 
 
@@ -54,7 +57,8 @@ return(
       </div>
             <h1 className="text-3xl font-bold my-5 text-gray-600">Login</h1>
             <span className="text-gray-300 text-sm my-5">Login to use the WAI components</span>
-
+            
+        {responseStatus !=='' && <div className="bg-red-50 text-red-500 font-bold p-3 text-center text-sm">{responseStatus}</div>}
             <form onSubmit={ handleSubmit((data)=> { handleForm(data) })}>
                 
                 <div className="w-full gap-5">

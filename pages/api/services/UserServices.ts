@@ -24,4 +24,9 @@ export class UserServices{
     );
     return response.data;
 }
+
+async getUser(user_id:string){
+    const response  = await axios.get(`${url}/user/getUser/${user_id}`);
+    return response.data;
+}
 }
