@@ -3,10 +3,10 @@ import React, { useState,useContext } from 'react'
 import { LoadingOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
-import {UserServices} from '../api/services/UserServices'
-import {LoggedInUser,UserLogin} from '../types/User'
-import {decode} from '../../utils/decode'
-import {UserContext} from '../api/context/UserContext'
+import {UserServices} from './api/services/UserServices'
+import {LoggedInUser,UserLogin} from './types/User'
+import {decode} from '../utils/decode'
+import {UserContext} from './api/context/UserContext'
 // use the user context
 
 

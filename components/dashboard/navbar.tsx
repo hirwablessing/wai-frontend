@@ -1,12 +1,17 @@
 import Link from "next/link";
+import { useRouter} from "next/router";
 import {useContext, useState} from "react";
 import {UserContext} from '../../pages/api/context/UserContext'
 
 export default function navbar(){
+    
+    const router = useRouter();
     const [toggle,setToggle] = useState(false);
     const {user,logout} = useContext(UserContext)
     const first_name = user.first_name || ''
     const last_name = user.second_name || ''
+
+
 return(
 <div>
     <div className="bg-white px-5 py-3 flex items-center gap-10">

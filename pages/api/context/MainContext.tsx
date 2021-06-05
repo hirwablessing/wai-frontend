@@ -8,16 +8,29 @@ export const MainContext = (props:any)=>{
     
 const router = useRouter();
   const [user,setUser]= useState<LoggedInUser>({})
+
+
 //   function tologout
 
 const logout = ()=>{
     localStorage.clear();
-    router.push("/panel/login")
+    router.push("/login")
 }
     useEffect(() => {
     let data:any = JSON.parse(localStorage.getItem("user") || '{}');
     setUser(data)
+
+    
+    if(!(data?._id)){
+        if(router.pathname.startsWith("/panel")){
+            router.push("/login")
+        }
+        
+    }
+
+
 },[user])
+
 
     return(
         
