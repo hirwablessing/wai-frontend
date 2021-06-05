@@ -3,8 +3,8 @@ import React, { useState,useContext } from 'react'
 import { LoadingOutlined } from '@ant-design/icons';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
-// import {UserServices} from '../pages/api/services/UserServices'
-import {User} from './types/User'
+import {UserServices} from '../pages/api/services/UserServices'
+import {User,UserLogin} from './types/User'
 import {decode} from '../utils/decode'
 import {UserContext} from '../pages/api/context/UserContext'
 // use the user context
@@ -12,30 +12,30 @@ import {UserContext} from '../pages/api/context/UserContext'
 
 export default function login(){
 
-    const {user} = useContext(UserContext)
+    const {user,setUser} = useContext(UserContext)
     const router = useRouter();
 
 const { register, handleSubmit, formState: { errors } } = useForm()
 const [loading,setLoading] = useState(false)
 const handleForm = async(data:any)=>{
-setTimeout(() => {
-setLoading(false)
-}, 3000);
+
 setLoading(true)
 
-// let body:User = {
-//     email:data.email,
-//     password: data.password
-// }
+let body:UserLogin = {
+    email:data.email,
+    password: data.password
+}
 try {
-    // const services = new UserServices();
-    // data = await services.login(body);
-    // let userData = decode(data.token);
-    // console.log(userData);
+    const services = new UserServices();
+    console.log(body);
+    data = await services.login(body);
+    let userData = decode(data.token);
+    console.log(data);
+    setLoading(false)
 
-    // // let userInfo = await getUser(userData.id);
-    // // console.log(userInfo.message);
-    // // localStorage.setItem("user", JSON.stringify(userInfo.message));
+    // let userInfo = await getUser(userData.id);
+    // console.log(userInfo.message);
+    // localStorage.setItem("user", JSON.stringify(userInfo.message));
     // localStorage.setItem("token", JSON.stringify(data.token));
     // setUser(userInfo.message);
 } catch (e) {

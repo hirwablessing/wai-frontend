@@ -1,11 +1,12 @@
-import { User } from "../../types/User";
+import { User, UserLogin } from "../../types/User";
 import axios from "axios";
 import url from '../../../utils/url'
 
-const token = JSON.parse(localStorage.getItem("token") || '');
+const token = '';
 
 export class UserServices{
-    async login(body:User){
+    async login(body:UserLogin){
+        console.log('body ',body);
         let response  = await axios.post(`${url}/user/login`,body);
         return response.data;
 
@@ -14,7 +15,7 @@ export class UserServices{
 
     }
     async updatePassword(body:User){
-  const response =  await axios.put(`${url}/user/updatePassword/${body.id}`,body.password,
+  const response =  await axios.put(`${url}/user/updatePassword/${body._id}`,body.password,
     {
         headers:{
             authorization:`Bearer ${token}`
