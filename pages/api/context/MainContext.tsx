@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import {useRouter} from 'next/router'
-import { LoggedInUser } from "../../types/User"
+import { LoggedInUser } from "../../../components/types/User"
 import { UserContext } from "./UserContext"
 
 

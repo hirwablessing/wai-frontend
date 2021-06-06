@@ -1,5 +1,5 @@
 import {createContext, useContext, useState} from 'react'
-import { LoggedInUser } from '../../types/User'
+import { LoggedInUser } from '../../../components/types/User'
 
 
 export type GlobalUser ={

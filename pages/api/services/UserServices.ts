@@ -1,4 +1,4 @@
-import { User, UserLogin } from "../../types/User";
+import { User, UserLogin } from "../../../components/types/User";
 import axios from "axios";
 import url from '../../../utils/url'
 
