@@ -3,17 +3,22 @@ import { useRouter } from "next/router";
 import { useContext, useState } from "react";
 import {UserContext} from '../../pages/api/context/UserContext'
 import {
-    AppstoreOutlined, SettingOutlined, LogoutOutlined, AlignRightOutlined, FileTextOutlined,
-    CreditCardOutlined, CloseOutlined
+    AppstoreOutlined, SettingOutlined, LogoutOutlined,UnorderedListOutlined, FileTextOutlined,
   } from '@ant-design/icons'
 
 export default function sidebar() {
 const [openSettingSubmenu, setOpenSettingSubmenu] = useState(false);
+const [openPagesMenu, setopenPagesMenu] = useState(false);
 const [openNewsSubmenu, setOpenNewsSubmenu] = useState(false);
 const router = useRouter();
 const {logout} = useContext(UserContext)
 return (
-<div className="sidebar bg-white lg:w-1/5 h-screen top-0 sticky overflow-y-auto">
+    <div className="sidebar bg-white lg:w-1/5">
+
+        <div className="bg-blue-600 w-full block lg:hidden p-5">
+            <h1 className="font-bold text-white">WAI</h1>
+        </div>
+<div className="hidden lg:block  h-screen overflow-y-auto top-0 sticky z-40 ">  
     <div className="upper--bound flex gap-5 mb-5 p-5 items-center">
         <span className="bg-blue-700 rounded-lg text-white p-5">logo</span>
         <h1>World Amenders International (WAI)</h1>
@@ -54,6 +59,53 @@ return (
         </div>
         )}
 
+        {/* pages */}
+
+          {/* settings */}
+          <span onClick={()=> setopenPagesMenu(!openPagesMenu)}
+            className={
+            router.pathname.startsWith("/panel/pages") === true
+            ? "activeSidebarLink block cursor-pointer"
+            : "block cursor-pointer"
+            }
+            >
+          <UnorderedListOutlined style={{ fontSize: '17px' }}/> <span> Pages </span>
+        </span>
+        {openPagesMenu && (
+        <div className="ml-10 text-gray-500">
+            <Link href="/panel/pages/home">
+            <a className={ router.pathname.startsWith("/panel/pages/home")===true ? "activeSidebarLink block"
+                : "block" }>
+                Home
+            </a>
+            </Link>
+            <Link href="/panel/settings/changepassword">
+            <a className={ router.pathname.startsWith("/panel/settings/changepassword")===true ? "activeSidebarLink block"
+                : "block" }>
+                About us
+            </a>
+            </Link>
+            <Link href="/panel/settings/changepassword">
+            <a className={ router.pathname.startsWith("/panel/settings/changepassword")===true ? "activeSidebarLink block"
+                : "block" }>
+                Take action
+            </a>
+            </Link>
+            <Link href="/panel/settings/changepassword">
+            <a className={ router.pathname.startsWith("/panel/settings/changepassword")===true ? "activeSidebarLink block"
+                : "block" }>
+                Women advocacy
+            </a>
+            </Link>
+            <Link href="/panel/settings/changepassword">
+            <a className={ router.pathname.startsWith("/panel/settings/changepassword")===true ? "activeSidebarLink block"
+                : "block" }>
+               Contact us
+            </a>
+            </Link>
+        </div>
+        )}
+
         {/* settings */}
         <span onClick={()=> setOpenSettingSubmenu(!openSettingSubmenu)}
             className={
@@ -85,6 +137,7 @@ return (
              <LogoutOutlined style={{ fontSize: '17px' }}/> <span> Logout </span>
         </span>
     </div>
+</div>
 </div>
 );
 }
