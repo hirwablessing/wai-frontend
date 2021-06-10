@@ -1,6 +1,22 @@
 import dynamic from "next/dynamic";
 
-import { EditorState, convertToRaw, ContentState } from "draft-js";
+
+
+
+
+import React, { useContext, useState } from "react";
+import { useForm } from 'react-hook-form'
+import { LoadingOutlined, CameraOutlined } from '@ant-design/icons';
+import Link from "next/link";
+// import PostEditor from "../../components/dashboard/PostEditor";
+
+
+
+
+
+// plugins for the editor
+
+import { EditorState } from "draft-js";
 import 'suneditor/dist/css/suneditor.min.css'; // Import Sun Editor's CSS File to the _app.j
 import parser from "html-react-parser";
 import SunEditor from "suneditor-react";
@@ -23,11 +39,34 @@ import {
   link
 } from "suneditor/src/plugins";
 
+
+
+// import types
+import {Article} from '../../types/GeneralTypes'
+
+// import services
+import {Posts} from '../../../pages/api/services/Posts'
+
+// use context
+import {UserContext} from '../../../pages/api/context/UserContext'
+
+
 const Suneditor = dynamic(() => import("suneditor-react"), { //besure to import dynamically
   ssr: false,
 });
 
 export default function PostEditor(props:any){
+
+
+
+  const { register, handleSubmit, formState: { errors } } = useForm()
+  const [loading,setLoading] = useState(false)
+  
+
+
+
+
+
     interface IRichTextEditorProps {
         richTextEditorHtml: string;
         onRichTextEditorChange: any;
@@ -39,11 +78,141 @@ export default function PostEditor(props:any){
         hideToolbar: boolean;
       }
 
+
+
+
+
+
+
+
+
+// upload image here
+
+const [file, setFile] = useState('');
+const [img,setImage] = useState("");
+let tempFile:any;
+const uploadImage = (e:any) => {
+tempFile = e.target.files[0];
+// console.log("img",tempFile)
+const reader:any = new FileReader();
+reader.addEventListener(
+"load",
+function () {
+setFile(reader.result);
+setImage(tempFile)
+},
+false
+);
+
+if (tempFile) {
+reader.readAsDataURL(tempFile);
+}
+// setFilename(e.target.files.name);
+};
+
+
+
+    // use context
+    const {user} = useContext(UserContext)
+
+const [content, setContent] = useState("");
+
+let editorState:any = EditorState.createEmpty();
+const handleContent = (e:any)=>{
+    setContent(e);
+}
+
+
+const handleForm = async(data:Article)=>{
+    
+  console.log("Errorrrrrr",user?.id);
+  setTimeout(() => {
+  setLoading(false)
+  }, 3000);
+  setLoading(true)
+  
+  // e.preventDefault();
+  editorState = content
+  // editorState = draftToHtml(convertToRaw(editorState.getCurrentContent()));
+  console.log("Post: ",editorState);
+  console.log(data.title,editorState)
+  
+  try{
+      let Post = new Posts();
+      await Post.createPost({
+          title:data.title,
+          content:editorState.toString(),
+          user_id: user?.id,
+          category_id: "60c27e725f21cd00157ce34b",
+          
+      });
+  
+  }catch(e){
+  // console.log("Errorrrrrr",e.response);
+  
+  let data = e.response;
+  // console.log(e.response)
+  // setErrorLog(data?.data.error?data.data.error:data.data.data?data.data.data:"Check your internet connection.");
+  
+  // setLoadingStatus("Publish")
+  }
+      
+  }
+  
+  // articles category id: 60c27e725f21cd00157ce34b
+
   return (
     <div className="editor">
-      <SunEditor
+       <h1 className="font-bold">News / Create article</h1>
+        <div className="my-10">
+            <form onSubmit={ handleSubmit((data:Article)=> { handleForm(data) })}>
+
+
+                <div className="form-group">
+                    <label htmlFor="" className="text-gray-600 block my-3">Title </label>
+                    <input type="text" id="" className="border p-3 w-full" {...register('title', {
+                        required: '* This field is required' })} />
+                    <span className="text-red-600 text-xs">{errors.title && errors.title.message}</span>
+                </div>
+
+                <div className="form-group">
+                    <label htmlFor="" className="text-gray-600 block my-3">Tags </label>
+                    <p className="mb-10">Create tags or choose from created ones <button
+                            className="bg-blue-700 text-white px-4 py-2">Add tag</button></p>
+                </div>
+
+                <div className="form-group">
+                    <label htmlFor="featured_image" className="text-gray-600 block my-3">
+                        <span className="block my-3">Feature image</span>
+                        <div
+                            className="px-12 border-2 border-dashed border-dark-500 py-20 w-full h-1/2 cursor-pointer flex items-center justify-center hover:border-blue-700">
+
+                            {!file ?
+                            <CameraOutlined style={{ fontSize: '40px' }} />:<img src={file} alt="Featured image"
+                                className="create--featured-image" />}
+
+                        </div>
+                    </label>
+
+                    <input type="file" name="" id="featured_image" className="hidden" onChange={uploadImage} />
+                </div>
+
+                <div className="form-group">
+                    <label htmlFor="" className="text-gray-600 block my-3">Content </label>
+
+                    {/*
+                    <PostEditor /> */}
+
+
+
+
+
+<SunEditor
             autoFocus={true}
             lang="en"
+            
+defaultValue = {content}
+onChange={(e)=>{ return handleContent(e)}}
             setOptions={{
               showPathLabel: false,
               minHeight: "50vh",
@@ -104,7 +273,32 @@ export default function PostEditor(props:any){
               ]
             }}
           />
+
+
+
+
+
+
+
+                    <span className="text-red-600 text-xs">{errors.content && errors.content.message}</span>
+                </div>
+
+                <div>
+                    {loading?
+                    <button type="submit"
+                        className="btn bg-blue-400 px-4 py-3 text-white float-right my-5 focus:outline-none flex gap-2 items-center">
+                        <LoadingOutlined />Publishing</button>:
+                    <button type="submit"
+                        className="btn bg-blue-700 px-4 py-3 text-white float-right my-5 focus:outline-none">Publish</button>
+                    }
+                    {/* <Alert type="error" message="failed" autoClose={false} /> */}
+                </div>
+            </form>
+
+        </div>
+
     </div>
+     
   );
 };
 

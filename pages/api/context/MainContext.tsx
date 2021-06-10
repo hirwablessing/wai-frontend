@@ -7,7 +7,15 @@ import { UserContext } from "./UserContext"
 export const MainContext = (props:any)=>{
     
 const router = useRouter();
-  const [user,setUser]= useState<LoggedInUser>({})
+  const [user,setUser]= useState<LoggedInUser>(
+    {id:'',
+    first_name:'',
+    second_name:'',
+    email:'',
+    iat:0,
+    gender:'',
+}
+  )
 
 
 //   function tologout
