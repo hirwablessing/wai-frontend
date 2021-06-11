@@ -120,8 +120,9 @@ export default function PostEditor(props: any) {
       await Post.createPost({
         title: data.title,
         content: editorState.toString(),
+        section: parseInt(props.section) || 0,
         user_id: user?._id,
-        category_id: "60c27e725f21cd00157ce34b",
+        category_id: props.category_id,
       });
 
 
