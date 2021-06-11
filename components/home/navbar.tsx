@@ -16,14 +16,14 @@ return(
                 <span className="text-lg">WAI</span>
             </div>
             <div className="menu lg:w-1/2 lg:flex gap-5 justify-end text-xs mt-5 lg:mt-0 items-center cursor-pointer">
-                <Link href="/"><a className={router.pathname==='/'?"uppercase block text-blue-700 font-bold hover:font-bold":'uppercase block hover:text-blue-700 hover:font-bold'}>HOME</a></Link>
-                <Link href="/aboutus"><a className={router.pathname==='/aboutus'?"uppercase block text-blue-700 font-bold hover:font-bold":'uppercase block hover:text-blue-700 hover:font-bold'}>ABOUT US</a>
+                <Link href="/"><a className={router.pathname==='/'?"uppercase block text-white font-bold hover:font-bold":'uppercase block hover:text-white hover:font-bold'}>HOME</a></Link>
+                <Link href="/aboutus"><a className={router.pathname==='/aboutus'?"uppercase block text-white font-bold hover:font-bold":'uppercase block hover:text-white hover:font-bold'}>ABOUT US</a>
                 </Link>
-                <Link href="/takeaction"><a className={router.pathname==='/takeaction'?"uppercase block text-blue-700 font-bold hover:font-bold":'uppercase block hover:text-blue-700 hover:font-bold'}>Take
+                <Link href="/takeaction"><a className={router.pathname==='/takeaction'?"uppercase block text-white font-bold hover:font-bold":'uppercase block hover:text-white hover:font-bold'}>Take
                     Action</a></Link>
-                <Link href="/ourimpact"><a className={router.pathname==='/ourimpact'?"uppercase block text-blue-700 font-bold hover:font-bold":'uppercase block hover:text-blue-700 hover:font-bold'}>our
+                <Link href="/ourimpact"><a className={router.pathname==='/ourimpact'?"uppercase block text-white font-bold hover:font-bold":'uppercase block hover:text-white hover:font-bold'}>our
                     impact</a></Link>
-                {/* <Link href="/women-advocacy"><a className={router.pathname==='/women-advocacy'?"uppercase block text-blue-700 font-bold hover:font-bold":'uppercase block hover:text-blue-700 hover:font-bold'}>women
+                {/* <Link href="/women-advocacy"><a className={router.pathname==='/women-advocacy'?"uppercase block text-white font-bold hover:font-bold":'uppercase block hover:text-white hover:font-bold'}>women
                     advocacy</a></Link> */}
                 <Link href="/contact"><a
                     className="uppercase block bg-blue-700 text-white px-2 py-3 rounded hover:bg-blue-600">
@@ -49,18 +49,19 @@ return(
 
         {navToggle &&
         <div
-            className="menu z-40  w-full lg:flex gap-3 justify-end text-sm items-center p-5 absolute bg-white shadow-lg top-4 right-0 mt-14 md:12 z-40 cursor-pointer">
-            <Link href="/"><a className="uppercase my-3 block hover:text-blue-700 hover:font-bold">HOME</a></Link>
-            <Link href="/aboutus"><a className="uppercase my-3 block hover:text-blue-700 hover:font-bold">ABOUT US</a>
+            className="menu z-40  w-full lg:flex gap-3 justify-end text-sm items-center p-5 absolute bg-blue-800 shadow-lg top-4 right-0 mt-14 md:12 z-40 cursor-pointer">
+            <hr />
+            <Link href="/"><a className="uppercase my-3 block hover:text-white text-white hover:font-bold">HOME</a></Link>
+            <Link href="/aboutus"><a className="uppercase my-3 block hover:text-white text-white hover:font-bold">ABOUT US</a>
             </Link>
-            <Link href="/takeaction"><a className="uppercase my-3 block hover:text-blue-700 hover:font-bold">Take
+            <Link href="/takeaction"><a className="uppercase my-3 block hover:text-white text-white hover:font-bold">Take
                 Action</a></Link>
-          <Link href="/ourimpact"><a className="uppercase my-3 block hover:text-blue-700 hover:font-bold">our
+          <Link href="/ourimpact"><a className="uppercase my-3 block hover:text-white text-white hover:font-bold">our
                 impact</a></Link>
-            {/* <Link href="/women-advocacy"><a className="uppercase my-3 block hover:text-blue-700 hover:font-bold">women
+            {/* <Link href="/women-advocacy"><a className="uppercase my-3 block hover:text-white text-white hover:font-bold">women
                 advocacy</a></Link> */}
             <Link href="/contact"><a
-                className="uppercase block bg-blue-700 text-white px-2 py-3 rounded font-bold hover:bg-blue-600">CONTACT
+                className="uppercase my-3 block hover:text-white text-white hover:font-bold">CONTACT
                 US</a></Link>
         </div>
         }

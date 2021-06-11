@@ -45,7 +45,7 @@ return(
                 <a href="https://instagram.com">{ parse('' + icons.ig + '')}</a>
             </div>
             <div className="img mb-10">
-                <img src="/bg-image.jpg" alt="" className="w-full article--cover-img" />
+                <img src="/donation.jpg" alt="" className="w-full article--cover-img" />
             </div>
             <div className="content lg:ml-16 flex gap-5">
                 <div className="w-full text-justify ">
