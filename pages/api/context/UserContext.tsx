@@ -9,7 +9,7 @@ export type GlobalUser ={
 }
 
 export const UserContext = createContext<GlobalUser>({
-    user:{id:'',
+    user:{_id:'',
     first_name:'',
     second_name:'',
     email:'',

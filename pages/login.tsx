@@ -36,6 +36,8 @@ try {
     let userInfo = await services.getUser(userData.id);
     // console.log(userInfo);
     localStorage.setItem("user", JSON.stringify(userInfo.message));
+    
+    localStorage.setItem("token", JSON.stringify(data.token));
     // localStorage.setItem("token", JSON.stringify(data.token));
     setUser(userInfo.message);
     router.push("/panel/dashboard")

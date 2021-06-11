@@ -12,7 +12,7 @@ updatedAt:string;
 }
 
 export type LoggedInUser ={
-    id:string;
+    _id:string;
     first_name?:string;
     second_name?:string;
     email?:string;

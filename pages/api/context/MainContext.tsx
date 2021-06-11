@@ -8,7 +8,7 @@ export const MainContext = (props:any)=>{
     
 const router = useRouter();
   const [user,setUser]= useState<LoggedInUser>(
-    {id:'',
+    {_id:'',
     first_name:'',
     second_name:'',
     email:'',
