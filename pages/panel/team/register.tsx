@@ -42,7 +42,7 @@ const handleForm = (data:TeamMember) => {
         role: data.role,
         phone:0o777777777,
         email:data.email,
-        image:img.name
+        file:img
 
     }
     console.log('Member',

@@ -9,7 +9,7 @@ const [navToggle,setNavToogle]=useState(false);
 const router = useRouter();
 return(
 <>
-    <div className="hidden lg:block bg-blue-800 text-white h-1/2 px-5 py-3 w-full top-0 sticky z-40 ">
+    <div className="hidden lg:block bg-blue-800  text-white h-1/2 px-5 py-3 w-full top-0 sticky z-40 ">
         <div className="mx-auto lg:px-7 lg:flex items-center">
             <div className="lg:w-1/2 home--title hover text-sm uppercase cursor-pointer" onClick={()=>router.push('/')}> <span>World Amenders
                     International</span> <br />

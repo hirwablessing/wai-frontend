@@ -20,8 +20,10 @@ a {
 .bg--img-block{
   /* background-color: #010094; */
 /* background-image: linear-gradient(135deg, #010094 41%, #3518d4 87%); */
-background-color: #224ade;
-background-image: linear-gradient(160deg, #224ade 0%, #1e40ae 50%);
+/* background-color: #224ade;
+background-image: linear-gradient(160deg, #224ade 0%, #1e40ae 50%); */
+background-color: #1e40ae;
+background-image: linear-gradient(45deg, #1e40ae 0%, #083bdc 100%);
 
 
 

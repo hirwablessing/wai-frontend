@@ -12,5 +12,5 @@ last_name:string,
 phone:number,
 email:string,
 role:string
-image:string
+file:string
 }
