@@ -186,7 +186,7 @@ export default function PostEditor(props: any) {
               htmlFor="featured_image"
               className="text-gray-600 block my-3"
             >
-              <span className="block my-3">Feature image</span>
+              <span className="block my-3">Featured image</span>
               <div className="px-12 border-2 border-dashed border-dark-500 py-20 w-full h-1/2 cursor-pointer flex items-center justify-center hover:border-blue-700">
                 {!file ? (
                   <CameraOutlined style={{ fontSize: "40px" }} />

@@ -30,6 +30,7 @@ const services = new UserServices();
 
 if(data.new_password !== data.confirm_password ){
 setErrorLog("Passwords don't match")
+setLoading(false)
 }
 const body:PasswordChange = {
 currentPassword: data.old_password,

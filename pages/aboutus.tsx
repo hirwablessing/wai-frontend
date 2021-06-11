@@ -33,7 +33,7 @@ return (
     <Navbar />
     {/* main body content */}
     <div className="p-5 lg:p-20 w-full">
-        <div className="mission bg-blue-50 text-dark p-10 rounded-lg">
+        <div className="mission bg-blue-50 text-dark p-10 rounded-xl">
             <h2 className="text-blue-700 text-center text-2xl font-bold w-full mb-5">Mission</h2>
             <p className="">Commissioned by Christ, wherever we go, we strive to better the lives of the
                 neediest
@@ -95,7 +95,7 @@ return (
         {/* how we work */}
         <div className="my-10">
             <h2 className="text-2xl text-blue-700 font-bold w-full my-10">How we work</h2>
-            <div className="absolute">
+            {/* <div className="absolute">
                 <div className="flex gap-5 w-full">
                     <div className="shadow-lg w-1/3 h-1/2 p-10 lg:p-20"></div>
                     <div className="shadow-lg w-1/3 h-1/2 p-5 lg:p-10"></div>
@@ -111,7 +111,7 @@ return (
                     <div className="shadow-lg w-1/3 h-1/2 p-10 lg:p-10"></div>
                     <div className="shadow-lg w-1/3 h-1/2 p-5 lg:p-20"></div>
                 </div>
-            </div>
+            </div> */}
             <div className="lg:flex gap-12">
                 <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
                     <img src="/how_we_work.png" alt="" className="rounded-md" />
@@ -140,7 +140,7 @@ return (
 
         {/* our team */}
         <div className="mt-12 pt-12">
-            <div className=" bg-blue-50 p-5 lg:p-10">
+            <div className=" bg-blue-50 rounded-xl p-5 lg:p-10">
                 <h2 className="text-2xl text-blue-700 font-bold w-full my-10">Our team</h2>
             {/* team members  */}
                 <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-4 w-full justify-center my-5 overflow-x-auto">
