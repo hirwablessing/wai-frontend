@@ -115,7 +115,7 @@ return (
 
         {/* our team */}
         <div className="mt-12 pt-12">
-            <div className=" bg-blue-50 p-5 lg:p-20">
+            <div className=" bg-blue-50 p-5 lg:p-10">
                 <h2 className="text-3xl text-blue-700 font-bold w-full my-10">Our team</h2>
 
                 <div className="lg:flex gap-4 w-full justify-center my-5 overflow-x-auto">
