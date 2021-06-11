@@ -115,7 +115,7 @@ export default function PostEditor(props: any) {
 
     try {
       
-      setStatus(1);
+
       let Post = new Posts();
       await Post.createPost({
         title: data.title,
@@ -127,16 +127,19 @@ export default function PostEditor(props: any) {
 
       setStatusMessage("Post created successfully");
       // console.log("hello ", statusMessage);
+
       setLoading(false);
+      setStatus(1);
     } catch (e) {
-      setStatus(0);
 
       let data = e.response.data.error;
-      // console.log("Errorrrrrr", data);
+      console.log("Errorrrrrr", data);
       setStatusMessage(data);
       // console.log("hello ", statusMessage);
       
       setLoading(false);
+      
+      setStatus(0);
       // setErrorLog(data?.data.error?data.data.error:data.data.data?data.data.data:"Check your internet connection.");
 
       // setLoadingStatus("Publish")
@@ -304,7 +307,8 @@ export default function PostEditor(props: any) {
               </button>
             )}
             {status === 0 ? (
-              <Alert type="error" message="Error occured" autoClose={false}
+              <Alert type="error" message="Error occured" 
+              autoClose={4000}
               {
                 ...setTimeout(() => {
                   setStatus(-1)
