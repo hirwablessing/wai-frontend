@@ -16,7 +16,7 @@ export default function Alert(props:any){
         notify();
     },[])
     return(
-        <div className="">
+        <div className="text-sm">
             {/* <button className="bg-blue-500 text-white p-5 rounded" onClick={notify}>Notify !</button> */}
             <ToastContainer position="top-right" 
 autoClose= {props.autoClose} />

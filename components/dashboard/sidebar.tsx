@@ -28,7 +28,7 @@ return (
     </div>
     <hr />
 
-    <div className="links my-10 pl-">
+    <div className="links my-10 text-sm">
         <Link href="/panel/dashboard">
         <a className={ router.pathname.startsWith("/panel/dashboard")===true ? "activeSidebarLink block " : "block" }>
         <AppstoreOutlined style={{ fontSize: '17px' }} className=""/> <span> Dashboard </span>

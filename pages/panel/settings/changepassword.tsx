@@ -8,10 +8,12 @@ import { PasswordChange } from '../../../components/types/GeneralTypes';
 import Dashboard from '../../../layouts/Dashboard';
 import Link from 'next/link';
 import {UserServices} from '../../api/services/UserServices';
+import Alert from '../../../components/dashboard/toasts/Alert';
 
 export default function changepassword(){
 const { register, handleSubmit, formState: { errors } } = useForm()
 const [loading,setLoading] = useState(false)
+const [status,setStatus] = useState(-1) // checking if there's no error while updating
 
 // error log
 const [errorLog,setErrorLog] = useState('')
@@ -33,11 +35,12 @@ const body:PasswordChange = {
 currentPassword: data.old_password,
 newPassword:data.new_password
 }
-let response:any;
+
 try{
-     response = await services.updatePassword(user?._id,body)
-    console.log(response)
+    let response = await services.updatePassword(user?._id,body)
     setLoading(false)
+    setErrorLog("")
+    setStatus(1)
 
 }catch(e){
     setErrorLog(e.response.data.message);
@@ -98,6 +101,20 @@ return(
         <a className="text-gray-400 text-sm my-5 hover:underline cursor-pointer">Change profile settings</a>
         </Link>
     </div>
+
+{status === 1 &&
+    <Alert
+                type="success"
+                message="Password updated successfully"
+                autoClose={2000}
+                {
+                  ...setTimeout(() => {
+                    setStatus(-1)
+                  }, 2000)
+                }
+                />
+            }
+            
 </Dashboard>
 
 
