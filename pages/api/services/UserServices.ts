@@ -1,32 +1,47 @@
-import { User, UserLogin } from "../../../components/types/User";
+import {
+    User,
+    UserLogin
+} from "../../../components/types/User";
+import {
+    PasswordChange
+} from "../../../components/types/GeneralTypes";
 import axios from "axios";
 import url from '../../../utils/url'
 
-const token = '';
+let token:string;
+if(typeof localStorage !=='undefined'){
 
-export class UserServices{
-    async login(body:UserLogin){
-        console.log('body ',body);
-        let response  = await axios.post(`${url}/user/login`,body);
+ token = JSON.parse(localStorage.getItem("token") || '');
+
+}
+
+
+export class UserServices {
+    async login(body: UserLogin) {
+        console.log('body ', body);
+        let response = await axios.post(`${url}/user/login`, body);
         return response.data;
 
     }
-    async create(body:User){
+    async create(body: User) {
 
     }
-    async updatePassword(body:User){
-  const response =  await axios.put(`${url}/user/updatePassword/${body._id}`,body.password,
-    {
-        headers:{
-            authorization:`Bearer ${token}`
-        }
-    }
-    );
-    return response.data;
-}
 
-async getUser(user_id:string){
-    const response  = await axios.get(`${url}/user/getUser/${user_id}`);
-    return response.data;
-}
+
+    async getUser(user_id: string) {
+        const response = await axios.get(`${url}/user/getUser/${user_id}`);
+        return response.data;
+    }
+
+    async updatePassword(user_id: string, body: PasswordChange) {
+        console.log('errr ', body )
+        const response = await axios.put(`${url}/user/updatePassword/${user_id}`, body, {
+            headers: {
+                authorization: `Bearer ${token}`
+            }
+        });
+        return response.data;
+    }
+
+    
 }

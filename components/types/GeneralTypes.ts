@@ -14,3 +14,8 @@ email:string,
 role:string
 file:string
 }
+
+export type PasswordChange = {
+    currentPassword:string | number,
+    newPassword:string | number
+}
