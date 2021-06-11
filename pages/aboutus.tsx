@@ -1,6 +1,31 @@
 import Navbar from '../components/home/navbar'
 import Footer from '../components/home/footer'
+import React from 'react'
+import TeamCard from '../components/dashboard/TeamCard'
 export default function aboutus(){
+
+    const teamMember:any=[
+        {
+        names:"Aime Ismael",
+        role:"Founder and President of World Amenders"
+        },
+        {
+        names:"Aime Ismael",
+        role:"Founder and President of World Amenders"
+        },
+        {
+        names:"Aime Ismael",
+        role:"Founder and President of World Amenders"
+        },
+        {
+        names:"Aime Ismael",
+        role:"Founder and President of World Amenders"
+        },
+        
+
+
+
+    ]
 return (
 
 <div>
@@ -117,84 +142,17 @@ return (
         <div className="mt-12 pt-12">
             <div className=" bg-blue-50 p-5 lg:p-10">
                 <h2 className="text-3xl text-blue-700 font-bold w-full my-10">Our team</h2>
-
-                <div className="lg:flex gap-4 w-full justify-center my-5 overflow-x-auto">
-
-                    <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" className="h-60" alt="" />
-                        <div className="block -center my-5 p-5">
-                            <h1 className="text-md">Aime Ismael</h1>
-                            <span className="text-sm text-gray-500">Founder and President of World Amenders
-                                International</span>
-                        </div>
-                    </div>
-
-                    <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" className="h-60" alt="" />
-                        <div className="block -center my-5 p-5">
-                            <h1 className="text-md">Aime Ismael</h1>
-                            <span className="text-sm text-gray-500">Founder and President of World Amenders
-                                International</span>
-                        </div>
-                    </div>
-
-                    <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" className="h-60" alt="" />
-                        <div className="block -center my-5 p-5">
-                            <h1 className="text-md">Aime Ismael</h1>
-                            <span className="text-sm text-gray-500">Founder and President of World Amenders
-                                International</span>
-                        </div>
-                    </div>
-
-                    <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" className="h-60" alt="" />
-                        <div className="block -center my-5 p-5">
-                            <h1 className="text-md">Aime Ismael</h1>
-                            <span className="text-sm text-gray-500">Founder and President of World Amenders
-                                International</span>
-                        </div>
-                    </div>
+            {/* team members  */}
+                <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-4 w-full justify-center my-5 overflow-x-auto">
+                   {
+                       teamMember?.map((member:any)=>{
+                           return(
+                               <TeamCard names={member.names} role={member.role}/>
+                           )
+                       })
+                   }
                 </div>
-                <div className="mt-12 lg:flex gap-4 w-full justify-center my-5 overflow-x-auto">
-                   
-                <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" className="h-60" alt="" />
-                        <div className="block -center my-5 p-5">
-                            <h1 className="text-md">Aime Ismael</h1>
-                            <span className="text-sm text-gray-500">Founder and President of World Amenders
-                                International</span>
-                        </div>
-                    </div>
-
-                    <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" className="h-60" alt="" />
-                        <div className="block -center my-5 p-5">
-                            <h1 className="text-md">Aime Ismael</h1>
-                            <span className="text-sm text-gray-500">Founder and President of World Amenders
-                                International</span>
-                        </div>
-                    </div>
-
-                    <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" className="h-60" alt="" />
-                        <div className="block -center my-5 p-5">
-                            <h1 className="text-md">Aime Ismael</h1>
-                            <span className="text-sm text-gray-500">Founder and President of World Amenders
-                                International</span>
-                        </div>
-                    </div>
-
-                    <div className="card bg-white lg:w-1/4 min-h-60">
-                        <img src="/bg-image.jpg" className="h-60" alt="" />
-                        <div className="block -center my-5 p-5">
-                            <h1 className="text-md">Aime Ismael</h1>
-                            <span className="text-sm text-gray-500">Founder and President of World Amenders
-                                International</span>
-                        </div>
-                    </div>
                 </div>
-            </div>
 
 
         </div>
