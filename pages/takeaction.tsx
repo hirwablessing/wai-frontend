@@ -72,8 +72,8 @@ return(
                 <div className="block">
 
                     <form onSubmit={ handleSubmit((data)=> { handleForm(data) })}>
-                        <div className="title  text-gray-500 text-lg my-5">
-                            <div className="font-bold my-5 uppercase"> Share your little, but powerful prayer</div>
+                        <div className="title text-lg my-5">
+                            <div className="font-bold my-5"> Share your little, but powerful prayer</div>
                             <div className="sub-title text-sm text-gray-400">Fill out the information</div>
                             <div className="sub-title text-sm text-gray-400">Field marked with <span
                                     className="text-red-500">*</span> is required</div>
@@ -161,8 +161,8 @@ return(
                 <div className="block">
 
                     <form onSubmit={ handleSubmit((data)=> { handleForm(data) })}>
-                        <div className="title  text-gray-500 text-lg my-5">
-                            <div className="font-bold my-5 uppercase"> Share you advice</div>
+                        <div className="title text-lg my-5">
+                            <div className="font-bold my-5"> Share you advice</div>
                             <div className="sub-title text-sm text-gray-400">Fill out the information</div>
                             <div className="sub-title text-sm text-gray-400">Field marked with <span
                                     className="text-red-500">*</span> is required</div>
@@ -238,7 +238,7 @@ return(
                 
             <form onSubmit={ handleSubmit((data)=> { handleForm(data) })}>
                         <div className="title  text-lg my-5">
-                            <div className="font-bold my-5 uppercase text-dark-500">Register to become an Ambassador </div>
+                            <div className="font-bold my-5 text-dark-500">Register to become an Ambassador </div>
                             <div className="sub-title text-sm text-gray-400">Fill out the information</div>
                             <div className="sub-title text-sm text-gray-400">Field marked with <span
                                     className="text-red-500">*</span> is required</div>
