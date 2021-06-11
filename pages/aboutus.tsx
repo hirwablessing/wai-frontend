@@ -9,7 +9,7 @@ return (
     {/* main body content */}
     <div className="p-5 lg:p-20 w-full">
         <div className="mission bg-blue-50 text-dark p-10 rounded-lg">
-            <h2 className="text-blue-700 text-center text-3xl font-bold w-full my-5">Mission</h2>
+            <h2 className="text-blue-700 text-center text-3xl font-bold w-full mb-5">Mission</h2>
             <p className="">Commissioned by Christ, wherever we go, we strive to better the lives of the
                 neediest
                 and encourage young people to use their powerful energy, fearless spirit, and creative minds in

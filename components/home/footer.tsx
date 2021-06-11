@@ -13,7 +13,7 @@ return(
 <div>
 
 
-  <div className="footer w-full lg:mt-12 p-5 px-5 lg:px-12 bg-blue-700 text-white">
+  <div className="footer w-full lg:mt-12 p-5 px-5 lg:px-12 bg-blue-800 text-white">
     <div className="lg:flex">
       <div className="lg:w-1/3">
         <h1 className="font-bold my-2 text-xl text-white">Categories</h1>
@@ -61,7 +61,7 @@ return(
   </div>
   {/* footer ends here */}
   {/* sub-footer */}
-  <div className="bg-blue-700 w-full text-center text-white text-sm py-3">
+  <div className="bg-blue-800 w-full text-center text-white text-sm py-3">
     &copy; 2021 Allrights reserved ~ WAI
   </div>
   {/* sub-footer ends here */}

@@ -9,11 +9,11 @@ const [navToggle,setNavToogle]=useState(false);
 const router = useRouter();
 return(
 <>
-    <div className="hidden lg:block bg-white shadow h-1/2 px-5 py-3 w-full top-0 sticky z-40 ">
+    <div className="hidden lg:block bg-blue-800 text-white shadow h-1/2 px-5 py-3 w-full top-0 sticky z-40 ">
         <div className="mx-auto lg:px-7 lg:flex items-center">
-            <div className="lg:w-1/2 home--title text-blue-700 hover:text-blue-700 text-sm uppercase cursor-pointer font-bold" onClick={()=>router.push('/')}> <span>World Amenders
+            <div className="lg:w-1/2 home--title hover text-sm uppercase cursor-pointer font-bold" onClick={()=>router.push('/')}> <span>World Amenders
                     International</span> <br />
-                <span className="text-lg font-bold text-blue-700">WAI</span>
+                <span className="text-lg font-bold">WAI</span>
             </div>
             <div className="menu lg:w-1/2 lg:flex gap-5 justify-end text-xs mt-5 lg:mt-0 items-center cursor-pointer">
                 <Link href="/"><a className={router.pathname==='/'?"uppercase block text-blue-700 font-bold hover:font-bold":'uppercase block hover:text-blue-700 hover:font-bold'}>HOME</a></Link>
@@ -35,10 +35,10 @@ return(
     </div>
 
     {/* navbar responsiveness */}
-    <div className="block lg:hidden shadow bg-white h top-0 sticky px-5 py-3 w-full flex items-center gap-4" onClick={()=>router.push('/')}>
-        <div className="w-3/4 home--title text-blue-700 text-sm uppercase font-bold"> <span>World Amenders
+    <div className="block lg:hidden shadow bg-blue-800 h top-0 sticky px-5 py-3 w-full flex items-center gap-4" onClick={()=>router.push('/')}>
+        <div className="w-3/4 home--title text-white text-sm uppercase font-bold"> <span>World Amenders
                 International</span> <br />
-            <span className="text-lg font-bold text-blue-700">WAI</span>
+            <span className="text-lg font-bold text-white">WAI</span>
         </div>
         <div className="w-1/4 flex justify-end cursor-pointer" onClick={()=>{setNavToogle(!navToggle)}}>
             {!navToggle?
