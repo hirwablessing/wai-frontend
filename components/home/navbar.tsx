@@ -9,7 +9,7 @@ const [navToggle,setNavToogle]=useState(false);
 const router = useRouter();
 return(
 <>
-    <div className="hidden lg:block bg-blue-800 text-white shadow h-1/2 px-5 py-3 w-full top-0 sticky z-40 ">
+    <div className="hidden lg:block bg-blue-800 text-white h-1/2 px-5 py-3 w-full top-0 sticky z-40 ">
         <div className="mx-auto lg:px-7 lg:flex items-center">
             <div className="lg:w-1/2 home--title hover text-sm uppercase cursor-pointer" onClick={()=>router.push('/')}> <span>World Amenders
                     International</span> <br />
@@ -35,7 +35,7 @@ return(
     </div>
 
     {/* navbar responsiveness */}
-    <div className="block lg:hidden shadow bg-blue-800 h top-0 sticky px-5 py-3 w-full flex items-center gap-4" onClick={()=>router.push('/')}>
+    <div className="block lg:hidden bg-blue-800 h top-0 sticky px-5 py-3 w-full flex items-center gap-4" onClick={()=>router.push('/')}>
         <div className="w-3/4 home--title text-white text-sm uppercase "> <span>World Amenders
                 International</span> <br />
             <span className="text-lg  text-white">WAI</span>
