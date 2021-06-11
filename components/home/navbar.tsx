@@ -11,9 +11,9 @@ return(
 <>
     <div className="hidden lg:block bg-blue-800 text-white shadow h-1/2 px-5 py-3 w-full top-0 sticky z-40 ">
         <div className="mx-auto lg:px-7 lg:flex items-center">
-            <div className="lg:w-1/2 home--title hover text-sm uppercase cursor-pointer font-bold" onClick={()=>router.push('/')}> <span>World Amenders
+            <div className="lg:w-1/2 home--title hover text-sm uppercase cursor-pointer" onClick={()=>router.push('/')}> <span>World Amenders
                     International</span> <br />
-                <span className="text-lg font-bold">WAI</span>
+                <span className="text-lg">WAI</span>
             </div>
             <div className="menu lg:w-1/2 lg:flex gap-5 justify-end text-xs mt-5 lg:mt-0 items-center cursor-pointer">
                 <Link href="/"><a className={router.pathname==='/'?"uppercase block text-blue-700 font-bold hover:font-bold":'uppercase block hover:text-blue-700 hover:font-bold'}>HOME</a></Link>
@@ -26,7 +26,7 @@ return(
                 {/* <Link href="/women-advocacy"><a className={router.pathname==='/women-advocacy'?"uppercase block text-blue-700 font-bold hover:font-bold":'uppercase block hover:text-blue-700 hover:font-bold'}>women
                     advocacy</a></Link> */}
                 <Link href="/contact"><a
-                    className="uppercase block bg-blue-700 text-white px-2 py-3 rounded font-bold hover:bg-blue-600">
+                    className="uppercase block bg-blue-700 text-white px-2 py-3 rounded hover:bg-blue-600">
                     CONTACT
                     US </a></Link>
             </div>
@@ -36,9 +36,9 @@ return(
 
     {/* navbar responsiveness */}
     <div className="block lg:hidden shadow bg-blue-800 h top-0 sticky px-5 py-3 w-full flex items-center gap-4" onClick={()=>router.push('/')}>
-        <div className="w-3/4 home--title text-white text-sm uppercase font-bold"> <span>World Amenders
+        <div className="w-3/4 home--title text-white text-sm uppercase "> <span>World Amenders
                 International</span> <br />
-            <span className="text-lg font-bold text-white">WAI</span>
+            <span className="text-lg  text-white">WAI</span>
         </div>
         <div className="w-1/4 flex justify-end cursor-pointer" onClick={()=>{setNavToogle(!navToggle)}}>
             {!navToggle?

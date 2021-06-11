@@ -12,12 +12,12 @@ return (
 
   {/* main body image */}
   <div className="bg--img-block py-12">
-    <div className="text-white  lg:w-1/2 mt-16 lg:px-12">
+    <div className="text-white  lg:w-1/2 mt-16 px-10 lg:px-12 mx-auto text-center">
       <h1 className="ml-2" style={{fontSize:'35px'}}>WORLD AMENDERS INTERNATIONAL</h1>
       <p className="ml-2 text-xl my-3">"We are a young, but strong, voice for the unheard."</p>
 
       <Link href="/takeaction"><a
-        className="mx-2 block text-center lg:w-1/2 btn bg-blue-700 hover:bg-blue-600 text-white rounded p-4 text-sm my-12">Take
+        className="mx-auto block text-center lg:w-1/2 btn bg-blue-700 hover:bg-blue-600 text-white rounded p-4 text-sm my-12">Take
         an action and become an Amender </a></Link>
 
 
