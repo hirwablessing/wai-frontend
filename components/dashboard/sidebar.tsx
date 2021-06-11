@@ -3,13 +3,16 @@ import { useRouter } from "next/router";
 import { useContext, useState } from "react";
 import {UserContext} from '../../pages/api/context/UserContext'
 import {
-    AppstoreOutlined, SettingOutlined, LogoutOutlined,UnorderedListOutlined, FileTextOutlined,
+    AppstoreOutlined, SettingOutlined, LogoutOutlined,UnorderedListOutlined,
+     FileTextOutlined,
+     TeamOutlined
   } from '@ant-design/icons'
 
 export default function sidebar() {
 const [openSettingSubmenu, setOpenSettingSubmenu] = useState(false);
 const [openPagesMenu, setopenPagesMenu] = useState(false);
 const [openNewsSubmenu, setOpenNewsSubmenu] = useState(false);
+const [openTeamSubmenu, setOpenTeamSubmenu] = useState(false);
 const router = useRouter();
 const {logout} = useContext(UserContext)
 return (
@@ -60,6 +63,34 @@ return (
         )}
 
         {/* pages */}
+
+        {/* team members */}
+           <span onClick={()=> setOpenTeamSubmenu(!openTeamSubmenu)}
+            className={
+            router.pathname.startsWith("/panel/team") === true
+            ? "activeSidebarLink block cursor-pointer"
+            : "block cursor-pointer"
+            }
+            >
+            <TeamOutlined style={{ fontSize: '17px' }}/> <span> Team </span>
+        </span>
+        {openTeamSubmenu && (
+        <div className="ml-10 text-gray-500">
+            <Link href="/panel/team/register">
+            <a className={ router.pathname.startsWith("/panel/team")===true ? "activeSidebarLink block"
+                : "block" }>
+                 Register a member
+            </a>
+            </Link>
+            <Link href="/panel/team/view">
+            <a className={ router.pathname.startsWith("/panel/team")===true ? "activeSidebarLink block"
+                : "block" }>
+                View members
+            </a>
+            </Link>
+        </div>
+        )}
+
 
           {/* settings */}
           <span onClick={()=> setopenPagesMenu(!openPagesMenu)}
