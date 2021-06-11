@@ -20,12 +20,12 @@ return(
     <Navbar />
     {/* main body*/}
     <div className="p-5 lg:px-20 py-10">
-        <div className="bg-blue-50 p-10 font-bold text-3xl text-blue-700 my-10">
+        <div className="bg-blue-50 p-10 font-bold text-xl text-blue-700 my-10">
             Take Action and Become An Amender
         </div>
         <div className="lg:flex gap-20">
             <div className="w-full lg:w-1/2">
-                <h1 className="font-bold text-xl my-2 text-justify">
+                <h1 className="font-bold text-lg my-2 text-justify">
                     (Sharing Prayers) Millions of people across the globe are thirsting for you little.
                 </h1>
 
@@ -72,7 +72,7 @@ return(
                 <div className="block">
 
                     <form onSubmit={ handleSubmit((data)=> { handleForm(data) })}>
-                        <div className="title  text-gray-500 text-xl my-5">
+                        <div className="title  text-gray-500 text-lg my-5">
                             <div className="font-bold my-5 uppercase"> Share your little, but powerful prayer</div>
                             <div className="sub-title text-sm text-gray-400">Fill out the information</div>
                             <div className="sub-title text-sm text-gray-400">Field marked with <span
@@ -132,7 +132,7 @@ return(
 
             </div>
             <div className="w-full lg:w-1/2 mt-20 lg:mt-0">
-                <h1 className="font-bold text-xl my-2 text-justify">
+                <h1 className="font-bold text-lg my-2 text-justify">
                     (Sharing advice) As long as your advice brings a change, we can change our whole working system
                     because of the advice.
                 </h1>
@@ -161,7 +161,7 @@ return(
                 <div className="block">
 
                     <form onSubmit={ handleSubmit((data)=> { handleForm(data) })}>
-                        <div className="title  text-gray-500 text-xl my-5">
+                        <div className="title  text-gray-500 text-lg my-5">
                             <div className="font-bold my-5 uppercase"> Share you advice</div>
                             <div className="sub-title text-sm text-gray-400">Fill out the information</div>
                             <div className="sub-title text-sm text-gray-400">Field marked with <span
@@ -223,7 +223,7 @@ return(
         </div>
 
         {/* */}
-        <div className="bg-blue-50 p-10 font-bold text-3xl text-blue-700 mt-20 lg:my-10 mb-5">
+        <div className="bg-blue-50 p-10 font-bold text-xl text-blue-700 mt-20 lg:my-10 mb-5">
             Actions matter most when it comes to helping the poor.
         </div>
         <div className="lg:flex gap-20">
@@ -237,7 +237,7 @@ return(
             <div className="w-full lg:w-1/2">
                 
             <form onSubmit={ handleSubmit((data)=> { handleForm(data) })}>
-                        <div className="title  text-xl my-5">
+                        <div className="title  text-lg my-5">
                             <div className="font-bold my-5 uppercase text-dark-500">Register to become an Ambassador </div>
                             <div className="sub-title text-sm text-gray-400">Fill out the information</div>
                             <div className="sub-title text-sm text-gray-400">Field marked with <span

@@ -3,7 +3,7 @@ import Navbar from "../components/dashboard/navbar"
 
 export default function Dashboard({children}:any){
     return(
-        <div className="block lg:flex gap-7 bg-gray-50">
+        <div className="block lg:flex gap-7 bg-gray-50 text-sm">
     {/* sidebar */}
     <Sidebar />
     <div className="lg:w-4/5 min-h-screen">

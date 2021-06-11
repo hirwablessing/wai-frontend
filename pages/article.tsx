@@ -11,7 +11,7 @@ return(
     {/* main body*/}
     <div className="p-5 lg:p-20">
         <h6 className="text-gray-400 w-full text-center mt-3  text-sm my-5">Published January 13, 2021</h6>
-        <h1 className="title font-bold text-3xl text-center">7 Rules of Effective Branding</h1>
+        <h1 className="title font-bold text-2xl text-center">7 Rules of Effective Branding</h1>
         {/* tags */}
         <div className="tags flex gap-4 w-full justify-center my-5 overflow-x-auto px-5">
             <div

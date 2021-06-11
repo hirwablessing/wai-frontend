@@ -16,7 +16,8 @@ return(
   <div className="footer w-full lg:mt-12 p-5 px-5 lg:px-12 bg-blue-800 text-white">
     <div className="lg:flex">
       <div className="lg:w-1/3">
-        <h1 className="font-bold my-2 text-xl text-white">Categories</h1>
+        <h1 className="font-bold my-2 text-lg text-white">Categories</h1>
+        <div className="text-sm">
         <Link href="/"><a className={router.pathname==='/'?"block my-2 text-white font-bold":"block my-2 hover:text-white hover:font-bold"}>Home</a></Link>
         <Link href="/aboutus"><a className={router.pathname==='/aboutus'?"block my-2 text-white font-bold":"block my-2 hover:text-white hover:font-bold"}>About us</a>
         </Link>
@@ -27,10 +28,11 @@ return(
         {/* <Link href="/women-advocacy"><a className={router.pathname==='/women-advocacy'?"block my-2 text-white font-bold":"block my-2 hover:text-white hover:font-bold"}>Women
           advocacy</a></Link> */}
         <Link href="/contact"><a className={router.pathname==='/contact'?"block my-2 text-white font-bold":"block my-2 hover:text-white hover:font-bold"}>Contact</a></Link>
+        </div>
       </div>
 
       <div className="lg:w-1/3">
-        <h1 className="font-bold my-2 text-xl text-white">Connect with us</h1>
+        <h1 className="font-bold my-2 text-lg text-white">Connect with us</h1>
         <div className="flex gap-5 contact--icons-block">
           <span className={emailToggle?"cursor-pointer shadow":'cursor-pointer'}
             onClick={()=>setEmailToggle(!emailToggle)}>{ parse('' + icons.mailWhite + '')}</span>
@@ -44,8 +46,8 @@ return(
         </div>
       </div>
 
-      <div className="lg:w-1/3">
-        <h1 className="font-bold my-2 text-xl text-white">Get Our Newsletter</h1>
+      <div className="lg:w-1/3 text-sm">
+        <h1 className="font-bold my-2 text-lg text-white">Get Our Newsletter</h1>
         <form action="">
           <label htmlFor="">Enter your email address</label>
           <div className="flex items-center">
