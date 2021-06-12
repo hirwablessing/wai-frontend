@@ -13,7 +13,7 @@ return (
   {/* main body image */}
   <div className="bg--img-block h-screen lg:flex items-center">
     <div className="lg:w-1/2 lg:px-5 pt-10 lg:pt-0">
-      <img src="/bgImage.png" alt="" className="w-full"/>
+      <img src="/bgImage.svg" alt="" className="w-full"/>
     </div>
     <div className="text-white  lg:w-1/2 mt-10 lg:mt-0 px-10 lg:px-12 mx-auto">
       <h1 className="ml-2" style={{fontSize:'35px'}}>WORLD AMENDERS INTERNATIONAL</h1>
