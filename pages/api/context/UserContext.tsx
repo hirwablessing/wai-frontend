@@ -5,7 +5,8 @@ import { LoggedInUser } from '../../../components/types/User'
 export type GlobalUser ={
   user:LoggedInUser,
   setUser:(user: LoggedInUser) => void,
-  logout:() => void
+  logout:() => void,
+checking:Boolean
 }
 
 export const UserContext = createContext<GlobalUser>({
@@ -17,7 +18,8 @@ export const UserContext = createContext<GlobalUser>({
     gender:'',
 },
 setUser:()=>{},
-logout:()=>{}
+logout:()=>{},
+checking:false
     
 })
 

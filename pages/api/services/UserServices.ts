@@ -11,7 +11,7 @@ import url from '../../../utils/url'
 let token:string;
 if(typeof localStorage !=='undefined'){
 
- token = JSON.parse(localStorage.getItem("token") || '');
+ token = localStorage.getItem("token") ? JSON.parse(localStorage.getItem("token") || "") : "";
 
 }
 

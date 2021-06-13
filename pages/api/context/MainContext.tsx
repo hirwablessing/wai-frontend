@@ -17,6 +17,8 @@ const router = useRouter();
 }
   )
 
+  const [checking,setChecking] = useState<Boolean>(true)
+
 
 //   function tologout
 
@@ -25,6 +27,7 @@ const logout = ()=>{
     router.push("/login")
 }
     useEffect(() => {
+        setChecking(true)
     let data:any = JSON.parse(localStorage.getItem("user") || '{}');
     setUser(data)
 
@@ -36,13 +39,15 @@ const logout = ()=>{
         
     }
 
-
+setChecking(true)
 },[user])
+
+
 
 
     return(
         
-  <UserContext.Provider value={{user, setUser,logout}}>
+  <UserContext.Provider value={{user, setUser,logout,checking}}>
       {props.children}
   </UserContext.Provider>
     )
