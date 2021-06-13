@@ -38,7 +38,7 @@ const logout = ()=>{
         
     } else setChecking(false)
 
-},[])
+},[checking])
 
 
 
