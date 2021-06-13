@@ -55,9 +55,9 @@ return(
     <div className="lg:flex lg:w-2/3 mx-auto my-auto">
         <div className="lg:w-1/2  bg-white h-screen flex items-center p-10">
             <div className="w-full">
-            <div className="title text-blue-700 font-bold text-3xl cursor-pointer"  onClick={()=>router.push('/')}> World Amenders International (WAI)
+            <div className="title text-blue-700 font-bold text-2xl cursor-pointer"  onClick={()=>router.push('/')}> World Amenders International (WAI)
       </div>
-            <h1 className="text-3xl font-bold my-5 text-gray-600">Login</h1>
+            <h1 className="text-xl font-bold my-5 text-gray-600">Login</h1>
             <span className="text-gray-300 text-sm my-5">Login to use the WAI components</span>
             
         {responseStatus !=='' && <div className="bg-red-50 text-red-500 font-bold p-3 text-center text-sm">{responseStatus}</div>}
@@ -86,9 +86,9 @@ return(
                     <button type="submit"
                         className="btn bg-blue-700 px-10 py-3 text-white my-5 focus:outline-none">Login</button>
                     }
-            <div className="w-full flex my-5">
+            <div className="w-full flex my-5 text-sm">
                 <Link href="/">
-                <a className="w-1/2 text-blue-400 hover:underline">Visit site</a>
+                <a className="w-1/2 text-blue-700 hover:underline">Visit site</a>
                 </Link>
                 <Link href="/forgotpassword">
                 <a className="w-1/2 flex justify-end text-gray-400 hover:underline">Forgot password</a>
