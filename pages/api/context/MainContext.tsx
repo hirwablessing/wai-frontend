@@ -27,7 +27,6 @@ const logout = ()=>{
     router.push("/login")
 }
     useEffect(() => {
-        setChecking(true)
     let data:any = JSON.parse(localStorage.getItem("user") || '{}');
     setUser(data)
 
@@ -37,10 +36,9 @@ const logout = ()=>{
             router.push("/login")
         }
         
-    }
+    } else setChecking(false)
 
-setChecking(true)
-},[user])
+},[])
 
 
 
