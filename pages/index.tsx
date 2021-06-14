@@ -12,16 +12,20 @@ return (
 
   {/* main body image */}
   <div className="bg--img-block h-screen lg:flex items-center">
-    <div className="lg:w-1/2 lg:px-5 pt-10 lg:pt-0">
+    <div className="lg:w-1/2 lg:px-5">
       <img src="/bgImage.svg" alt="" className="w-full"/>
     </div>
     <div className="text-white  lg:w-1/2 mt-10 lg:mt-0 px-10 lg:px-12 mx-auto">
+    <div className="">
       <h1 className="ml-2" style={{fontSize:'35px'}}>WORLD AMENDERS INTERNATIONAL</h1>
       <p className="ml-2 text-xl my-3">"We are a young, but strong, voice for the unheard."</p>
+      </div>
+      <div className="lg:w-1/2">
 
       <Link href="/takeaction"><a
-        className="block lg:ml-4 text-center lg:w-1/2 btn bg-blue-700 hover:bg-blue-600 text-white rounded p-4 text-sm my-12">Take
-        an action and become an Amender </a></Link>
+        className="block lg:ml-4 w-full text-center btn bg-blue-700 hover:bg-blue-600 text-white rounded py-4 text-sm my-12">
+        Become an Amender </a></Link>
+        </div>
 
 
     </div>
