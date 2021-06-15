@@ -39,13 +39,22 @@ export class UserServices {
     }
 
     async updatePassword(user_id: string, body: PasswordChange) {
-        console.log('errr ', body )
         const response = await axios.put(`${url}/user/updatePassword/${user_id}`, body, {
             headers: {
                 authorization: `Bearer ${token}`
             }
         });
         return response.data;
+    }
+
+    async uploadImage(user_id:string,body: any,action:string){
+        const response = await axios.put(`${url}/user/upload-image/${user_id}?action=${action}`, body, {
+            headers: {
+                authorization: `Bearer ${token}`
+            }
+        });
+        return response.data;
+        
     }
 
     

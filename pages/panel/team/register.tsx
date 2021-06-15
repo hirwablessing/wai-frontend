@@ -1,20 +1,25 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Dashboard from "../../../layouts/Dashboard";
 import { LoadingOutlined, CameraOutlined } from "@ant-design/icons";
 import { useForm } from 'react-hook-form'
 import { TeamMember } from "../../../components/types/GeneralTypes";
 import {UserServices} from '../../api/services/UserServices'
+import Alert from "../../../components/dashboard/toasts/Alert";
 
 export default function register() {
 
     const [loading, setLoading] = useState(false);
+    const [status, setStatus] = useState(-1) // checking if there's no error while updating
 
-    const { register, handleSubmit, formState: { errors } } = useForm()
+    // error log
+    const [errorLog, setErrorLog] = useState('')
+
+    const { register, handleSubmit, reset, formState: { errors } } = useForm()
 
     // upload image here
 
     const [file, setFile] = useState("");
-    const [img, setImage] = useState({ name: "" });
+    const [img, setImage] = useState("");
     let tempFile: any;
     const uploadImage = (e: any) => {
         tempFile = e.target.files[0];
@@ -38,6 +43,7 @@ export default function register() {
 
     const services = new UserServices();
     const handleForm = async (data: TeamMember) => {
+        setLoading(true)
         const body:TeamMember = {
             first_name: data.first_name,
             second_name: data.second_name,
@@ -49,8 +55,25 @@ export default function register() {
 
         }
 
-        const response = await services.create(body)
-        console.log(response)
+        try{
+            const response = await services.create(body)
+            let formData = new FormData();
+            formData.append("file",img)
+            if(img){
+                await services.uploadImage(response.message._id,formData,"user_img");
+            }
+            console.log(response.message._id)
+            setLoading(false)
+            setErrorLog("")
+            setStatus(1)
+            reset(response)
+            setFile("")
+        }catch(e){
+            setErrorLog(e);
+            setLoading(false)
+        }
+
+    
         // console.log('Member',
         //     body
         // )
@@ -125,7 +148,7 @@ export default function register() {
 
                     <div className="form-group">
                         <label htmlFor="featured_image" className="text-gray-600 block my-3">
-                            <span className="block my-3">Image</span>
+                            <span className="block my-3">Profile image</span>
                             <div
                                 className="px-5 lg:px-12 border-2 border-dashed border-dark-500 py-5 lg:py-20 w-full h-1/2 cursor-pointer flex items-center justify-center hover:border-blue-700">
                                 {!file ? (
@@ -147,12 +170,25 @@ export default function register() {
                             Registering
                         </button>
                     ) : (
-                        <button type="submit" className="btn bg-blue-700 px-4 py-3 text-white mt-5 focus:outline-none">
+                        <button type="submit" className="btn bg-blue-700 px-4 py-3 text-white mt-5 focus:outline-none flex gap-2 items-center focus:outline-none">
                             Register
                         </button>
                     )}
                 </form>
             </div>
+
+            {status === 1 &&
+                <Alert
+                    type="success"
+                    message="Member created successfully"
+                    autoClose={2000}
+                    {
+                    ...setTimeout(() => {
+                        setStatus(-1)
+                    }, 2000)
+                    }
+                />
+            }
         </Dashboard>
     )
 }
