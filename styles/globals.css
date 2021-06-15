@@ -118,7 +118,17 @@ button{
   cursor: pointer;
   border: 1px solid #1d4ed7;
 }
+
+/* profile settings */
+
+.avatar--bg-block{
+  height:200px;
+  width:200px;
+}
+
+
 /* progress bar styles */
+
 
 #nprogress .bar {
   height:5px !important;

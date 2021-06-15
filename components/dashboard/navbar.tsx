@@ -38,7 +38,7 @@ export default function navbar(){
         }
         fetchUser();
     },[user])
-console.log(process.env.NEXT_PUBLIC_CLOUDINARY_URL)
+// console.log(process.env.NEXT_PUBLIC_CLOUDINARY_URL)
 
 return(
 <div className="hidden lg:block">
