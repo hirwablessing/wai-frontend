@@ -8,7 +8,7 @@ import {
     CameraOutlined,
     LoadingOutlined
 } from '@ant-design/icons'
-import ProfileImage from "./profileImage";
+import ProfileImage from "./ProfileImage";
 
 export default function ProfileSettings() {
 

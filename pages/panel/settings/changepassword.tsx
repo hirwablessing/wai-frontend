@@ -9,7 +9,7 @@ import Dashboard from '../../../layouts/Dashboard';
 import Link from 'next/link';
 import { UserServices } from '../../api/services/UserServices';
 import Alert from '../../../components/dashboard/toasts/Alert';
-import ProfileImage from '../../../components/dashboard/profileImage';
+import ProfileImage from '../../../components/dashboard/ProfileImage';
 
 export default function changepassword() {
     const { register, handleSubmit, formState: { errors } } = useForm()
