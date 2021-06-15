@@ -38,6 +38,16 @@ export class UserServices {
         return response.data;
     }
 
+    async getUsers(){
+        const response = await axios.get(`${url}/user/getUsers?limit=100`,{
+            headers: {
+                authorization: `Bearer ${token}`
+            }
+        });
+        return response.data;
+        
+    }
+
     async updatePassword(user_id: string, body: PasswordChange) {
         const response = await axios.put(`${url}/user/updatePassword/${user_id}`, body, {
             headers: {
