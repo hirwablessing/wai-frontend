@@ -45,7 +45,7 @@ return(
 <div className="hidden lg:block">
     <div className="bg-white px-5 py-3 flex items-center gap-10">
         <div className="lg:w-1/2">
-            <input type="text" placeholder="search dashboard" className="w-full rounded-full bg-gray-50 px-10 py-3 text-sm text-dark-500 focus:outline-none" />
+            <input type="text" placeholder="Search dashboard" className="w-full rounded-full bg-gray-50 px-10 py-3 text-sm text-dark-500 focus:outline-none" />
         </div>
         <div className="lg:w-1/2 flex justify-end items-center gap-3">
             <div>
