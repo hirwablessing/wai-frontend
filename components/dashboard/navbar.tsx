@@ -51,7 +51,7 @@ return(
             <div className="">
         <h1 className="font-bold text-sm block flex float-right w-full">
             {user.first_name} {user.second_name}</h1>
-        <h2 className="text-xs text-gray-400">{userData.role}</h2>
+        <h2 className="text-xs text-gray-400">{user.role}</h2>
         </div>
            
                     {userData?.image?

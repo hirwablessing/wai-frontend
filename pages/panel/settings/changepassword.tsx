@@ -1,7 +1,5 @@
 import { useForm } from 'react-hook-form'
-import dynamic from "next/dynamic";
 import React, { useContext, useState } from 'react'
-import { Posts } from '../../api/services/Posts';
 import { LoadingOutlined } from '@ant-design/icons';
 import { UserContext } from '../../api/context/UserContext';
 import { PasswordChange } from '../../../components/types/GeneralTypes';
@@ -39,7 +37,7 @@ export default function changepassword() {
         }
 
         try {
-            let response = await services.updatePassword(user?._id, body)
+            await services.updatePassword(user?._id, body)
             setLoading(false)
             setErrorLog("")
             setStatus(1)

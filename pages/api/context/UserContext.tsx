@@ -14,6 +14,7 @@ export const UserContext = createContext<GlobalUser>({
     first_name:'',
     second_name:'',
     email:'',
+    role:'',
     iat:0,
     gender:'',
 },

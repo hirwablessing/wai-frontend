@@ -18,6 +18,7 @@ export type LoggedInUser ={
     first_name?:string;
     second_name?:string;
     email?:string;
+    role?:string;
     gender?:string;
     iat?:number;
     }
