@@ -21,6 +21,7 @@ export default function ProfileImage(){
             password: '',
             phone: 0,
             image: '',
+            role:'',
             gender: '',
             active: true,
             createdAt: '',

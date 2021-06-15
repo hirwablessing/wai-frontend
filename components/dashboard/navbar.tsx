@@ -48,8 +48,9 @@ return(
             <input type="text" placeholder="Search dashboard" className="w-full rounded-full bg-gray-50 px-10 py-3 text-sm text-dark-500 focus:outline-none" />
         </div>
         <div className="lg:w-1/2 flex justify-end items-center gap-3">
-            <div>
-        <h1 className="font-bold text-sm block">{user.first_name} {user.second_name}</h1>
+            <div className="">
+        <h1 className="font-bold text-sm block flex float-right w-full">
+            {user.first_name} {user.second_name}</h1>
         <h2 className="text-xs text-gray-400">{userData.role}</h2>
         </div>
            
