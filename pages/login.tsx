@@ -51,7 +51,7 @@ try {
 
 }
 return(
-<div className=" h-screen w-full">
+<div className=" h-screen w-full text-sm">
     <div className="lg:flex lg:w-2/3 mx-auto my-auto">
         <div className="lg:w-1/2  bg-white h-screen flex items-center p-10">
             <div className="w-full">

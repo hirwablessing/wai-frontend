@@ -9,7 +9,7 @@ return(
     {/* navigation bar */}
     <Navbar />
     {/* main body*/}
-    <div className="p-5 lg:p-20">
+    <div className="p-5 lg:p-20 text-sm">
         <h6 className="text-gray-400 w-full text-center mt-3  text-sm my-5">Published January 13, 2021</h6>
         <h1 className="title font-bold text-2xl text-center">7 Rules of Effective Branding</h1>
         {/* tags */}

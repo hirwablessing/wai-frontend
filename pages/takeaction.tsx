@@ -19,7 +19,7 @@ return(
     {/* navigation bar */}
     <Navbar />
     {/* main body*/}
-    <div className="p-5 lg:px-20 py-10">
+    <div className="p-5 lg:px-20 py-10 text-sm">
         <div className="bg-blue-50 p-10 font-bold text-xl text-blue-700 my-10">
             Take Action and Become An Amender
         </div>

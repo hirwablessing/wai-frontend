@@ -11,7 +11,7 @@ return (
   <Navbar />
 
   {/* main body image */}
-  <div className="bg--img-block h-screen lg:flex items-center">
+  <div className="bg--img-block h-screen lg:flex items-center text-sm">
     <div className="lg:w-1/2 lg:px-5">
       <img src="/bgImage.svg" alt="" className="w-full"/>
     </div>
@@ -34,7 +34,7 @@ return (
   <div className="px-5 py-20 lg:px-20">
     <div className="upper--block my-15 w-full bg-blue-50 rounded-3xl p-5 lg:p-10">
       <div className="title text-blue-700 font-bold text-2xl text-center"> OUR MISSION </div>
-      <div className="mission--title text-center my-12 lg:px-20 text-gray-600">
+      <div className="mission--title text-center my-12 lg:px-20 text-gray-600 text-sm">
         Commissioned by Christ, wherever we go, we strive to better the lives of the neediest and encourage young people
         to use their powerful energy, fearless spirit, and creative minds in launching humanitarian actions and advocacy
         to make hunger, poverty, and injustice unknown to the next generations.

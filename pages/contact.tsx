@@ -22,14 +22,14 @@ return (
     <Navbar />
 
     {/* main body image */}
-    <div className="lg:flex gap-12 mx-auto lg:w-2/3 p-5 my-3">
+    <div className="lg:flex gap-12 mx-auto lg:w-2/3 py-10 h-screen">
         {/* <div className="shadow-lg lg:w-1/2 p-5 h-1/2">
             <div className="title font-bold text-gray-500 text-xl">Contact us</div>
         </div> */}
-        <div className="bg-white w-full">
+        <div className="bg-white w-full text-sm">
 
             <form onSubmit={ handleSubmit((data) => { handleForm(data) })}>
-                <div className="title text-xl my-5"> <div className="font-bold my-5 uppercase"> Contact us</div>
+                <div className="title text-xl my-5"> <div className="font-bold my-10 uppercase"> Contact us</div>
                     <div className="sub-title text-sm text-gray-400">Fill out the information</div>
                     <div className="sub-title text-sm text-gray-400">Field marked with <span className="text-red-500">*</span> is required</div>
                 </div>

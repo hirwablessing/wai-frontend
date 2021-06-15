@@ -32,7 +32,7 @@ return (
     {/* navigation bar */}
     <Navbar />
     {/* main body content */}
-    <div className="p-5 lg:p-20 w-full">
+    <div className="p-5 lg:p-20 w-full text-sm">
         <div className="mission bg-blue-50 text-dark p-10 rounded-xl">
             <h2 className="text-blue-700 text-center text-2xl font-bold w-full mb-5">Mission</h2>
             <p className="">Commissioned by Christ, wherever we go, we strive to better the lives of the
