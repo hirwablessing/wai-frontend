@@ -17,7 +17,7 @@ return (
     </div>
     <div className="text-white  lg:w-1/2 mt-10 lg:mt-0 px-10 lg:px-12 mx-auto">
     <div className="">
-      <h1 className="ml-2" style={{fontSize:'35px'}}>WORLD AMENDERS INTERNATIONAL</h1>
+      <h1 className="ml-2 text-4xl">WORLD AMENDERS INTERNATIONAL</h1>
       <p className="ml-2 text-xl my-3">"We are a young, but strong, voice for the unheard."</p>
       </div>
       <div className="lg:w-1/2">
