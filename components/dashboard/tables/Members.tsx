@@ -17,6 +17,7 @@ export default function Members() {
     useEffect(() => {
 
         const fetchUsers = async () => {
+            
             const data = await services.getUsers()
             // console.log('users',data)
             setusersData(data.data.docs)
