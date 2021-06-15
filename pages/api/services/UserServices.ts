@@ -3,7 +3,7 @@ import {
     UserLogin
 } from "../../../components/types/User";
 import {
-    PasswordChange
+    PasswordChange, TeamMember
 } from "../../../components/types/GeneralTypes";
 import axios from "axios";
 import url from '../../../utils/url'
@@ -18,13 +18,18 @@ if(typeof localStorage !=='undefined'){
 
 export class UserServices {
     async login(body: UserLogin) {
-        console.log('body ', body);
+        // console.log('body ', body);
         let response = await axios.post(`${url}/user/login`, body);
         return response.data;
 
     }
-    async create(body: User) {
-
+    async create(body: TeamMember) {
+        let response = await axios.post(`${url}/user/createUser`, body, {
+            headers: {
+                authorization: `Bearer ${token}`
+            }
+        });
+        return response.data;
     }
 
 

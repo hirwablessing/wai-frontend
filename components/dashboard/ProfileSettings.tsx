@@ -1,11 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
-import { User } from "../types/User";
-import { UserServices } from "../../pages/api/services/UserServices";
-import { UserContext } from "../../pages/api/context/UserContext";
 import {
-    CameraOutlined,
     LoadingOutlined
 } from '@ant-design/icons'
 import ProfileImage from "./ProfileImage";
@@ -19,36 +15,8 @@ export default function ProfileSettings() {
             setLoading(false)
         }, 3000);
         setLoading(true)
-        console.log(data.names, data.email, data.smessage)
     }
 
-    const { user } = useContext(UserContext)
-
-    const services = new UserServices();
-    const [userData, setUserData] = useState<User>(
-        {
-            _id: '',
-            first_name: '',
-            second_name: '',
-            email: '',
-            password: '',
-            phone: 0,
-            image: '',
-            gender: '',
-            active: true,
-            createdAt: '',
-            updatedAt: '',
-
-        }
-    );
-
-    useEffect(() => {
-        const fetchUser = async () => {
-            let data = await services.getUser(user._id)
-            setUserData(data.message);
-        }
-        fetchUser();
-    }, [user])
     return (
         <div className="main--body p-10 my-5 bg-white">
             <h1 className="font-bold">Settings / Profile settings</h1>

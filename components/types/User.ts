@@ -6,6 +6,7 @@ email:string;
 password:string;
 phone:number;
 image:string;
+role:string;
 gender:string;
 active:boolean;
 createdAt:string;

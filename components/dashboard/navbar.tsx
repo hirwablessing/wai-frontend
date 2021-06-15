@@ -23,6 +23,7 @@ export default function navbar(){
             password:'',
             phone:0,
             image:'',
+            role:'',
             gender:'',
             active:true,
             createdAt:'',
@@ -47,7 +48,10 @@ return(
             <input type="text" placeholder="search dashboard" className="w-full rounded-full bg-gray-50 px-10 py-3 text-sm text-dark-500 focus:outline-none" />
         </div>
         <div className="lg:w-1/2 flex justify-end items-center gap-3">
-        <h1 className="font-bold text-sm">{user.first_name} {user.second_name}</h1>
+            <div>
+        <h1 className="font-bold text-sm block">{user.first_name} {user.second_name}</h1>
+        <h2 className="text-xs text-gray-400">{userData.role}</h2>
+        </div>
            
                     {userData?.image?
                     <div className="cursor-pointer rounded-full text-center shadow avatar--image flex items-center text-white font-bold  justify-center"
