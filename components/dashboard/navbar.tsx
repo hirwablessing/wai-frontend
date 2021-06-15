@@ -1,16 +1,44 @@
 import Link from "next/link";
 import { useRouter} from "next/router";
-import {useContext, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import {UserContext} from '../../pages/api/context/UserContext'
+import {UserServices} from '../../pages/api/services/UserServices'
+import { User } from "../types/User";
+// require('dotenv').config()
 
 export default function navbar(){
     
     const router = useRouter();
+    const services = new UserServices();
     const [toggle,setToggle] = useState(false);
     const {user,logout} = useContext(UserContext)
     const first_name = user.first_name || ''
     const last_name = user.second_name || ''
+    const [userData,setUserData] = useState<User>(
+        {
+            _id:'',
+            first_name:'',
+            second_name:'',
+            email:'',
+            password:'',
+            phone:0,
+            image:'',
+            gender:'',
+            active:true,
+            createdAt:'',
+            updatedAt:'',
+        
+        }
+    );
 
+    useEffect(() => {
+         const fetchUser = async()=>{
+         let data = await services.getUser(user._id)
+        setUserData(data.message);
+        }
+        fetchUser();
+    },[user])
+console.log(process.env.NEXT_PUBLIC_CLOUDINARY_URL)
 
 return(
 <div className="hidden lg:block">
@@ -20,12 +48,21 @@ return(
         </div>
         <div className="lg:w-1/2 flex justify-end items-center gap-3">
         <h1 className="font-bold text-sm">{user.first_name} {user.second_name}</h1>
-            <div
+           
+                    {userData?.image?
+                    <div className="cursor-pointer rounded-full text-center shadow avatar--image flex items-center text-white font-bold  justify-center"
+                    onClick={() => setToggle(!toggle)}
+                    >
+                    <img src={process.env.NEXT_PUBLIC_CLOUDINARY_URL+userData?.image} className="object-cover w-full h-full rounded-full" alt="Profile image" />
+                    </div>
+                : <div
                 className="cursor-pointer rounded-full text-center bg-blue-700 avatar--image flex items-center text-white font-bold  justify-center"
                 onClick={() => setToggle(!toggle)}
                 >
-                {(first_name.toUpperCase())[0]}   {(last_name.toUpperCase())[0]} 
+                {(first_name.toUpperCase())[0]}   {(last_name.toUpperCase())[0]}
+                
                 </div>
+                }
                 {toggle &&
                 <div className="bg-white shadow p-5 absolute float-right lg:top-5 mt-12 z-40">
                     <Link href="/panel/settings/profile">

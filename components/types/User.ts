@@ -1,10 +1,11 @@
 export type User ={
 _id:string;
 first_name:string;
-last_name:string;
+second_name:string;
 email:string;
 password:string;
 phone:number;
+image:string;
 gender:string;
 active:boolean;
 createdAt:string;
@@ -17,7 +18,7 @@ export type LoggedInUser ={
     second_name?:string;
     email?:string;
     gender?:string;
-    iat?:number
+    iat?:number;
     }
 
 export type UserLogin ={
