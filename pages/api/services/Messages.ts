@@ -2,14 +2,22 @@ import axios from 'axios'
 import { Message } from '../../../components/types/GeneralTypes'
 import url from '../../../utils/url'
 
-let token:string;
-if(typeof localStorage !=='undefined'){
-
- token = localStorage.getItem("token") ? JSON.parse(localStorage.getItem("token") || "") : "";
-
+let token: string
+if (typeof localStorage !== 'undefined') {
+  token = localStorage.getItem('token')
+    ? JSON.parse(localStorage.getItem('token') || '')
+    : ''
 }
 
 export class Messages {
+  async getMessages() {
+    let response = await axios.get(`${url}/messages/all`, {
+      headers: {
+        authorization: `Bearer ${token}`
+      }
+    })
+    return response.data
+  }
   async createMessage(body: Message) {
     let response = await axios.post(`${url}/messages/create`, body, {
       headers: {
