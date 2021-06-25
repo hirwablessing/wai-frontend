@@ -11,6 +11,9 @@ export default function Members() {
     const [responseData, setResponseData] = useState([])
     const [usersData, setusersData] = useState([])
 
+    // deleting modal
+    const [deleteOpenModal, setdeleteOpenModal] = useState(false);
+
 
     // searching module
     const services = new UserServices();
@@ -41,6 +44,28 @@ export default function Members() {
     return (
         <div className="main--body p-5 lg:p-10 my-5 bg-white">
             <h1 className="font-bold">Team / View members</h1>
+
+
+
+
+        {/* deleting the category modal here */}
+        <div className={deleteOpenModal?"block modal":"hidden modal"}>
+        <div className="modal-content my-5 bg-white m-auto w-full lg:w-1/3 p-5 shadow rounded">
+      
+            <>
+            <h1 className="text-dark text-center">
+                Do you want to delete this category?
+                <br />
+                <span className="font-bold text-sm">
+
+                </span>
+            </h1>
+      
+            </>
+
+             </div>
+    </div>
+
             <div className="">
 
                 <div className="bg-white w-full text-sm rounded">
@@ -93,7 +118,10 @@ export default function Members() {
                                                     <td>
                                                         <div className="flex gap-5">
                                                             {parse('' + icons.editPayroll + '')}
+
+                                                            <span onClick={()=>setdeleteOpenModal(true)}>
                                                             {parse('' + icons.outlineTrash + '')}
+                                                            </span>
                                                         </div>
                                                     </td>
                                                 </tr>)

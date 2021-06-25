@@ -20,3 +20,9 @@ export type PasswordChange = {
     currentPassword:string | number,
     newPassword:string | number
 }
+
+export type Message = {
+    names:string,
+    email:string,
+    message:string
+}

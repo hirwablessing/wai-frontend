@@ -3,17 +3,27 @@ import Footer from '../components/home/footer'
 import { useForm } from 'react-hook-form'
 import { useState } from 'react'
 import { LoadingOutlined } from '@ant-design/icons';
+import { Message } from '../components/types/GeneralTypes';
+import {Messages} from '../pages/api/services/Messages'
 
 export default function Contact() {
     
   const { register, handleSubmit, formState: { errors } } = useForm()
   const [loading,setLoading] = useState(false)
-  const handleForm = async(data:any)=>{
-      setTimeout(() => {
+  
+  const messages = new Messages();
+
+  const handleForm = async(data:Message)=>{
+    setLoading(true)
+      try{
+        const response = await messages.createMessage(data);
+        setLoading(false)
+        console.log(response)
+      }catch(err){
+          console.log(err)
           setLoading(false)
-      }, 3000);
-      setLoading(true)
-    console.log(data.names,data.email,data.smessage)
+      }
+   
   }
 return (
 
@@ -28,7 +38,7 @@ return (
         </div> */}
         <div className="bg-white w-full text-sm">
 
-            <form onSubmit={ handleSubmit((data) => { handleForm(data) })}>
+            <form onSubmit={ handleSubmit((data:Message) => { handleForm(data) })}>
                 <div className="title text-xl my-5"> <div className="font-bold my-10 uppercase"> Contact us</div>
                     <div className="sub-title text-sm text-gray-400">Fill out the information</div>
                     <div className="sub-title text-sm text-gray-400">Field marked with <span className="text-red-500">*</span> is required</div>
@@ -47,8 +57,8 @@ return (
                 </div>
                 <div className="form-group">
                     <label htmlFor="" className="text-gray-600 block my-3">Message <span className="text-red-500">*</span></label>
-                    <textarea id="" className="border h-2/3 p-3 w-full" {...register('smessage', { required: '* This field is required' })}></textarea>
-                    <span className="text-red-600 text-xs">{errors.smessage && errors.smessage.message}</span>
+                    <textarea id="" className="border h-2/3 p-3 w-full" {...register('message', { required: '* This field is required' })}></textarea>
+                    <span className="text-red-600 text-xs">{errors.message && errors.message.message}</span>
                 </div>
                 <div>
                     {loading?

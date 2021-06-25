@@ -4,26 +4,22 @@ export default function HomeDashboard(){
     const data = [
 
         {
-            firstName:"Ish",
-            lastName:"Gervais",
+            names:"Ish Gervais",
             message:"Problems will you start to solve after this registration",
             date:"04/20/2021"
         },
         {
-            firstName:"Ish",
-            lastName:"Gervais",
+            names:"Ish Gervais",
             message:"Problems will you start to solve after this registration",
             date:"04/20/2021"
         },
         {
-            firstName:"Ish",
-            lastName:"Gervais",
+            names:"Ish Gervais",
             message:"Problems will you start to solve after this registration",
             date:"04/20/2021"
         },
         {
-            firstName:"Ish",
-            lastName:"Gervais",
+            names:"Ish Gervais",
             message:"Problems will you start to solve after this registration",
             date:"04/20/2021"
         }
@@ -71,7 +67,7 @@ return(
                         className="rounded-lg p-5 h-1/2 text-center bg-blue-100 text-dark flex items-center font-bold justify-center">
                         GA</div>
                     <div className="content text-sm">
-                        <h1 className="text-gray-400 mb-2">{item.firstName} {item.lastName}</h1>
+                        <h1 className="text-gray-400 mb-2">{item.names}</h1>
                         <p>{item.message}</p>
                         <h1
                             className="text-gray-400 text-xs mt-4 block float-right">{item.date}</h1>
