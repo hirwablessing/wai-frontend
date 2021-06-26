@@ -24,5 +24,5 @@ export type PasswordChange = {
 export type Message = {
     names:string,
     email:string,
-    message:string
+    cn_message:string
 }
