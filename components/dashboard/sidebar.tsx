@@ -22,7 +22,7 @@ export default function sidebar() {
                 <h1 className="font-bold text-white">WAI</h1>
             </div>
             <div className="hidden lg:block  h-screen overflow-y-auto top-0 sticky z-40 ">
-                <div className="upper--bound flex gap-5 mb-5 p-5 items-center hover:text-blue-500 cursor-pointer" onClick={() =>router.push('/')}>
+                <div className="upper--bound flex gap-5 mb-5 p-5 items-center hover:text-blue-700 cursor-pointer" onClick={() =>router.push('/')}>
                     <span className="bg-blue-700 rounded-lg text-white p-5">logo</span>
                     <h1>World Amenders International (WAI)</h1>
                 </div>
