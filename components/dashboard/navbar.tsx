@@ -61,10 +61,10 @@ return(
                     <img src={process.env.NEXT_PUBLIC_CLOUDINARY_URL+userData?.image} className="object-cover w-full h-full rounded-full" alt="Profile image" />
                     </div>
                 : <div
-                className="cursor-pointer rounded-full text-center bg-blue-700 avatar--image flex items-center text-white font-bold  justify-center"
+                className="cursor-pointer rounded-full text-center bg-gray-50 avatar--image flex items-center font-bold  justify-center"
                 onClick={() => setToggle(!toggle)}
                 >
-                {(first_name.toUpperCase())[0]}   {(last_name.toUpperCase())[0]}
+                {(first_name.toUpperCase())[0]}{(last_name.toUpperCase())[0]}
                 
                 </div>
                 }
