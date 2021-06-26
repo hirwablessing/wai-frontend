@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 import {UserContext} from '../../pages/api/context/UserContext'
 import {
     AppstoreOutlined, SettingOutlined, LogoutOutlined,UnorderedListOutlined,
-     FileTextOutlined,
+     FileTextOutlined,MailOutlined,
      TeamOutlined
   } from '@ant-design/icons'
 
@@ -34,6 +34,8 @@ return (
         <AppstoreOutlined style={{ fontSize: '17px' }} className=""/> <span> Dashboard </span>
         </a>
         </Link>
+
+     
 
         {/* news */}
         <span onClick={()=> setOpenNewsSubmenu(!openNewsSubmenu)}
@@ -136,6 +138,13 @@ return (
             </Link>
         </div>
         )}
+        {/* inbox ---contact us messages */}
+        <Link href="/panel/inbox">
+        <a className={ router.pathname.startsWith("/panel/inbox")===true ? "activeSidebarLink block " : "block" }>
+        <MailOutlined style={{ fontSize: '17px' }} className=""/> <span> Inbox </span>
+        </a>
+        </Link>
+
 
         {/* settings */}
         <span onClick={()=> setOpenSettingSubmenu(!openSettingSubmenu)}
