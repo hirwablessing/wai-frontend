@@ -70,28 +70,28 @@ export default function HomeDashboard() {
 
                         {skelLoading ?
                         <>
-                        <div className="my-4">
+                        <div className="my-4 p-2 border rounded">
                         <Skeleton height={20} width={'50%'} />
                         
                         <Skeleton height={30} width={'100%'} />
                         <Skeleton height={20} width={'20%'} />
 
                         </div>
-                        <div className="my-4">
+                        <div className="my-4 p-2 border rounded">
                         <Skeleton height={20} width={'50%'} />
                         
                         <Skeleton height={30} width={'100%'} />
                         <Skeleton height={20} width={'20%'} />
 
                         </div>
-                        <div className="my-4">
+                        <div className="my-4 p-2 border rounded">
                         <Skeleton height={20} width={'50%'} />
                         
                         <Skeleton height={30} width={'100%'} />
                         <Skeleton height={20} width={'20%'} />
 
                         </div>
-                        <div className="my-4">
+                        <div className="my-4 p-2 border rounded">
                         <Skeleton height={20} width={'50%'} />
                         
                         <Skeleton height={30} width={'100%'} />
