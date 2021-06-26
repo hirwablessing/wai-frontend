@@ -18,10 +18,9 @@ export default function Contact() {
     const handleForm = async (data: Message) => {
         setLoading(true)
         try {
-            setStatus(1)
             const response = await messages.createMessage(data);
             setLoading(false)
-          
+            setStatus(1)
             reset(response)
         } catch (err) {
             setStatus(0)
