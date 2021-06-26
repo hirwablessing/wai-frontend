@@ -15,6 +15,15 @@ export default function Message() {
     const [deleteOpenModal, setdeleteOpenModal] = useState(false);
 
 
+
+   // format date
+
+   function formatDate(date: string) {
+    let newDate = date.split('T');
+    return newDate[0] + ' ' + (newDate[1].split('.'))[0]
+}
+
+
     // searching module
     const services = new Messages();
     useEffect(() => {
@@ -115,7 +124,7 @@ export default function Message() {
                                                     <td>{item.names}</td>
                                                     <td>{item.email}</td>
                                                     <td>{item.cn_message}</td>
-                                                    <td>{item.createdAt}</td>
+                                                    <td>{formatDate(item.createdAt)}</td>
                                                     <td>
                                                         <div className="flex gap-5">
                                                             {parse('' + icons.editPayroll + '')}
