@@ -31,7 +31,6 @@ export default function Message() {
         const response_messages = async() => {
             let messages_data = await services.getMessages();
             setRespData(messages_data.data); 
-            console.log(messages_data)
         }
 
         response_messages()

@@ -16,9 +16,9 @@ export default function sidebar() {
     const router = useRouter();
     const { logout } = useContext(UserContext)
     return (
-        <div className="sidebar bg-white lg:w-1/5">
+        <div className="sidebar bg-white w-full">
 
-            <div className="bg-blue-600 w-full block lg:hidden p-5">
+            <div className="bg-blue-700 w-full block lg:hidden p-5">
                 <h1 className="font-bold text-white">WAI</h1>
             </div>
             <div className="hidden lg:block  h-screen overflow-y-auto top-0 sticky z-40 ">
