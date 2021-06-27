@@ -43,7 +43,7 @@ return (
 
       <div className="title text-blue-700 font-bold text-2xl lg:px-20 lg:pt-20"> World Amenders International (WAI)
       </div>
-      <div className="lg:flex gap-12 my-12 lg:px-20">
+      <section className="lg:flex gap-12 my-12 lg:px-20">
         <div className="w-full lg:w-1/2">
           <h1 className="font-bold text-lg">
             Opening verse</h1>
@@ -55,10 +55,10 @@ return (
         <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
           <img src="/readingBible.jpg" alt="" />
         </div>
-      </div>
+      </section>
     </div>
 
-    <div className="upper--block my-15 w-full">
+    <section className="upper--block my-15 w-full lg:py-20">
       <div className="lg:flex gap-12 my-12 items-center lg:px-20">
         <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
           <img src="/donation.jpg" alt="" />
@@ -75,9 +75,9 @@ return (
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div className="upper--block my-15 w-full">
+    <section className="upper--block my-15 w-full lg:py-20">
       <div className="lg:flex gap-12 my-12 items-center lg:px-20">
         <div className="w-full lg:w-1/2">
           <h1 className="font-bold text-lg">
@@ -94,7 +94,7 @@ return (
           <img src="/charity.jpg" alt="" />
         </div>
       </div>
-    </div>
+    </section>
 
   </div>
 
