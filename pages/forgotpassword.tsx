@@ -30,7 +30,7 @@ return(
                 
                 <div className="w-full gap-5">
 
-                    <div className="form-group">
+                    <div className="form-group text-sm">
                         <label htmlFor="" className="text-gray-600 block my-3">Email</label>
                         <input type="email" id="" className="border p-3 w-full" {...register('email', {
                             required: '* This field is required' })} />
