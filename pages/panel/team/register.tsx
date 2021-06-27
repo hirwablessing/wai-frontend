@@ -165,12 +165,12 @@ export default function register() {
 
                     {loading ? (
                         <button type="submit"
-                            className="btn bg-blue-400 px-4 py-3 text-white mt-5 focus:outline-none flex gap-2 items-center">
+                            className="btn bg-blue-400 px-4 py-3 text-white mt-5 focus:outline-none flex gap-2 items-center rounded">
                             <LoadingOutlined />
                             Registering
                         </button>
                     ) : (
-                        <button type="submit" className="btn bg-blue-700 px-4 py-3 text-white mt-5 focus:outline-none flex gap-2 items-center focus:outline-none">
+                        <button type="submit" className="btn bg-blue-700 px-4 py-3 text-white mt-5 focus:outline-none flex gap-2 items-center focus:outline-none rounded">
                             Register
                         </button>
                     )}

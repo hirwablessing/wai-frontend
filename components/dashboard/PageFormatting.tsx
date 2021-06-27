@@ -90,10 +90,10 @@ return(
             <div>
                 {loading?
                 <button type="submit"
-                    className="btn bg-blue-400 px-4 py-3 text-white float-right my-5 focus:outline-none flex gap-2 items-center">
+                    className="btn bg-blue-400 px-4 py-3 text-white float-right my-5 focus:outline-none flex gap-2 items-center rounded">
                     <LoadingOutlined />Publishing</button>:
                 <button type="submit"
-                    className="btn bg-blue-700 px-4 py-3 text-white float-right my-5 focus:outline-none">Publish</button>
+                    className="btn bg-blue-700 px-4 py-3 text-white float-right my-5 focus:outline-none rounded">Publish</button>
                 }
                 {/* <Alert type="error" message="failed" autoClose={false} /> */}
             </div>

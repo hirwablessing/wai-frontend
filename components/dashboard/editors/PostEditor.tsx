@@ -294,7 +294,7 @@ export default function PostEditor(props: any) {
             {loading ? (
               <button
                 type="submit"
-                className="btn bg-blue-400 px-4 py-3 text-white float-right my-5 focus:outline-none flex gap-2 items-center"
+                className="btn bg-blue-400 px-4 py-3 text-white float-right my-5 focus:outline-none flex gap-2 items-center rounded rounded"
               >
                 <LoadingOutlined />
                 {props.btnLoadingTitle}
@@ -302,7 +302,7 @@ export default function PostEditor(props: any) {
             ) : (
               <button
                 type="submit"
-                className="btn bg-blue-700 px-4 py-3 text-white float-right my-5 focus:outline-none"
+                className="btn bg-blue-700 px-4 py-3 text-white float-right my-5 focus:outline-none rounded"
               >
               {props.btnTitle}
               </button>

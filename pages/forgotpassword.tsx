@@ -40,10 +40,10 @@ return(
                 <div>
                     {loading?
                     <button type="submit"
-                        className="btn bg-blue-400 px-10 py-3 text-white my-5 text-sm focus:outline-none flex gap-2 items-center">
+                        className="btn bg-blue-400 px-10 py-3 text-white my-5 text-sm focus:outline-none flex gap-2 items-center rounded">
                         <LoadingOutlined />Login</button>:
                     <button type="submit"
-                        className="btn bg-blue-700 px-10 py-3 text-white my-5 focus:outline-none">Reset</button>
+                        className="btn bg-blue-700 px-10 py-3 text-white my-5 focus:outline-none rounded text-sm">Reset</button>
                     }
             <div className="w-full flex my-5 text-sm">
                 <Link href="/">
