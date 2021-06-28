@@ -62,7 +62,7 @@ export default function register() {
             if(img){
                 await services.uploadImage(response.message._id,formData,"user_img");
             }
-            console.log(response.message._id)
+            // console.log(response.message._id)
             setLoading(false)
             setErrorLog("")
             setStatus(1)

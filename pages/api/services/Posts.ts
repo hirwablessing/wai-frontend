@@ -8,7 +8,7 @@ export class Posts{
 
 
     async  createPost(body:Article){
-        console.log(body)
+        // console.log(body)
             let response  = await axios.post(`${url}/posts/createPost`,
             body,
             {
@@ -19,5 +19,14 @@ export class Posts{
             );
             return response.data;
 
+    }
+    async uploadImage(id:string,body: any,action:string){
+        const response = await axios.put(`${url}/posts/upload-image/${id}?action=${action}`, body, {
+            headers: {
+                authorization: `Bearer ${token}`
+            }
+        });
+        return response.data;
+        
     }
 }

@@ -49,6 +49,7 @@ export default function PostEditor(props: any) {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
   const [loading, setLoading] = useState(false);
@@ -110,14 +111,14 @@ export default function PostEditor(props: any) {
     // e.preventDefault();
     editorState = content;
     // editorState = draftToHtml(convertToRaw(editorState.getCurrentContent()));
-    console.log("Post: ", editorState);
-    console.log(data.title, editorState);
+    // console.log("Post: ", editorState);
+    // console.log(data.title, editorState);
 
     try {
       
 
       let Post = new Posts();
-      await Post.createPost({
+      let creationResponse = await Post.createPost({
         title: data.title,
         content: editorState.toString(),
         section: parseInt(props.section) || 0,
@@ -127,14 +128,22 @@ export default function PostEditor(props: any) {
 
 
       setStatusMessage("Post created successfully");
-      // console.log("hello ", statusMessage);
+      
+      let formData = new FormData();
+      formData.append("file",img)
+
+      if(img){
+       let fileReponse =  await Post.uploadImage(creationResponse.message._id,formData,"post_img");
+       console.log(fileReponse)
+    }
+      // console.log("hello ", response);
 
       setLoading(false);
       setStatus(1);
+      reset(data)
     } catch (e) {
 
       let data = e.response.data.error;
-      console.log("Errorrrrrr", data);
       setStatusMessage(data);
       // console.log("hello ", statusMessage);
       
