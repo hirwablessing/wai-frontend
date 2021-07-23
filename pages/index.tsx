@@ -60,8 +60,16 @@ export default function Home() {
 
         <video src="/amenders_home.mp4" autoPlay loop muted className="w-full main--video top-0 absolute " ></video>
       </div>
+         {/* navigation bar */}
+         <Navbar
+           textColor="text-white"
+           bgColor="bg-blue-gradient"
+           activeColor="text-blue-500"
+           hoverColor="text-blue-500"
+
+        />
       {/* main body content */}
-      <div className="px-5 py-20 lg:px-20 top-20 md:top-0 relative">
+      <div className="px-5 py-20 lg:px-20 top-20 md:top-0">
         <div className="upper--block my-15 w-full rounded-3xl lg:p-10  ">
           <div className="title text-blue-700 font-bold text-2xl text-center">🌏 OUR MISSION </div>
           <div className="mission--title lg:px-20 text-gray-600 text-sm my-5">
@@ -128,11 +136,10 @@ export default function Home() {
       </div>
 
       {/* main body ends here */}
-      <hr />
       {/* new articles */}
 
       {/* video */}
-      <section className="bg-black p-5 md:p-10 lg:p-20 w-full mb-5 bg-black-gradient">
+      <section className="bg-black p-5 md:p-10 lg:p-20 w-full mb-5 bg-black-gradient my-5">
         <div className="w-full grid sm:grid-cols-1 md:grid-cols-2 gap-10">
           <div>
           <h1 className="text-3xl text-blue-700 font-bold">WAI actions overview</h1>
