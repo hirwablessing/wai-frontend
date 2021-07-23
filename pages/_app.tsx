@@ -19,17 +19,17 @@ Router.events.on('routeChangeError', () => NProgress.done())
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <MainContext>
-         <Head>
+      <Head>
         <title>WAI</title>
         <meta name="theme-color" content="#031043" />
-    <meta
-      name="description"
-      content="WAI"
-    />
+        <meta
+          name="description"
+          content="WAI"
+        />
       </Head>
-  <Component {...pageProps} />
-  </MainContext>
+      <Component {...pageProps} />
+    </MainContext>
   )
-  
+
 }
 export default MyApp
