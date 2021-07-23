@@ -17,10 +17,15 @@ console.log(data.names,data.email,data.smessage)
 return(
 <div>
     {/* navigation bar */}
-    <Navbar />
+    <Navbar
+      textColor="text-black"
+      bgColor="bg-white"
+      activeColor="text-blue-500"
+      hoverColor="text-blue-500"
+    />
     {/* main body*/}
     <div className="p-5 lg:px-20 py-10 text-sm">
-        <div className="bg-blue-50 p-10 font-bold text-xl text-blue-700 my-10">
+        <div className="bg-blue-gradient p-10 font-bold text-xl text-white my-10">
             Take Action and Become An Amender
         </div>
         <div className="lg:flex gap-20">
@@ -223,7 +228,7 @@ return(
         </div>
 
         {/* */}
-        <div className="bg-blue-50 p-10 font-bold text-xl text-blue-700 mt-20 lg:my-10 mb-5">
+        <div className="bg-blue-gradient p-10 font-bold text-xl text-white mt-20 lg:my-10 mb-5">
             Actions matter most when it comes to helping the poor.
         </div>
         <div className="lg:flex gap-20">

@@ -7,7 +7,12 @@ export default function article(){
 return(
 <div>
     {/* navigation bar */}
-    <Navbar />
+    <Navbar
+       textColor="text-white"
+       bgColor="bg-blue-gradient"
+       activeColor="text-blue-500"
+       hoverColor="text-blue-500"
+    />
     {/* main body*/}
     <div className="p-5 lg:p-20 text-sm">
         <h6 className="text-gray-400 w-full text-center mt-3  text-sm my-5">Published January 13, 2021</h6>

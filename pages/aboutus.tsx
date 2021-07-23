@@ -30,19 +30,30 @@ return (
 
 <div>
     {/* navigation bar */}
-    <Navbar />
+    <Navbar
+      textColor="text-black"
+      bgColor="bg-white"
+      activeColor="text-blue-500"
+      hoverColor="text-blue-500"
+    />
     {/* main body content */}
-    <div className="p-5 lg:p-20 w-full text-sm">
-        <div className="mission bg-blue-50 text-dark p-10 rounded-xl">
-            <h2 className="text-blue-700 text-center text-2xl font-bold w-full mb-5">Mission</h2>
+    <div className="w-full text-sm">
+        <div className="p-5 lg:p-20">
+        <div className="bg-blue-gradient p-10 font-bold text-xl text-white">
+            About us
+        </div>
+        </div>
+   
+        {/* <div className=" p-5 lg:p-20 mission bg-blue-gradient text-white p-10">
+            <h2 className=" text-center text-2xl font-bold w-full mb-5">Mission</h2>
             <p className="">Commissioned by Christ, wherever we go, we strive to better the lives of the
                 neediest
                 and encourage young people to use their powerful energy, fearless spirit, and creative minds in
                 launching humanitarian actions to make hunger, poverty, and injustice unknown to the next generations.
             </p>
-        </div>
+        </div> */}
 
-        <div className="story my-12">
+        <div className="p-5 lg:p-20 story my-12">
             <h2 className="text-2xl text-blue-700 font-bold w-full my-10">Our story</h2>
             <div className="lg:flex gap-12">
                 <div className="w-full lg:w-1/2 my-5 lg:my-0">
@@ -93,7 +104,7 @@ return (
         {/* our story ends here */}
 
         {/* how we work */}
-        <div className="my-10">
+        <div className="p-5 lg:p-20  my-10">
             <h2 className="text-2xl text-blue-700 font-bold w-full my-10">How we work</h2>
             {/* <div className="absolute">
                 <div className="flex gap-5 w-full">
@@ -140,10 +151,10 @@ return (
 
         {/* our team */}
         <div className="mt-12 pt-12">
-            <div className=" bg-blue-50 rounded-xl p-5 lg:p-10">
-                <h2 className="text-2xl text-blue-700 font-bold w-full my-10">Our team</h2>
+            <div className=" bg-blue-gradient p-5 lg:p-10">
+                <h2 className="text-2xl text-white font-bold w-full my-10">Our team</h2>
             {/* team members  */}
-                <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-4 w-full justify-center my-5 overflow-x-auto">
+                <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-10 w-full justify-center my-5 overflow-x-auto">
                    {
                        teamMember?.map((member:any)=>{
                            return(
@@ -158,7 +169,7 @@ return (
         </div>
 
         {/* our location */}
-        <div className="mt-12 pt-12">
+        <div className="p-5 lg:p-20 mt-12 pt-12">
             <div className="lg:flex gap-12 mt-12">
                 <div className="lg:w-1/2">
                     <h2 className="text-2xl text-blue-700 font-bold w-full my-10">Our Location</h2>

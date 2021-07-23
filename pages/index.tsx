@@ -4,18 +4,24 @@ import News from '../components/home/news'
 import React from 'react'
 import Link from 'next/link'
 export default function Home() {
-return (
+  return (
 
-<div>
-  {/* navigation bar */}
-  <Navbar />
+    <div>
 
-  {/* main body image */}
-  <div className="bg--img-block h-screen lg:flex items-center text-sm">
-    <div className="lg:w-1/2 lg:px-5">
-      <img src="/bgImage.svg" alt="" className="w-full"/>
-    </div>
-    <div className="text-white  lg:w-1/2 mt-10 lg:mt-0 px-10 lg:px-12 mx-auto">
+      <div className="top-0 gradient">
+        {/* navigation bar */}
+        <Navbar
+          textColor="text-white"
+          bgColor="transparent"
+          activeColor="text-blue-500"
+          hoverColor="text-blue-500"
+
+        />
+
+        {/* main body image */}
+
+
+        {/* <div className="text-white  lg:w-1/2 mt-10 lg:mt-0 px-10 lg:px-12 mx-auto">
     <div className="">
       <h1 className="ml-2 text-4xl">WORLD AMENDERS INTERNATIONAL</h1>
       <p className="ml-2 text-xl my-3">"We are a young, but strong, voice for the unheard."</p>
@@ -23,93 +29,142 @@ return (
       <div className="lg:w-1/2">
 
       <Link href="/takeaction"><a
-        className="block lg:ml-4 w-full text-center btn bg-blue-700 hover:bg-blue-600 text-white rounded py-4 text-sm my-12">
+        className="block lg:ml-4 w-full text-center btn bg-blue-700 hover:bg-blue-600 text-white rounded py-4 text-sm ">
         Become an Amender </a></Link>
         </div>
 
 
-    </div>
-  </div>
-  {/* main body content */}
-  <div className="px-5 py-20 lg:px-20">
-    <div className="upper--block my-15 w-full bg-blue-50 rounded-3xl p-5 lg:p-10">
-      <div className="title text-blue-700 font-bold text-2xl text-center"> OUR MISSION </div>
-      <div className="mission--title text-center my-12 lg:px-20 text-gray-600 text-sm">
-        Commissioned by Christ, wherever we go, we strive to better the lives of the neediest and encourage young people
-        to use their powerful energy, fearless spirit, and creative minds in launching humanitarian actions and advocacy
-        to make hunger, poverty, and injustice unknown to the next generations.
 
-      </div>
+    </div> */}
 
-      <div className="title text-blue-700 font-bold text-2xl lg:px-20 lg:pt-20"> World Amenders International (WAI)
-      </div>
-      <section className="lg:flex gap-12 my-12 lg:px-20">
-        <div className="w-full lg:w-1/2">
-          <h1 className="font-bold text-lg">
-            Opening verse</h1>
-          <br />
-          <p className="text-sm text-gray-600">
-            Whoever oppresses the poor insults their Maker, but those who are generous to the needy honors Him (14: 31)
-          </p>
+        <div className="md:absolute w-full flex top-40 justify-end">
+          <div className="md:w-2/3 h-full bg-black-gradient text-white p-5 md:p-10 md:rounded-lg main--dashboard md:mr-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 my-5">
+              <div>
+                <h1 className="text-3xl block font-bold">World Amenders International (WAI)
+                </h1>
+                <br />
+                <span className="text-md block">Commissioned by Christ, wherever we go, we strive to better the lives of the neediest and encourage young people to use their powerful energy, fearless spirit, and creative minds in launching humanitarian actions and advocacy to make hunger, poverty, and injustice unknown to the next generations.</span>
+                <button className="sm:w-full md:w-1/2 mt-10 bg-blue-600 text-white py-2 px-10 rounded-full hover:bg-black hover:text-white btn-border-1 cursor-pointer focus:outline-none">Take action</button>
+
+              </div>
+              <div className="">
+                <img src="/person.svg" alt="" />
+              </div>
+            </div>
+
+
+
+          </div>
         </div>
-        <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
-          <img src="/readingBible.jpg" alt="" />
+
+        <video src="/amenders_home.mp4" autoPlay loop muted className="w-full main--video top-0 absolute " ></video>
+      </div>
+      {/* main body content */}
+      <div className="px-5 py-20 lg:px-20 top-20 md:top-0 relative">
+        <div className="upper--block my-15 w-full rounded-3xl lg:p-10  ">
+          <div className="title text-blue-700 font-bold text-2xl text-center">🌏 OUR MISSION </div>
+          <div className="mission--title lg:px-20 text-gray-600 text-sm my-5">
+            Commissioned by Christ, wherever we go, we strive to better the lives of the neediest and encourage young people
+            to use their powerful energy, fearless spirit, and creative minds in launching humanitarian actions and advocacy
+            to make hunger, poverty, and injustice unknown to the next generations.
+
+          </div>
+
+        </div>
+        <section className="lg:flex items-center gap-12  lg:px-20">
+          <div className="w-full lg:w-1/2">
+            <h1 className="font-bold text-lg">
+              Opening verse</h1>
+            <br />
+            <p className="text-sm text-gray-600 mb-3">
+              Whoever oppresses the poor insults their Maker, but those who are generous to the needy honors Him (14: 31)
+            </p>
+          </div>
+          <div className="w-full lg:w-1/2 lg:mt-0">
+            <img src="/readingBible.jpg" alt="" />
+          </div>
+        </section>
+
+
+        <section className="upper--block my-15 w-full lg:py-20">
+          <div className="lg:flex gap-12  items-center lg:px-20">
+            <div className="w-full lg:w-1/2 lg:mt-0">
+              <img src="/donation.jpg" alt="" />
+            </div>
+            <div className="w-full lg:w-1/2 lg:mt-0">
+              <h1 className="font-bold text-lg text-blue-700 my-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis iste</h1>
+              <br />
+              <p className="text-sm text-gray-500 mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis iste, quo numquam laborum,
+                beatae
+                necessitatibus doloribus tenetur possimus ab saepe? Quam totam deserunt et repellendus quos maiores a
+                consectetur.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="upper--block my-15 w-full lg:py-20">
+          <div className="lg:flex gap-12  items-center lg:px-20">
+            <div className="w-full lg:w-1/2">
+              <h1 className="font-bold text-lg text-blue-700 my-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis iste</h1>
+              <br />
+              <p className="text-sm text-gray-500 mb-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis iste, quo numquam laborum,
+                beatae
+                necessitatibus doloribus tenetur possimus ab saepe? Quam totam deserunt et repellendus quos maiores a
+                consectetur.
+              </p>
+            </div>
+            <div className="w-full lg:w-1/2 lg:mt-0">
+              <img src="/charity.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      {/* main body ends here */}
+      <hr />
+      {/* new articles */}
+
+      {/* video */}
+      <section className="bg-black p-5 md:p-10 lg:p-20 w-full mb-5 bg-black-gradient">
+        <div className="w-full grid sm:grid-cols-1 md:grid-cols-2 gap-10">
+          <div>
+          <h1 className="text-3xl text-blue-700 font-bold">WAI actions overview</h1>
+
+          <p className="text-white my-5">
+            <h1>We are devoted to make</h1> <br />
+            <ul className="my-3 ml-5">
+              <li className="list-disc">Poverty</li>
+              <li className="list-disc">Hunger</li>
+              <li className="list-disc">Injustice</li>
+            </ul>
+            unknown to the next generations.
+          </p>
+
+          <img src="/people.svg" alt="" className="w-1/2" />
+
+          </div>
+          <div className="w-full">
+          <video src="/amenders_home.mp4" autoPlay loop muted controls className="my-5" ></video>
+
+          </div>
         </div>
       </section>
+      <div className="lg:px-20">
+        <News title={'News'} />
+        <News />
+        <News />
+      </div>
+      {/* footer */}
+      <hr />
+      <Footer />
+
     </div>
-
-    <section className="upper--block my-15 w-full lg:py-20">
-      <div className="lg:flex gap-12 my-12 items-center lg:px-20">
-        <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
-          <img src="/donation.jpg" alt="" />
-        </div>
-        <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
-          <h1 className="font-bold text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis iste</h1>
-          <br />
-          <p className="text-sm text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis iste, quo numquam laborum,
-            beatae
-            necessitatibus doloribus tenetur possimus ab saepe? Quam totam deserunt et repellendus quos maiores a
-            consectetur.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section className="upper--block my-15 w-full lg:py-20">
-      <div className="lg:flex gap-12 my-12 items-center lg:px-20">
-        <div className="w-full lg:w-1/2">
-          <h1 className="font-bold text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis iste</h1>
-          <br />
-          <p className="text-sm text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis corporis iste, quo numquam laborum,
-            beatae
-            necessitatibus doloribus tenetur possimus ab saepe? Quam totam deserunt et repellendus quos maiores a
-            consectetur.
-          </p>
-        </div>
-        <div className="w-full lg:w-1/2 mt-5 lg:mt-0">
-          <img src="/charity.jpg" alt="" />
-        </div>
-      </div>
-    </section>
-
-  </div>
-
-  {/* main body ends here */}
-  <hr />
-  {/* new articles */}
-  <div className="lg:px-20">
-  <News title={'News'} />
-  <News />
-  <News />
-  </div>
-  {/* footer */}
-  <hr />
-  <Footer />
-
-</div>
-)
+  )
 }

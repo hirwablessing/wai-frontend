@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import '../styles/main.css'
 import type { AppProps } from 'next/app'
+import Head from 'next/head'
 
 import Router from 'next/router'
 import NProgress from 'nprogress'
@@ -18,6 +19,14 @@ Router.events.on('routeChangeError', () => NProgress.done())
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <MainContext>
+         <Head>
+        <title>WAI</title>
+        <meta name="theme-color" content="#031043" />
+    <meta
+      name="description"
+      content="WAI"
+    />
+      </Head>
   <Component {...pageProps} />
   </MainContext>
   )

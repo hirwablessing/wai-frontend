@@ -32,7 +32,12 @@ export default function Contact() {
 
         <div>
             {/* navigation bar */}
-            <Navbar />
+            <Navbar
+                     textColor="text-black"
+                     bgColor="bg-white"
+                     activeColor="text-blue-500"
+                     hoverColor="text-blue-500"
+            />
             {status === 1 ?
                 <Alert
                     type="success"

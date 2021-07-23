@@ -33,14 +33,27 @@ background-image: linear-gradient(0deg, #1e40ae 0%, #113bbd 100%);
   height:500px;
   /* content: url('../public/') */
 }
+/* animation */
+.animation-1:hover{
 
+  width:90%;
+  transition: width 2s;
+}
+
+.btn-border-1:hover{
+ 
+  width:90%;
+  transition: 1s  ease-in-out;
+  border: 1px solid #113bbd;
+}
 /* footer */
 
 .contact-icons{
   fill: rgba(128, 128, 128, 0.568);
 }
 .contact--white-icons{
-  fill:#fff;
+  /* fill:#fff; */
+  fill:gray
 }
 .contact--white-icons:hover{
   /* fill:blue */
@@ -126,9 +139,36 @@ button{
   width:200px;
 }
 
+/* video */
 
+.gradient{
+  top: 0;
+  background: rgba(0, 0, 0, 0.849);
+  width: 100%;
+  height: 110vh;
+  z-index: 1;
+}
+
+.main--dashboard{
+  /* box-shadow: rgb(5, 0, 82) 0px 22px 70px 4px; */
+  /* border-radius: 0 250px 250px 0 !important; */
+}
+video {
+  z-index: -10;
+}
 /* progress bar styles */
 
+.bg-black-gradient{
+  background-color: #00041a;
+  background-image: linear-gradient(160deg, #00041a 0%, #000516 100%);
+  
+}
+
+.bg-blue-gradient{
+  background-color: #00041a;
+background-image: linear-gradient(160deg, #00041a 0%, #042079 100%);
+
+}
 
 #nprogress .bar {
   height:5px !important;

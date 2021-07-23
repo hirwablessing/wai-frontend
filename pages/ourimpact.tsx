@@ -4,10 +4,15 @@ export default function ourimpact(){
 return(
 <div>
     {/* navigation bar */}
-    <Navbar />
+    <Navbar
+     textColor="text-black"
+     bgColor="bg-white"
+     activeColor="text-blue-500"
+     hoverColor="text-blue-500"
+    />
     {/* main body*/}
     <div className="p-5 lg:px-20 py-10">
-    <div className="bg-blue-50 p-10 font-bold text-2xl text-blue-700 my-10">
+    <div className="bg-blue-gradient p-10 font-bold text-xl text-white">
            Our Impact
         </div>
 
