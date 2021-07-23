@@ -139,10 +139,10 @@ export default function Home() {
       {/* new articles */}
 
       {/* video */}
-      <section className="bg-black p-5 md:p-10 lg:p-20 w-full mb-5 bg-black-gradient my-5">
+      <section className="bg-black px-5 py-20  md:p-10 lg:p-20 w-full mb-5 bg-black-gradient my-5">
         <div className="w-full grid sm:grid-cols-1 md:grid-cols-2 gap-10">
           <div>
-          <h1 className="text-3xl text-blue-700 font-bold">WAI actions overview</h1>
+          <h1 className="text-3xl text-white font-bold">WAI actions overview</h1>
 
           <p className="text-white my-5">
             <h1>We are devoted to make</h1> <br />
