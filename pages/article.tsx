@@ -8,10 +8,10 @@ return(
 <div>
     {/* navigation bar */}
     <Navbar
-       textColor="text-white"
-       bgColor="bg-blue-gradient"
-       activeColor="text-blue-500"
-       hoverColor="text-blue-500"
+  textColor="text-black"
+  bgColor="bg-white"
+  activeColor="text-blue-500"
+  hoverColor="text-blue-500"
     />
     {/* main body*/}
     <div className="p-5 lg:p-20 text-sm">
